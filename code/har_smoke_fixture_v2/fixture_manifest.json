@@ -1,0 +1,81 @@
+{
+  "status": "partial_fixture",
+  "groups_requested": [
+    [
+      "a",
+      "nexus4",
+      "nexus4_1"
+    ],
+    [
+      "g",
+      "s3",
+      "s3_2"
+    ],
+    [
+      "i",
+      "s3mini",
+      "s3mini_2"
+    ]
+  ],
+  "groups_with_bounded_paired_coverage": [
+    [
+      "a",
+      "nexus4",
+      "nexus4_1"
+    ]
+  ],
+  "rows_written": {
+    "acc": 2968,
+    "gyro": 2968
+  },
+  "limits": {
+    "chunk_size": 25000,
+    "max_chunks_per_file": 4,
+    "max_scanned_rows_per_file": 100000,
+    "max_retained_rows_per_group_per_sensor": 20000,
+    "max_total_retained_rows": 80000,
+    "fixture_duration_seconds": 30.0
+  },
+  "scan_report": [
+    {
+      "sensor": "acc",
+      "file": "Phones_accelerometer.csv",
+      "chunks_scanned": 4,
+      "rows_scanned": 100000,
+      "matching_rows": 100000,
+      "rows_retained": 20000,
+      "scan_limit_reached": true
+    },
+    {
+      "sensor": "acc",
+      "file": "Watch_accelerometer.csv",
+      "chunks_scanned": 4,
+      "rows_scanned": 100000,
+      "matching_rows": 0,
+      "rows_retained": 0,
+      "scan_limit_reached": true
+    },
+    {
+      "sensor": "gyro",
+      "file": "Phones_gyroscope.csv",
+      "chunks_scanned": 4,
+      "rows_scanned": 100000,
+      "matching_rows": 100000,
+      "rows_retained": 20000,
+      "scan_limit_reached": true
+    },
+    {
+      "sensor": "gyro",
+      "file": "Watch_gyroscope.csv",
+      "chunks_scanned": 4,
+      "rows_scanned": 100000,
+      "matching_rows": 0,
+      "rows_retained": 0,
+      "scan_limit_reached": true
+    }
+  ],
+  "incomplete_reasons": {
+    "missing_sensor_in_bounded_scan": 2
+  },
+  "preservation": "Rows retain source order within each source file, original integer timestamps, labels, and User/Model/Device identities. Disconnected fragments are not stitched."
+}

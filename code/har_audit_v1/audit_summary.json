@@ -1,0 +1,49 @@
+{
+  "audit_stage": 1,
+  "data_directory": "ignore_files\\data\\full",
+  "output_directory": "code\\har_audit_v1",
+  "chunk_size": 50000,
+  "large_gap_threshold_seconds": 5.0,
+  "group_keys": [
+    "User",
+    "Model",
+    "Device"
+  ],
+  "timestamp_columns": [
+    "Arrival_Time",
+    "Creation_Time"
+  ],
+  "candidate_units_per_second": {
+    "Arrival_Time": [
+      1.0,
+      1000.0,
+      1000000.0,
+      1000000000.0
+    ],
+    "Creation_Time": [
+      1.0,
+      1000.0,
+      1000000.0,
+      1000000000.0
+    ]
+  },
+  "timestamp_policy": "Creation_Time and Arrival_Time are retained as nullable integers. Candidate scales are diagnostic only; no clock correction or independent zeroing is performed.",
+  "files": {
+    "acc": {
+      "Phones": "ignore_files\\data\\full\\Phones_accelerometer.csv",
+      "Watch": "ignore_files\\data\\full\\Watch_accelerometer.csv"
+    },
+    "gyro": {
+      "Phones": "ignore_files\\data\\full\\Phones_gyroscope.csv",
+      "Watch": "ignore_files\\data\\full\\Watch_gyroscope.csv"
+    }
+  },
+  "stream_group_count": {
+    "acc": 105,
+    "gyro": 86
+  },
+  "paired_group_count": 84,
+  "missing_accel_groups": 2,
+  "missing_gyro_groups": 21,
+  "status": "audit_complete_no_preprocessing_or_training_run"
+}

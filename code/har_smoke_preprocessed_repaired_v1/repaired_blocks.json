@@ -1,0 +1,2943 @@
+[
+  {
+    "sensor": "acc",
+    "original_positions": [
+      77,
+      78
+    ],
+    "original_indices": [
+      "79",
+      "78"
+    ],
+    "creation_times": [
+      1424696632312113318,
+      1424696632306040320
+    ],
+    "backward_displacement_ns": 6072998,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      253,
+      254
+    ],
+    "original_indices": [
+      "255",
+      "254"
+    ],
+    "creation_times": [
+      1424696633199035667,
+      1424696633192382835
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      261,
+      262
+    ],
+    "original_indices": [
+      "263",
+      "262"
+    ],
+    "creation_times": [
+      1424696633241088890,
+      1424696633233123802
+    ],
+    "backward_displacement_ns": 7965088,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      273,
+      274
+    ],
+    "original_indices": [
+      "275",
+      "274"
+    ],
+    "creation_times": [
+      1424696633299102806,
+      1424696633293090843
+    ],
+    "backward_displacement_ns": 6011963,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      323,
+      324
+    ],
+    "original_indices": [
+      "325",
+      "324"
+    ],
+    "creation_times": [
+      1424696633553253196,
+      1424696633545318626
+    ],
+    "backward_displacement_ns": 7934570,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      343,
+      344
+    ],
+    "original_indices": [
+      "345",
+      "344"
+    ],
+    "creation_times": [
+      1424696633652191185,
+      1424696633645996116
+    ],
+    "backward_displacement_ns": 6195069,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      430,
+      431
+    ],
+    "original_indices": [
+      "432",
+      "431"
+    ],
+    "creation_times": [
+      1424696634088928245,
+      1424696634083862327
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      449,
+      450
+    ],
+    "original_indices": [
+      "451",
+      "450"
+    ],
+    "creation_times": [
+      1424696634184448265,
+      1424696634179321312
+    ],
+    "backward_displacement_ns": 5126953,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      471,
+      472
+    ],
+    "original_indices": [
+      "473",
+      "472"
+    ],
+    "creation_times": [
+      1424696634295166038,
+      1424696634290100120
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      481,
+      482
+    ],
+    "original_indices": [
+      "483",
+      "482"
+    ],
+    "creation_times": [
+      1424696634345550560,
+      1424696634340454124
+    ],
+    "backward_displacement_ns": 5096436,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      509,
+      510
+    ],
+    "original_indices": [
+      "511",
+      "510"
+    ],
+    "creation_times": [
+      1424696634486816429,
+      1424696634481445335
+    ],
+    "backward_displacement_ns": 5371094,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      569,
+      570
+    ],
+    "original_indices": [
+      "571",
+      "570"
+    ],
+    "creation_times": [
+      1424696634788696312,
+      1424696634783660911
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      589,
+      590
+    ],
+    "original_indices": [
+      "591",
+      "590"
+    ],
+    "creation_times": [
+      1424696634890930198,
+      1424696634884246849
+    ],
+    "backward_displacement_ns": 6683349,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      659,
+      660
+    ],
+    "original_indices": [
+      "661",
+      "660"
+    ],
+    "creation_times": [
+      1424696635241821312,
+      1424696635236785911
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      698,
+      699
+    ],
+    "original_indices": [
+      "700",
+      "699"
+    ],
+    "creation_times": [
+      1424696635441223167,
+      1424696635433136009
+    ],
+    "backward_displacement_ns": 8087158,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      748,
+      749
+    ],
+    "original_indices": [
+      "750",
+      "749"
+    ],
+    "creation_times": [
+      1424696635690063499,
+      1424696635684997581
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      757,
+      758
+    ],
+    "original_indices": [
+      "759",
+      "758"
+    ],
+    "creation_times": [
+      1424696635735351585,
+      1424696635730346702
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      788,
+      789
+    ],
+    "original_indices": [
+      "790",
+      "789"
+    ],
+    "creation_times": [
+      1424696641114469385,
+      1424696641109250879
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      797,
+      798
+    ],
+    "original_indices": [
+      "799",
+      "798"
+    ],
+    "creation_times": [
+      1424696641161649561,
+      1424696641154569483
+    ],
+    "backward_displacement_ns": 7080078,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      805,
+      806
+    ],
+    "original_indices": [
+      "807",
+      "806"
+    ],
+    "creation_times": [
+      1424696641200223780,
+      1424696641196683740
+    ],
+    "backward_displacement_ns": 3540040,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      847,
+      848
+    ],
+    "original_indices": [
+      "849",
+      "848"
+    ],
+    "creation_times": [
+      1424696641412381983,
+      1424696641407377100
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      936,
+      937
+    ],
+    "original_indices": [
+      "938",
+      "937"
+    ],
+    "creation_times": [
+      1424696641862485742,
+      1424696641855405664
+    ],
+    "backward_displacement_ns": 7080078,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      944,
+      945
+    ],
+    "original_indices": [
+      "946",
+      "945"
+    ],
+    "creation_times": [
+      1424696641901853418,
+      1424696641896512842
+    ],
+    "backward_displacement_ns": 5340576,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      946,
+      947
+    ],
+    "original_indices": [
+      "948",
+      "947"
+    ],
+    "creation_times": [
+      1424696641912137842,
+      1424696641905576563
+    ],
+    "backward_displacement_ns": 6561279,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1113,
+      1114
+    ],
+    "original_indices": [
+      "1115",
+      "1114"
+    ],
+    "creation_times": [
+      1424696642752415017,
+      1424696642746006326
+    ],
+    "backward_displacement_ns": 6408691,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1163,
+      1164
+    ],
+    "original_indices": [
+      "1165",
+      "1164"
+    ],
+    "creation_times": [
+      1424696643003025369,
+      1424696642997989969
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1193,
+      1194
+    ],
+    "original_indices": [
+      "1195",
+      "1194"
+    ],
+    "creation_times": [
+      1424696643157535867,
+      1424696643149723367
+    ],
+    "backward_displacement_ns": 7812500,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1202,
+      1203
+    ],
+    "original_indices": [
+      "1204",
+      "1203"
+    ],
+    "creation_times": [
+      1424696643201359109,
+      1424696643194340066
+    ],
+    "backward_displacement_ns": 7019043,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1221,
+      1222
+    ],
+    "original_indices": [
+      "1223",
+      "1222"
+    ],
+    "creation_times": [
+      1424696643297153787,
+      1424696643290012674
+    ],
+    "backward_displacement_ns": 7141113,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1250,
+      1251
+    ],
+    "original_indices": [
+      "1252",
+      "1251"
+    ],
+    "creation_times": [
+      1424696643441097137,
+      1424696643436061737
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1280,
+      1281
+    ],
+    "original_indices": [
+      "1282",
+      "1281"
+    ],
+    "creation_times": [
+      1424696643593013641,
+      1424696643587001678
+    ],
+    "backward_displacement_ns": 6011963,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1297,
+      1298
+    ],
+    "original_indices": [
+      "1299",
+      "1298"
+    ],
+    "creation_times": [
+      1424696643677577850,
+      1424696643674434539
+    ],
+    "backward_displacement_ns": 3143311,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1300,
+      1301
+    ],
+    "original_indices": [
+      "1302",
+      "1301"
+    ],
+    "creation_times": [
+      1424696643693965789,
+      1424696643687709686
+    ],
+    "backward_displacement_ns": 6256103,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1359,
+      1360
+    ],
+    "original_indices": [
+      "1361",
+      "1360"
+    ],
+    "creation_times": [
+      1424696643993709442,
+      1424696643985591766
+    ],
+    "backward_displacement_ns": 8117676,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1367,
+      1368
+    ],
+    "original_indices": [
+      "1369",
+      "1368"
+    ],
+    "creation_times": [
+      1424696644033016082,
+      1424696644025478240
+    ],
+    "backward_displacement_ns": 7537842,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1379,
+      1380
+    ],
+    "original_indices": [
+      "1381",
+      "1380"
+    ],
+    "creation_times": [
+      1424696644091396209,
+      1424696644085506317
+    ],
+    "backward_displacement_ns": 5889892,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1389,
+      1390
+    ],
+    "original_indices": [
+      "1391",
+      "1390"
+    ],
+    "creation_times": [
+      1424696644143031951,
+      1424696644135951873
+    ],
+    "backward_displacement_ns": 7080078,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1557,
+      1558
+    ],
+    "original_indices": [
+      "1559",
+      "1558"
+    ],
+    "creation_times": [
+      1424696649621371055,
+      1424696649613772178
+    ],
+    "backward_displacement_ns": 7598877,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1565,
+      1566
+    ],
+    "original_indices": [
+      "1567",
+      "1566"
+    ],
+    "creation_times": [
+      1424696649660280967,
+      1424696649653841758
+    ],
+    "backward_displacement_ns": 6439209,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1598,
+      1599
+    ],
+    "original_indices": [
+      "1600",
+      "1599"
+    ],
+    "creation_times": [
+      1424696649825106406,
+      1424696649820101524
+    ],
+    "backward_displacement_ns": 5004882,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1617,
+      1618
+    ],
+    "original_indices": [
+      "1619",
+      "1618"
+    ],
+    "creation_times": [
+      1424696649923037315,
+      1424696649915682578
+    ],
+    "backward_displacement_ns": 7354737,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1646,
+      1647
+    ],
+    "original_indices": [
+      "1648",
+      "1647"
+    ],
+    "creation_times": [
+      1424696650069826865,
+      1424696650061983848
+    ],
+    "backward_displacement_ns": 7843017,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1665,
+      1666
+    ],
+    "original_indices": [
+      "1667",
+      "1666"
+    ],
+    "creation_times": [
+      1424696650162630821,
+      1424696650157473350
+    ],
+    "backward_displacement_ns": 5157471,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1686,
+      1687
+    ],
+    "original_indices": [
+      "1688",
+      "1687"
+    ],
+    "creation_times": [
+      1424696650268191123,
+      1424696650263247276
+    ],
+    "backward_displacement_ns": 4943847,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1726,
+      1727
+    ],
+    "original_indices": [
+      "1728",
+      "1727"
+    ],
+    "creation_times": [
+      1424696650471895957,
+      1424696650465456748
+    ],
+    "backward_displacement_ns": 6439209,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1764,
+      1765
+    ],
+    "original_indices": [
+      "1766",
+      "1765"
+    ],
+    "creation_times": [
+      1424696650662569785,
+      1424696650655855918
+    ],
+    "backward_displacement_ns": 6713867,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1795,
+      1796
+    ],
+    "original_indices": [
+      "1797",
+      "1796"
+    ],
+    "creation_times": [
+      1424696650818270469,
+      1424696650811953330
+    ],
+    "backward_displacement_ns": 6317139,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1805,
+      1806
+    ],
+    "original_indices": [
+      "1807",
+      "1806"
+    ],
+    "creation_times": [
+      1424696650867739463,
+      1424696650862337852
+    ],
+    "backward_displacement_ns": 5401611,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1854,
+      1855
+    ],
+    "original_indices": [
+      "1856",
+      "1855"
+    ],
+    "creation_times": [
+      1424696651114199424,
+      1424696651109164024
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1883,
+      1884
+    ],
+    "original_indices": [
+      "1885",
+      "1884"
+    ],
+    "creation_times": [
+      1424696651261843467,
+      1424696651255190635
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1891,
+      1892
+    ],
+    "original_indices": [
+      "1893",
+      "1892"
+    ],
+    "creation_times": [
+      1424696651301913047,
+      1424696651295351768
+    ],
+    "backward_displacement_ns": 6561279,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1903,
+      1904
+    ],
+    "original_indices": [
+      "1905",
+      "1904"
+    ],
+    "creation_times": [
+      1424696651363955283,
+      1424696651356142783
+    ],
+    "backward_displacement_ns": 7812500,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1943,
+      1944
+    ],
+    "original_indices": [
+      "1945",
+      "1944"
+    ],
+    "creation_times": [
+      1424696651562350059,
+      1424696651557314658
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1992,
+      1993
+    ],
+    "original_indices": [
+      "1994",
+      "1993"
+    ],
+    "creation_times": [
+      1424696651810183311,
+      1424696651803957725
+    ],
+    "backward_displacement_ns": 6225586,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2001,
+      2002
+    ],
+    "original_indices": [
+      "2003",
+      "2002"
+    ],
+    "creation_times": [
+      1424696651855623985,
+      1424696651849276328
+    ],
+    "backward_displacement_ns": 6347657,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2042,
+      2043
+    ],
+    "original_indices": [
+      "2044",
+      "2043"
+    ],
+    "creation_times": [
+      1424696652061037803,
+      1424696652055910850
+    ],
+    "backward_displacement_ns": 5126953,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2052,
+      2053
+    ],
+    "original_indices": [
+      "2054",
+      "2053"
+    ],
+    "creation_times": [
+      1424696652114413047,
+      1424696652106508994
+    ],
+    "backward_displacement_ns": 7904053,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2061,
+      2062
+    ],
+    "original_indices": [
+      "2063",
+      "2062"
+    ],
+    "creation_times": [
+      1424696652156588340,
+      1424696652151369834
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2091,
+      2092
+    ],
+    "original_indices": [
+      "2093",
+      "2092"
+    ],
+    "creation_times": [
+      1424696652306665574,
+      1424696652301691209
+    ],
+    "backward_displacement_ns": 4974365,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2131,
+      2132
+    ],
+    "original_indices": [
+      "2133",
+      "2132"
+    ],
+    "creation_times": [
+      1424696652510370408,
+      1424696652503015672
+    ],
+    "backward_displacement_ns": 7354736,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2151,
+      2152
+    ],
+    "original_indices": [
+      "2153",
+      "2152"
+    ],
+    "creation_times": [
+      1424696652610773240,
+      1424696652603784715
+    ],
+    "backward_displacement_ns": 6988525,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2161,
+      2162
+    ],
+    "original_indices": [
+      "2163",
+      "2162"
+    ],
+    "creation_times": [
+      1424696652659326707,
+      1424696652654077684
+    ],
+    "backward_displacement_ns": 5249023,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2210,
+      2211
+    ],
+    "original_indices": [
+      "2212",
+      "2211"
+    ],
+    "creation_times": [
+      1424696658064240850,
+      1424696658058228887
+    ],
+    "backward_displacement_ns": 6011963,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2249,
+      2250
+    ],
+    "original_indices": [
+      "2251",
+      "2250"
+    ],
+    "creation_times": [
+      1424696658259675421,
+      1424696658254640020
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2289,
+      2290
+    ],
+    "original_indices": [
+      "2291",
+      "2290"
+    ],
+    "creation_times": [
+      1424696658461213507,
+      1424696658456086553
+    ],
+    "backward_displacement_ns": 5126954,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2377,
+      2378
+    ],
+    "original_indices": [
+      "2379",
+      "2378"
+    ],
+    "creation_times": [
+      1424696658904938044,
+      1424696658898834529
+    ],
+    "backward_displacement_ns": 6103515,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2397,
+      2398
+    ],
+    "original_indices": [
+      "2399",
+      "2398"
+    ],
+    "creation_times": [
+      1424696659007934870,
+      1424696659000000300
+    ],
+    "backward_displacement_ns": 7934570,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2475,
+      2476
+    ],
+    "original_indices": [
+      "2477",
+      "2476"
+    ],
+    "creation_times": [
+      1424696659400608434,
+      1424696659392643346
+    ],
+    "backward_displacement_ns": 7965088,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2485,
+      2486
+    ],
+    "original_indices": [
+      "2487",
+      "2486"
+    ],
+    "creation_times": [
+      1424696659449222936,
+      1424696659442570104
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2514,
+      2515
+    ],
+    "original_indices": [
+      "2516",
+      "2515"
+    ],
+    "creation_times": [
+      1424696659593815221,
+      1424696659588749303
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2526,
+      2527
+    ],
+    "original_indices": [
+      "2528",
+      "2527"
+    ],
+    "creation_times": [
+      1424696659654178991,
+      1424696659649204625
+    ],
+    "backward_displacement_ns": 4974366,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2545,
+      2546
+    ],
+    "original_indices": [
+      "2547",
+      "2546"
+    ],
+    "creation_times": [
+      1424696659751316442,
+      1424696659744694127
+    ],
+    "backward_displacement_ns": 6622315,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2555,
+      2556
+    ],
+    "original_indices": [
+      "2557",
+      "2556"
+    ],
+    "creation_times": [
+      1424696659800144567,
+      1424696659795017614
+    ],
+    "backward_displacement_ns": 5126953,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2565,
+      2566
+    ],
+    "original_indices": [
+      "2567",
+      "2566"
+    ],
+    "creation_times": [
+      1424696659852146520,
+      1424696659845402135
+    ],
+    "backward_displacement_ns": 6744385,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2624,
+      2625
+    ],
+    "original_indices": [
+      "2626",
+      "2625"
+    ],
+    "creation_times": [
+      1424696660147469406,
+      1424696660142434005
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2645,
+      2646
+    ],
+    "original_indices": [
+      "2647",
+      "2646"
+    ],
+    "creation_times": [
+      1424696660256661300,
+      1424696660248635177
+    ],
+    "backward_displacement_ns": 8026123,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2684,
+      2685
+    ],
+    "original_indices": [
+      "2686",
+      "2685"
+    ],
+    "creation_times": [
+      1424696660449746017,
+      1424696660444680099
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2850,
+      2851
+    ],
+    "original_indices": [
+      "2852",
+      "2851"
+    ],
+    "creation_times": [
+      1424696661285591964,
+      1424696661280709152
+    ],
+    "backward_displacement_ns": 4882812,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2960,
+      2961
+    ],
+    "original_indices": [
+      "2962",
+      "2961"
+    ],
+    "creation_times": [
+      1424696661880002591,
+      1424696661874753567
+    ],
+    "backward_displacement_ns": 5249024,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      8,
+      9
+    ],
+    "original_indices": [
+      "9",
+      "8"
+    ],
+    "creation_times": [
+      1424696631961191687,
+      1424696631954447302
+    ],
+    "backward_displacement_ns": 6744385,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      18,
+      19
+    ],
+    "original_indices": [
+      "19",
+      "18"
+    ],
+    "creation_times": [
+      1424696632011209997,
+      1424696632004831824
+    ],
+    "backward_displacement_ns": 6378173,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      48,
+      49
+    ],
+    "original_indices": [
+      "49",
+      "48"
+    ],
+    "creation_times": [
+      1424696632160929236,
+      1424696632155924353
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      78,
+      79
+    ],
+    "original_indices": [
+      "79",
+      "78"
+    ],
+    "creation_times": [
+      1424696632312876257,
+      1424696632306803259
+    ],
+    "backward_displacement_ns": 6072998,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      215,
+      216
+    ],
+    "original_indices": [
+      "216",
+      "215"
+    ],
+    "creation_times": [
+      1424696633001922630,
+      1424696632996856712
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      224,
+      225
+    ],
+    "original_indices": [
+      "225",
+      "224"
+    ],
+    "creation_times": [
+      1424696633047241234,
+      1424696633042236351
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      244,
+      245
+    ],
+    "original_indices": [
+      "245",
+      "244"
+    ],
+    "creation_times": [
+      1424696633148803734,
+      1424696633142761253
+    ],
+    "backward_displacement_ns": 6042481,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      254,
+      255
+    ],
+    "original_indices": [
+      "255",
+      "254"
+    ],
+    "creation_times": [
+      1424696633199798607,
+      1424696633193237327
+    ],
+    "backward_displacement_ns": 6561280,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      262,
+      263
+    ],
+    "original_indices": [
+      "263",
+      "262"
+    ],
+    "creation_times": [
+      1424696633241851829,
+      1424696633234710716
+    ],
+    "backward_displacement_ns": 7141113,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      274,
+      275
+    ],
+    "original_indices": [
+      "275",
+      "274"
+    ],
+    "creation_times": [
+      1424696633299865745,
+      1424696633293853782
+    ],
+    "backward_displacement_ns": 6011963,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      284,
+      285
+    ],
+    "original_indices": [
+      "285",
+      "284"
+    ],
+    "creation_times": [
+      1424696633349395775,
+      1424696633344329857
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      324,
+      325
+    ],
+    "original_indices": [
+      "325",
+      "324"
+    ],
+    "creation_times": [
+      1424696633554016136,
+      1424696633546844505
+    ],
+    "backward_displacement_ns": 7171631,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      332,
+      333
+    ],
+    "original_indices": [
+      "333",
+      "332"
+    ],
+    "creation_times": [
+      1424696633592803978,
+      1424696633586578392
+    ],
+    "backward_displacement_ns": 6225586,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      354,
+      355
+    ],
+    "original_indices": [
+      "355",
+      "354"
+    ],
+    "creation_times": [
+      1424696633705017112,
+      1424696633697845482
+    ],
+    "backward_displacement_ns": 7171630,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      401,
+      402
+    ],
+    "original_indices": [
+      "402",
+      "401"
+    ],
+    "creation_times": [
+      1424696633938537620,
+      1424696633933502220
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      421,
+      422
+    ],
+    "original_indices": [
+      "422",
+      "421"
+    ],
+    "creation_times": [
+      1424696634039337181,
+      1424696634034271263
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      431,
+      432
+    ],
+    "original_indices": [
+      "432",
+      "431"
+    ],
+    "creation_times": [
+      1424696634089691185,
+      1424696634084899925
+    ],
+    "backward_displacement_ns": 4791260,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      441,
+      442
+    ],
+    "original_indices": [
+      "442",
+      "441"
+    ],
+    "creation_times": [
+      1424696634140014671,
+      1424696634134796165
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      472,
+      473
+    ],
+    "original_indices": [
+      "473",
+      "472"
+    ],
+    "creation_times": [
+      1424696634295928978,
+      1424696634290863060
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      490,
+      491
+    ],
+    "original_indices": [
+      "491",
+      "490"
+    ],
+    "creation_times": [
+      1424696634386688255,
+      1424696634381652855
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      500,
+      501
+    ],
+    "original_indices": [
+      "501",
+      "500"
+    ],
+    "creation_times": [
+      1424696634438507103,
+      1424696634431945823
+    ],
+    "backward_displacement_ns": 6561280,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      520,
+      521
+    ],
+    "original_indices": [
+      "521",
+      "520"
+    ],
+    "creation_times": [
+      1424696634538024925,
+      1424696634532531761
+    ],
+    "backward_displacement_ns": 5493164,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      528,
+      529
+    ],
+    "original_indices": [
+      "529",
+      "528"
+    ],
+    "creation_times": [
+      1424696634579193138,
+      1424696634572845482
+    ],
+    "backward_displacement_ns": 6347656,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      590,
+      591
+    ],
+    "original_indices": [
+      "591",
+      "590"
+    ],
+    "creation_times": [
+      1424696634891693138,
+      1424696634885131859
+    ],
+    "backward_displacement_ns": 6561279,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      661,
+      662
+    ],
+    "original_indices": [
+      "662",
+      "661"
+    ],
+    "creation_times": [
+      1424696635247619651,
+      1424696635242614769
+    ],
+    "backward_displacement_ns": 5004882,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      710,
+      711
+    ],
+    "original_indices": [
+      "711",
+      "710"
+    ],
+    "creation_times": [
+      1424696635494659446,
+      1424696635489196800
+    ],
+    "backward_displacement_ns": 5462646,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      749,
+      750
+    ],
+    "original_indices": [
+      "750",
+      "749"
+    ],
+    "creation_times": [
+      1424696635690856956,
+      1424696635685821556
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      778,
+      779
+    ],
+    "original_indices": [
+      "779",
+      "778"
+    ],
+    "creation_times": [
+      1424696641060514307,
+      1424696641054654932
+    ],
+    "backward_displacement_ns": 5859375,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      848,
+      849
+    ],
+    "original_indices": [
+      "849",
+      "848"
+    ],
+    "creation_times": [
+      1424696641411374903,
+      1424696641406125879
+    ],
+    "backward_displacement_ns": 5249024,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      927,
+      928
+    ],
+    "original_indices": [
+      "928",
+      "927"
+    ],
+    "creation_times": [
+      1424696641810148096,
+      1424696641803922510
+    ],
+    "backward_displacement_ns": 6225586,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      937,
+      938
+    ],
+    "original_indices": [
+      "938",
+      "937"
+    ],
+    "creation_times": [
+      1424696641861478662,
+      1424696641854276514
+    ],
+    "backward_displacement_ns": 7202148,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      947,
+      948
+    ],
+    "original_indices": [
+      "948",
+      "947"
+    ],
+    "creation_times": [
+      1424696641911130762,
+      1424696641904569483
+    ],
+    "backward_displacement_ns": 6561279,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1015,
+      1016
+    ],
+    "original_indices": [
+      "1016",
+      "1015"
+    ],
+    "creation_times": [
+      1424696642252073145,
+      1424696642247037744
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1023,
+      1024
+    ],
+    "original_indices": [
+      "1024",
+      "1023"
+    ],
+    "creation_times": [
+      1424696642295255518,
+      1424696642287229395
+    ],
+    "backward_displacement_ns": 8026123,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1035,
+      1036
+    ],
+    "original_indices": [
+      "1036",
+      "1035"
+    ],
+    "creation_times": [
+      1424696642353605127,
+      1424696642347715235
+    ],
+    "backward_displacement_ns": 5889892,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1094,
+      1095
+    ],
+    "original_indices": [
+      "1095",
+      "1094"
+    ],
+    "creation_times": [
+      1424696642650089578,
+      1424696642644687967
+    ],
+    "backward_displacement_ns": 5401611,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1102,
+      1103
+    ],
+    "original_indices": [
+      "1103",
+      "1102"
+    ],
+    "creation_times": [
+      1424696642693699197,
+      1424696642684757547
+    ],
+    "backward_displacement_ns": 8941650,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1134,
+      1135
+    ],
+    "original_indices": [
+      "1135",
+      "1134"
+    ],
+    "creation_times": [
+      1424696642852207498,
+      1424696642845798806
+    ],
+    "backward_displacement_ns": 6408692,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1153,
+      1154
+    ],
+    "original_indices": [
+      "1154",
+      "1153"
+    ],
+    "creation_times": [
+      1424696642946567849,
+      1424696642941562967
+    ],
+    "backward_displacement_ns": 5004882,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1194,
+      1195
+    ],
+    "original_indices": [
+      "1195",
+      "1194"
+    ],
+    "creation_times": [
+      1424696643156528787,
+      1424696643147983865
+    ],
+    "backward_displacement_ns": 8544922,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1203,
+      1204
+    ],
+    "original_indices": [
+      "1204",
+      "1203"
+    ],
+    "creation_times": [
+      1424696643200352029,
+      1424696643193210916
+    ],
+    "backward_displacement_ns": 7141113,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1252,
+      1253
+    ],
+    "original_indices": [
+      "1253",
+      "1252"
+    ],
+    "creation_times": [
+      1424696643445064422,
+      1424696643440029022
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1281,
+      1282
+    ],
+    "original_indices": [
+      "1282",
+      "1281"
+    ],
+    "creation_times": [
+      1424696643591915008,
+      1424696643586025115
+    ],
+    "backward_displacement_ns": 5889893,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1298,
+      1299
+    ],
+    "original_indices": [
+      "1299",
+      "1298"
+    ],
+    "creation_times": [
+      1424696643676570770,
+      1424696643673427459
+    ],
+    "backward_displacement_ns": 3143311,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1301,
+      1302
+    ],
+    "original_indices": [
+      "1302",
+      "1301"
+    ],
+    "creation_times": [
+      1424696643692897674,
+      1424696643686702606
+    ],
+    "backward_displacement_ns": 6195068,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1372,
+      1373
+    ],
+    "original_indices": [
+      "1373",
+      "1372"
+    ],
+    "creation_times": [
+      1424696644051265594,
+      1424696644044185516
+    ],
+    "backward_displacement_ns": 7080078,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1412,
+      1413
+    ],
+    "original_indices": [
+      "1413",
+      "1412"
+    ],
+    "creation_times": [
+      1424696644250728485,
+      1424696644245693084
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1421,
+      1422
+    ],
+    "original_indices": [
+      "1422",
+      "1421"
+    ],
+    "creation_times": [
+      1424696644296047088,
+      1424696644290950653
+    ],
+    "backward_displacement_ns": 5096435,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1450,
+      1451
+    ],
+    "original_indices": [
+      "1451",
+      "1450"
+    ],
+    "creation_times": [
+      1424696649080813194,
+      1424696649075686240
+    ],
+    "backward_displacement_ns": 5126954,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1510,
+      1511
+    ],
+    "original_indices": [
+      "1511",
+      "1510"
+    ],
+    "creation_times": [
+      1424696649382815147,
+      1424696649377810264
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1539,
+      1540
+    ],
+    "original_indices": [
+      "1540",
+      "1539"
+    ],
+    "creation_times": [
+      1424696649530367637,
+      1424696649523775840
+    ],
+    "backward_displacement_ns": 6591797,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1549,
+      1550
+    ],
+    "original_indices": [
+      "1550",
+      "1549"
+    ],
+    "creation_times": [
+      1424696649582064414,
+      1424696649574892783
+    ],
+    "backward_displacement_ns": 7171631,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1597,
+      1598
+    ],
+    "original_indices": [
+      "1598",
+      "1597"
+    ],
+    "creation_times": [
+      1424696649820925498,
+      1424696649815890098
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1617,
+      1618
+    ],
+    "original_indices": [
+      "1618",
+      "1617"
+    ],
+    "creation_times": [
+      1424696649923800254,
+      1424696649916781211
+    ],
+    "backward_displacement_ns": 7019043,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1646,
+      1647
+    ],
+    "original_indices": [
+      "1647",
+      "1646"
+    ],
+    "creation_times": [
+      1424696650070559287,
+      1424696650063326621
+    ],
+    "backward_displacement_ns": 7232666,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1746,
+      1747
+    ],
+    "original_indices": [
+      "1747",
+      "1746"
+    ],
+    "creation_times": [
+      1424696650571047569,
+      1424696650566012168
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1766,
+      1767
+    ],
+    "original_indices": [
+      "1767",
+      "1766"
+    ],
+    "creation_times": [
+      1424696650672152305,
+      1424696650666689658
+    ],
+    "backward_displacement_ns": 5462647,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1776,
+      1777
+    ],
+    "original_indices": [
+      "1777",
+      "1776"
+    ],
+    "creation_times": [
+      1424696650722018028,
+      1424696650716982627
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1805,
+      1806
+    ],
+    "original_indices": [
+      "1806",
+      "1805"
+    ],
+    "creation_times": [
+      1424696650868502403,
+      1424696650863100791
+    ],
+    "backward_displacement_ns": 5401612,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1895,
+      1896
+    ],
+    "original_indices": [
+      "1896",
+      "1895"
+    ],
+    "creation_times": [
+      1424696651324740196,
+      1424696651317477012
+    ],
+    "backward_displacement_ns": 7263184,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1964,
+      1965
+    ],
+    "original_indices": [
+      "1965",
+      "1964"
+    ],
+    "creation_times": [
+      1424696651671480918,
+      1424696651664339805
+    ],
+    "backward_displacement_ns": 7141113,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2042,
+      2043
+    ],
+    "original_indices": [
+      "2043",
+      "2042"
+    ],
+    "creation_times": [
+      1424696652061800742,
+      1424696652056673789
+    ],
+    "backward_displacement_ns": 5126953,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2052,
+      2053
+    ],
+    "original_indices": [
+      "2053",
+      "2052"
+    ],
+    "creation_times": [
+      1424696652115175987,
+      1424696652107973838
+    ],
+    "backward_displacement_ns": 7202149,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2071,
+      2072
+    ],
+    "original_indices": [
+      "2072",
+      "2071"
+    ],
+    "creation_times": [
+      1424696652207674766,
+      1424696652202456260
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2131,
+      2132
+    ],
+    "original_indices": [
+      "2132",
+      "2131"
+    ],
+    "creation_times": [
+      1424696652511133348,
+      1424696652503870164
+    ],
+    "backward_displacement_ns": 7263184,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2149,
+      2150
+    ],
+    "original_indices": [
+      "2150",
+      "2149"
+    ],
+    "creation_times": [
+      1424696652600092088,
+      1424696652594507371
+    ],
+    "backward_displacement_ns": 5584717,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2159,
+      2160
+    ],
+    "original_indices": [
+      "2160",
+      "2159"
+    ],
+    "creation_times": [
+      1424696652651514207,
+      1424696652644861375
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2169,
+      2170
+    ],
+    "original_indices": [
+      "2170",
+      "2169"
+    ],
+    "creation_times": [
+      1424696652701624071,
+      1424696652695245897
+    ],
+    "backward_displacement_ns": 6378174,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2179,
+      2180
+    ],
+    "original_indices": [
+      "2180",
+      "2179"
+    ],
+    "creation_times": [
+      1424696652750635301,
+      1424696652745599901
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2206,
+      2207
+    ],
+    "original_indices": [
+      "2207",
+      "2206"
+    ],
+    "creation_times": [
+      1424696658046021856,
+      1424696658039155401
+    ],
+    "backward_displacement_ns": 6866455,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2220,
+      2221
+    ],
+    "original_indices": [
+      "2221",
+      "2220"
+    ],
+    "creation_times": [
+      1424696658115479864,
+      1424696658110627569
+    ],
+    "backward_displacement_ns": 4852295,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2249,
+      2250
+    ],
+    "original_indices": [
+      "2250",
+      "2249"
+    ],
+    "creation_times": [
+      1424696658260438360,
+      1424696658255402960
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2299,
+      2300
+    ],
+    "original_indices": [
+      "2300",
+      "2299"
+    ],
+    "creation_times": [
+      1424696658515077032,
+      1424696658508393682
+    ],
+    "backward_displacement_ns": 6683350,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2359,
+      2360
+    ],
+    "original_indices": [
+      "2360",
+      "2359"
+    ],
+    "creation_times": [
+      1424696658814484991,
+      1424696658809449591
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2377,
+      2378
+    ],
+    "original_indices": [
+      "2378",
+      "2377"
+    ],
+    "creation_times": [
+      1424696658905700984,
+      1424696658899627986
+    ],
+    "backward_displacement_ns": 6072998,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2387,
+      2388
+    ],
+    "original_indices": [
+      "2388",
+      "2387"
+    ],
+    "creation_times": [
+      1424696658955200495,
+      1424696658949951472
+    ],
+    "backward_displacement_ns": 5249023,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2395,
+      2396
+    ],
+    "original_indices": [
+      "2396",
+      "2395"
+    ],
+    "creation_times": [
+      1424696658995544734,
+      1424696658990265193
+    ],
+    "backward_displacement_ns": 5279541,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2397,
+      2398
+    ],
+    "original_indices": [
+      "2398",
+      "2397"
+    ],
+    "creation_times": [
+      1424696659008697810,
+      1424696659001495661
+    ],
+    "backward_displacement_ns": 7202149,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2405,
+      2406
+    ],
+    "original_indices": [
+      "2406",
+      "2405"
+    ],
+    "creation_times": [
+      1424696659049133601,
+      1424696659041870417
+    ],
+    "backward_displacement_ns": 7263184,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2458,
+      2459
+    ],
+    "original_indices": [
+      "2459",
+      "2458"
+    ],
+    "creation_times": [
+      1424696659315891637,
+      1424696659308720006
+    ],
+    "backward_displacement_ns": 7171631,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2487,
+      2488
+    ],
+    "original_indices": [
+      "2488",
+      "2487"
+    ],
+    "creation_times": [
+      1424696659459171666,
+      1424696659453373326
+    ],
+    "backward_displacement_ns": 5798340,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2527,
+      2528
+    ],
+    "original_indices": [
+      "2528",
+      "2527"
+    ],
+    "creation_times": [
+      1424696659660038366,
+      1424696659654972448
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2545,
+      2546
+    ],
+    "original_indices": [
+      "2546",
+      "2545"
+    ],
+    "creation_times": [
+      1424696659752079381,
+      1424696659745579137
+    ],
+    "backward_displacement_ns": 6500244,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2555,
+      2556
+    ],
+    "original_indices": [
+      "2556",
+      "2555"
+    ],
+    "creation_times": [
+      1424696659800876989,
+      1424696659795780553
+    ],
+    "backward_displacement_ns": 5096436,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2565,
+      2566
+    ],
+    "original_indices": [
+      "2566",
+      "2565"
+    ],
+    "creation_times": [
+      1424696659852909459,
+      1424696659846287145
+    ],
+    "backward_displacement_ns": 6622314,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2575,
+      2576
+    ],
+    "original_indices": [
+      "2576",
+      "2575"
+    ],
+    "creation_times": [
+      1424696659902042760,
+      1424696659896519078
+    ],
+    "backward_displacement_ns": 5523682,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2593,
+      2594
+    ],
+    "original_indices": [
+      "2594",
+      "2593"
+    ],
+    "creation_times": [
+      1424696659992405309,
+      1424696659987339391
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2645,
+      2646
+    ],
+    "original_indices": [
+      "2646",
+      "2645"
+    ],
+    "creation_times": [
+      1424696660257424239,
+      1424696660250161056
+    ],
+    "backward_displacement_ns": 7263183,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2655,
+      2656
+    ],
+    "original_indices": [
+      "2656",
+      "2655"
+    ],
+    "creation_times": [
+      1424696660306069259,
+      1424696660299416427
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2693,
+      2694
+    ],
+    "original_indices": [
+      "2694",
+      "2693"
+    ],
+    "creation_times": [
+      1424696660495858077,
+      1424696660490822677
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2701,
+      2702
+    ],
+    "original_indices": [
+      "2702",
+      "2701"
+    ],
+    "creation_times": [
+      1424696660536141281,
+      1424696660531105880
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2714,
+      2715
+    ],
+    "original_indices": [
+      "2715",
+      "2714"
+    ],
+    "creation_times": [
+      1424696660604683761,
+      1424696660597237472
+    ],
+    "backward_displacement_ns": 7446289,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2823,
+      2824
+    ],
+    "original_indices": [
+      "2824",
+      "2823"
+    ],
+    "creation_times": [
+      1424696661152352218,
+      1424696661145546798
+    ],
+    "backward_displacement_ns": 6805420,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2960,
+      2961
+    ],
+    "original_indices": [
+      "2961",
+      "2960"
+    ],
+    "creation_times": [
+      1424696661880765530,
+      1424696661875547024
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  }
+]

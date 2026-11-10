@@ -1,0 +1,27 @@
+{
+  "status": "no_accepted_windows",
+  "fixture_directory": "code\\har_smoke_fixture_v2",
+  "output_directory": "code\\har_smoke_preprocessed_v1",
+  "groups_processed": [
+    [
+      "a",
+      "nexus4",
+      "nexus4_1"
+    ]
+  ],
+  "accepted_windows": 0,
+  "window_shape": [
+    0,
+    0,
+    6
+  ],
+  "target_hz": 50.0,
+  "window_seconds": 2.56,
+  "overlap": 0.5,
+  "normalized": false,
+  "rejections": {
+    "insufficient_intersection": 8613,
+    "clock_reset_or_out_of_order": 184,
+    "session_gap": 4
+  }
+}
