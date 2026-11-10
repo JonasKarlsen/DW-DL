@@ -1,0 +1,7441 @@
+[
+  {
+    "sensor": "acc",
+    "original_positions": [
+      77,
+      78
+    ],
+    "original_indices": [
+      "79",
+      "78"
+    ],
+    "creation_times": [
+      1424696632312113318,
+      1424696632306040320
+    ],
+    "original_rows": [
+      {
+        "Index": 79,
+        "Arrival_Time": 1424696634304,
+        "Creation_Time": 1424696632312113318,
+        "x": -5.940338,
+        "y": 0.64997864,
+        "z": 8.138916,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 78,
+        "Arrival_Time": 1424696634304,
+        "Creation_Time": 1424696632306040320,
+        "x": -5.935577400000001,
+        "y": 0.65830994,
+        "z": 8.113922,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6072998,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      253,
+      254
+    ],
+    "original_indices": [
+      "255",
+      "254"
+    ],
+    "creation_times": [
+      1424696633199035667,
+      1424696633192382835
+    ],
+    "original_rows": [
+      {
+        "Index": 255,
+        "Arrival_Time": 1424696635191,
+        "Creation_Time": 1424696633199035667,
+        "x": -5.7558594,
+        "y": 0.84754944,
+        "z": 8.2317505,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 254,
+        "Arrival_Time": 1424696635191,
+        "Creation_Time": 1424696633192382835,
+        "x": -5.765381,
+        "y": 0.90586853,
+        "z": 8.284119,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      261,
+      262
+    ],
+    "original_indices": [
+      "263",
+      "262"
+    ],
+    "creation_times": [
+      1424696633241088890,
+      1424696633233123802
+    ],
+    "original_rows": [
+      {
+        "Index": 263,
+        "Arrival_Time": 1424696635232,
+        "Creation_Time": 1424696633241088890,
+        "x": -5.7701416,
+        "y": 0.9070587,
+        "z": 8.203186,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 262,
+        "Arrival_Time": 1424696635232,
+        "Creation_Time": 1424696633233123802,
+        "x": -5.805847,
+        "y": 0.88920593,
+        "z": 8.249603,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7965088,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      273,
+      274
+    ],
+    "original_indices": [
+      "275",
+      "274"
+    ],
+    "creation_times": [
+      1424696633299102806,
+      1424696633293090843
+    ],
+    "original_rows": [
+      {
+        "Index": 275,
+        "Arrival_Time": 1424696635292,
+        "Creation_Time": 1424696633299102806,
+        "x": -5.804657,
+        "y": 0.88682556,
+        "z": 8.138916,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 274,
+        "Arrival_Time": 1424696635292,
+        "Creation_Time": 1424696633293090843,
+        "x": -5.8153687000000005,
+        "y": 0.84516907,
+        "z": 8.185333,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6011963,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      323,
+      324
+    ],
+    "original_indices": [
+      "325",
+      "324"
+    ],
+    "creation_times": [
+      1424696633553253196,
+      1424696633545318626
+    ],
+    "original_rows": [
+      {
+        "Index": 325,
+        "Arrival_Time": 1424696635544,
+        "Creation_Time": 1424696633553253196,
+        "x": -5.708252,
+        "y": 0.78208923,
+        "z": 8.217467999999998,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 324,
+        "Arrival_Time": 1424696635544,
+        "Creation_Time": 1424696633545318626,
+        "x": -5.6475525,
+        "y": 0.81303406,
+        "z": 8.282928,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7934570,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      343,
+      344
+    ],
+    "original_indices": [
+      "345",
+      "344"
+    ],
+    "creation_times": [
+      1424696633652191185,
+      1424696633645996116
+    ],
+    "original_rows": [
+      {
+        "Index": 345,
+        "Arrival_Time": 1424696635643,
+        "Creation_Time": 1424696633652191185,
+        "x": -5.7808533,
+        "y": 0.75709534,
+        "z": 8.262694999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 344,
+        "Arrival_Time": 1424696635643,
+        "Creation_Time": 1424696633645996116,
+        "x": -5.749908400000001,
+        "y": 0.77375793,
+        "z": 8.272217,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6195069,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      430,
+      431
+    ],
+    "original_indices": [
+      "432",
+      "431"
+    ],
+    "creation_times": [
+      1424696634088928245,
+      1424696634083862327
+    ],
+    "original_rows": [
+      {
+        "Index": 432,
+        "Arrival_Time": 1424696636081,
+        "Creation_Time": 1424696634088928245,
+        "x": -5.7320557,
+        "y": 0.83088684,
+        "z": 8.249603,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 431,
+        "Arrival_Time": 1424696636081,
+        "Creation_Time": 1424696634083862327,
+        "x": -5.7701416,
+        "y": 0.7856598000000001,
+        "z": 8.210327000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      449,
+      450
+    ],
+    "original_indices": [
+      "451",
+      "450"
+    ],
+    "creation_times": [
+      1424696634184448265,
+      1424696634179321312
+    ],
+    "original_rows": [
+      {
+        "Index": 451,
+        "Arrival_Time": 1424696636177,
+        "Creation_Time": 1424696634184448265,
+        "x": -5.746338,
+        "y": 0.7606659,
+        "z": 8.369812,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 450,
+        "Arrival_Time": 1424696636177,
+        "Creation_Time": 1424696634179321312,
+        "x": -5.7749023,
+        "y": 0.7618560999999999,
+        "z": 8.266266,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5126953,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      471,
+      472
+    ],
+    "original_indices": [
+      "473",
+      "472"
+    ],
+    "creation_times": [
+      1424696634295166038,
+      1424696634290100120
+    ],
+    "original_rows": [
+      {
+        "Index": 473,
+        "Arrival_Time": 1424696636288,
+        "Creation_Time": 1424696634295166038,
+        "x": -5.814178500000001,
+        "y": 0.7749481,
+        "z": 8.222228999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 472,
+        "Arrival_Time": 1424696636288,
+        "Creation_Time": 1424696634290100120,
+        "x": -5.8284607,
+        "y": 0.6773529,
+        "z": 8.144867,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      481,
+      482
+    ],
+    "original_indices": [
+      "483",
+      "482"
+    ],
+    "creation_times": [
+      1424696634345550560,
+      1424696634340454124
+    ],
+    "original_rows": [
+      {
+        "Index": 483,
+        "Arrival_Time": 1424696636359,
+        "Creation_Time": 1424696634345550560,
+        "x": -5.8915405,
+        "y": 0.7856598000000001,
+        "z": 8.259125,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 482,
+        "Arrival_Time": 1424696636359,
+        "Creation_Time": 1424696634340454124,
+        "x": -5.7510986,
+        "y": 0.7023468,
+        "z": 8.247223,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5096436,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      509,
+      510
+    ],
+    "original_indices": [
+      "511",
+      "510"
+    ],
+    "creation_times": [
+      1424696634486816429,
+      1424696634481445335
+    ],
+    "original_rows": [
+      {
+        "Index": 511,
+        "Arrival_Time": 1424696636478,
+        "Creation_Time": 1424696634486816429,
+        "x": -5.7903748,
+        "y": 0.7332916,
+        "z": 8.182953,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 510,
+        "Arrival_Time": 1424696636478,
+        "Creation_Time": 1424696634481445335,
+        "x": -5.8010864,
+        "y": 0.72377014,
+        "z": 8.203186,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5371094,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      569,
+      570
+    ],
+    "original_indices": [
+      "571",
+      "570"
+    ],
+    "creation_times": [
+      1424696634788696312,
+      1424696634783660911
+    ],
+    "original_rows": [
+      {
+        "Index": 571,
+        "Arrival_Time": 1424696636788,
+        "Creation_Time": 1424696634788696312,
+        "x": -5.8082275,
+        "y": 0.73210144,
+        "z": 8.22818,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 570,
+        "Arrival_Time": 1424696636788,
+        "Creation_Time": 1424696634783660911,
+        "x": -5.8082275,
+        "y": 0.7130585,
+        "z": 8.192474,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      589,
+      590
+    ],
+    "original_indices": [
+      "591",
+      "590"
+    ],
+    "creation_times": [
+      1424696634890930198,
+      1424696634884246849
+    ],
+    "original_rows": [
+      {
+        "Index": 591,
+        "Arrival_Time": 1424696636882,
+        "Creation_Time": 1424696634890930198,
+        "x": -5.805847,
+        "y": 0.7535248000000001,
+        "z": 8.181763,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 590,
+        "Arrival_Time": 1424696636882,
+        "Creation_Time": 1424696634884246849,
+        "x": -5.8117980000000005,
+        "y": 0.7951813,
+        "z": 8.196045,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6683349,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      659,
+      660
+    ],
+    "original_indices": [
+      "661",
+      "660"
+    ],
+    "creation_times": [
+      1424696635241821312,
+      1424696635236785911
+    ],
+    "original_rows": [
+      {
+        "Index": 661,
+        "Arrival_Time": 1424696637240,
+        "Creation_Time": 1424696635241821312,
+        "x": -5.8427430000000005,
+        "y": 0.80470276,
+        "z": 8.171051,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 660,
+        "Arrival_Time": 1424696637240,
+        "Creation_Time": 1424696635236785911,
+        "x": -5.855835,
+        "y": 0.7082977,
+        "z": 8.237701,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      698,
+      699
+    ],
+    "original_indices": [
+      "700",
+      "699"
+    ],
+    "creation_times": [
+      1424696635441223167,
+      1424696635433136009
+    ],
+    "original_rows": [
+      {
+        "Index": 700,
+        "Arrival_Time": 1424696637433,
+        "Creation_Time": 1424696635441223167,
+        "x": -5.830841,
+        "y": 0.75590515,
+        "z": 8.177002,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 699,
+        "Arrival_Time": 1424696637433,
+        "Creation_Time": 1424696635433136009,
+        "x": -5.7760925,
+        "y": 0.7618560999999999,
+        "z": 8.234131,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 8087158,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      748,
+      749
+    ],
+    "original_indices": [
+      "750",
+      "749"
+    ],
+    "creation_times": [
+      1424696635690063499,
+      1424696635684997581
+    ],
+    "original_rows": [
+      {
+        "Index": 750,
+        "Arrival_Time": 1424696637699,
+        "Creation_Time": 1424696635690063499,
+        "x": -5.7879944000000005,
+        "y": 0.7213898,
+        "z": 8.216277999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 749,
+        "Arrival_Time": 1424696637699,
+        "Creation_Time": 1424696635684997581,
+        "x": -5.7749023,
+        "y": 0.77256775,
+        "z": 8.218658,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      757,
+      758
+    ],
+    "original_indices": [
+      "759",
+      "758"
+    ],
+    "creation_times": [
+      1424696635735351585,
+      1424696635730346702
+    ],
+    "original_rows": [
+      {
+        "Index": 759,
+        "Arrival_Time": 1424696637727,
+        "Creation_Time": 1424696635735351585,
+        "x": -5.8237,
+        "y": 0.8237457,
+        "z": 8.259125,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 758,
+        "Arrival_Time": 1424696637727,
+        "Creation_Time": 1424696635730346702,
+        "x": -5.8391724,
+        "y": 0.8189850000000001,
+        "z": 8.255554,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      788,
+      789
+    ],
+    "original_indices": [
+      "790",
+      "789"
+    ],
+    "creation_times": [
+      1424696641114469385,
+      1424696641109250879
+    ],
+    "original_rows": [
+      {
+        "Index": 790,
+        "Arrival_Time": 1424696643106,
+        "Creation_Time": 1424696641114469385,
+        "x": -5.7808533,
+        "y": 0.47026062,
+        "z": 8.391235,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 789,
+        "Arrival_Time": 1424696643106,
+        "Creation_Time": 1424696641109250879,
+        "x": -5.746338,
+        "y": 0.47383118,
+        "z": 8.351958999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      797,
+      798
+    ],
+    "original_indices": [
+      "799",
+      "798"
+    ],
+    "creation_times": [
+      1424696641161649561,
+      1424696641154569483
+    ],
+    "original_rows": [
+      {
+        "Index": 799,
+        "Arrival_Time": 1424696643156,
+        "Creation_Time": 1424696641161649561,
+        "x": -5.7570496,
+        "y": 0.4631194999999999,
+        "z": 8.288879,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 798,
+        "Arrival_Time": 1424696643156,
+        "Creation_Time": 1424696641154569483,
+        "x": -5.805847,
+        "y": 0.44526672,
+        "z": 8.265075999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7080078,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      805,
+      806
+    ],
+    "original_indices": [
+      "807",
+      "806"
+    ],
+    "creation_times": [
+      1424696641200223780,
+      1424696641196683740
+    ],
+    "original_rows": [
+      {
+        "Index": 807,
+        "Arrival_Time": 1424696643195,
+        "Creation_Time": 1424696641200223780,
+        "x": -5.791565,
+        "y": 0.4797821,
+        "z": 8.285309,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 806,
+        "Arrival_Time": 1424696643195,
+        "Creation_Time": 1424696641196683740,
+        "x": -5.741577,
+        "y": 0.4797821,
+        "z": 8.204376,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 3540040,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      847,
+      848
+    ],
+    "original_indices": [
+      "849",
+      "848"
+    ],
+    "creation_times": [
+      1424696641412381983,
+      1424696641407377100
+    ],
+    "original_rows": [
+      {
+        "Index": 849,
+        "Arrival_Time": 1424696643403,
+        "Creation_Time": 1424696641412381983,
+        "x": -5.6737366,
+        "y": 0.46549988,
+        "z": 8.232941,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 848,
+        "Arrival_Time": 1424696643403,
+        "Creation_Time": 1424696641407377100,
+        "x": -5.766571,
+        "y": 0.4809723,
+        "z": 8.242462,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      936,
+      937
+    ],
+    "original_indices": [
+      "938",
+      "937"
+    ],
+    "creation_times": [
+      1424696641862485742,
+      1424696641855405664
+    ],
+    "original_rows": [
+      {
+        "Index": 938,
+        "Arrival_Time": 1424696643853,
+        "Creation_Time": 1424696641862485742,
+        "x": -5.7558594,
+        "y": 0.43455505,
+        "z": 8.367432,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 937,
+        "Arrival_Time": 1424696643853,
+        "Creation_Time": 1424696641855405664,
+        "x": -5.7487183,
+        "y": 0.4226532,
+        "z": 8.394805999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7080078,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      944,
+      945
+    ],
+    "original_indices": [
+      "946",
+      "945"
+    ],
+    "creation_times": [
+      1424696641901853418,
+      1424696641896512842
+    ],
+    "original_rows": [
+      {
+        "Index": 946,
+        "Arrival_Time": 1424696643892,
+        "Creation_Time": 1424696641901853418,
+        "x": -5.652313,
+        "y": 0.3726654,
+        "z": 8.373383,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 945,
+        "Arrival_Time": 1424696643892,
+        "Creation_Time": 1424696641896512842,
+        "x": -5.651123,
+        "y": 0.4143219,
+        "z": 8.418610000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5340576,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      946,
+      947
+    ],
+    "original_indices": [
+      "948",
+      "947"
+    ],
+    "creation_times": [
+      1424696641912137842,
+      1424696641905576563
+    ],
+    "original_rows": [
+      {
+        "Index": 948,
+        "Arrival_Time": 1424696643903,
+        "Creation_Time": 1424696641912137842,
+        "x": -5.6737366,
+        "y": 0.39408875,
+        "z": 8.378143,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 947,
+        "Arrival_Time": 1424696643903,
+        "Creation_Time": 1424696641905576563,
+        "x": -5.6999207,
+        "y": 0.44169617,
+        "z": 8.395996,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6561279,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1113,
+      1114
+    ],
+    "original_indices": [
+      "1115",
+      "1114"
+    ],
+    "creation_times": [
+      1424696642752415017,
+      1424696642746006326
+    ],
+    "original_rows": [
+      {
+        "Index": 1115,
+        "Arrival_Time": 1424696644743,
+        "Creation_Time": 1424696642752415017,
+        "x": -5.668976,
+        "y": 0.44169617,
+        "z": 8.259125,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1114,
+        "Arrival_Time": 1424696644743,
+        "Creation_Time": 1424696642746006326,
+        "x": -5.7034910000000005,
+        "y": 0.421463,
+        "z": 8.217467999999998,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6408691,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1163,
+      1164
+    ],
+    "original_indices": [
+      "1165",
+      "1164"
+    ],
+    "creation_times": [
+      1424696643003025369,
+      1424696642997989969
+    ],
+    "original_rows": [
+      {
+        "Index": 1165,
+        "Arrival_Time": 1424696645018,
+        "Creation_Time": 1424696643003025369,
+        "x": -5.672546400000001,
+        "y": 0.4309845,
+        "z": 8.336487,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1164,
+        "Arrival_Time": 1424696645018,
+        "Creation_Time": 1424696642997989969,
+        "x": -5.69635,
+        "y": 0.40837097,
+        "z": 8.297211,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1193,
+      1194
+    ],
+    "original_indices": [
+      "1195",
+      "1194"
+    ],
+    "creation_times": [
+      1424696643157535867,
+      1424696643149723367
+    ],
+    "original_rows": [
+      {
+        "Index": 1195,
+        "Arrival_Time": 1424696645148,
+        "Creation_Time": 1424696643157535867,
+        "x": -5.648742700000001,
+        "y": 0.36076355,
+        "z": 8.306732,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1194,
+        "Arrival_Time": 1424696645148,
+        "Creation_Time": 1424696643149723367,
+        "x": -5.6987305,
+        "y": 0.4226532,
+        "z": 8.305541999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7812500,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1202,
+      1203
+    ],
+    "original_indices": [
+      "1204",
+      "1203"
+    ],
+    "creation_times": [
+      1424696643201359109,
+      1424696643194340066
+    ],
+    "original_rows": [
+      {
+        "Index": 1204,
+        "Arrival_Time": 1424696645192,
+        "Creation_Time": 1424696643201359109,
+        "x": -5.6999207,
+        "y": 0.4643097,
+        "z": 8.342438000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1203,
+        "Arrival_Time": 1424696645192,
+        "Creation_Time": 1424696643194340066,
+        "x": -5.6677856,
+        "y": 0.43217468,
+        "z": 8.286499000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7019043,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1221,
+      1222
+    ],
+    "original_indices": [
+      "1223",
+      "1222"
+    ],
+    "creation_times": [
+      1424696643297153787,
+      1424696643290012674
+    ],
+    "original_rows": [
+      {
+        "Index": 1223,
+        "Arrival_Time": 1424696645289,
+        "Creation_Time": 1424696643297153787,
+        "x": -5.683258,
+        "y": 0.43693542,
+        "z": 8.387665,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1222,
+        "Arrival_Time": 1424696645289,
+        "Creation_Time": 1424696643290012674,
+        "x": -5.677307,
+        "y": 0.4476470999999999,
+        "z": 8.342438000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7141113,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1250,
+      1251
+    ],
+    "original_indices": [
+      "1252",
+      "1251"
+    ],
+    "creation_times": [
+      1424696643441097137,
+      1424696643436061737
+    ],
+    "original_rows": [
+      {
+        "Index": 1252,
+        "Arrival_Time": 1424696645438,
+        "Creation_Time": 1424696643441097137,
+        "x": -5.8094177,
+        "y": 0.46073914,
+        "z": 8.288879,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1251,
+        "Arrival_Time": 1424696645438,
+        "Creation_Time": 1424696643436061737,
+        "x": -5.773712000000001,
+        "y": 0.49882507,
+        "z": 8.366241,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1280,
+      1281
+    ],
+    "original_indices": [
+      "1282",
+      "1281"
+    ],
+    "creation_times": [
+      1424696643593013641,
+      1424696643587001678
+    ],
+    "original_rows": [
+      {
+        "Index": 1282,
+        "Arrival_Time": 1424696645584,
+        "Creation_Time": 1424696643593013641,
+        "x": -5.7165833,
+        "y": 0.48216248,
+        "z": 8.361481,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1281,
+        "Arrival_Time": 1424696645584,
+        "Creation_Time": 1424696643587001678,
+        "x": -5.634460400000001,
+        "y": 0.5035858,
+        "z": 8.272217,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6011963,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1297,
+      1298
+    ],
+    "original_indices": [
+      "1299",
+      "1298"
+    ],
+    "creation_times": [
+      1424696643677577850,
+      1424696643674434539
+    ],
+    "original_rows": [
+      {
+        "Index": 1299,
+        "Arrival_Time": 1424696645671,
+        "Creation_Time": 1424696643677577850,
+        "x": -5.705871599999999,
+        "y": 0.4631194999999999,
+        "z": 8.307922,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1298,
+        "Arrival_Time": 1424696645671,
+        "Creation_Time": 1424696643674434539,
+        "x": -5.6796875,
+        "y": 0.4631194999999999,
+        "z": 8.338867,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 3143311,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1300,
+      1301
+    ],
+    "original_indices": [
+      "1302",
+      "1301"
+    ],
+    "creation_times": [
+      1424696643693965789,
+      1424696643687709686
+    ],
+    "original_rows": [
+      {
+        "Index": 1302,
+        "Arrival_Time": 1424696645687,
+        "Creation_Time": 1424696643693965789,
+        "x": -5.709442,
+        "y": 0.48216248,
+        "z": 8.257935,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1301,
+        "Arrival_Time": 1424696645687,
+        "Creation_Time": 1424696643687709686,
+        "x": -5.7177734,
+        "y": 0.46788025,
+        "z": 8.319824,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6256103,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1359,
+      1360
+    ],
+    "original_indices": [
+      "1361",
+      "1360"
+    ],
+    "creation_times": [
+      1424696643993709442,
+      1424696643985591766
+    ],
+    "original_rows": [
+      {
+        "Index": 1361,
+        "Arrival_Time": 1424696645985,
+        "Creation_Time": 1424696643993709442,
+        "x": -5.734436,
+        "y": 0.49525452,
+        "z": 8.109161,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1360,
+        "Arrival_Time": 1424696645985,
+        "Creation_Time": 1424696643985591766,
+        "x": -5.739197,
+        "y": 0.4476470999999999,
+        "z": 8.149628,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 8117676,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1367,
+      1368
+    ],
+    "original_indices": [
+      "1369",
+      "1368"
+    ],
+    "creation_times": [
+      1424696644033016082,
+      1424696644025478240
+    ],
+    "original_rows": [
+      {
+        "Index": 1369,
+        "Arrival_Time": 1424696646024,
+        "Creation_Time": 1424696644033016082,
+        "x": -5.7368164,
+        "y": 0.47859192,
+        "z": 8.349578999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1368,
+        "Arrival_Time": 1424696646024,
+        "Creation_Time": 1424696644025478240,
+        "x": -5.702301,
+        "y": 0.47859192,
+        "z": 8.187714,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7537842,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1379,
+      1380
+    ],
+    "original_indices": [
+      "1381",
+      "1380"
+    ],
+    "creation_times": [
+      1424696644091396209,
+      1424696644085506317
+    ],
+    "original_rows": [
+      {
+        "Index": 1381,
+        "Arrival_Time": 1424696646082,
+        "Creation_Time": 1424696644091396209,
+        "x": -5.6594543,
+        "y": 0.4476470999999999,
+        "z": 8.376953,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1380,
+        "Arrival_Time": 1424696646082,
+        "Creation_Time": 1424696644085506317,
+        "x": -5.6796875,
+        "y": 0.46549988,
+        "z": 8.392425999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5889892,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1389,
+      1390
+    ],
+    "original_indices": [
+      "1391",
+      "1390"
+    ],
+    "creation_times": [
+      1424696644143031951,
+      1424696644135951873
+    ],
+    "original_rows": [
+      {
+        "Index": 1391,
+        "Arrival_Time": 1424696646133,
+        "Creation_Time": 1424696644143031951,
+        "x": -5.7510986,
+        "y": 0.5202484,
+        "z": 8.330536,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1390,
+        "Arrival_Time": 1424696646133,
+        "Creation_Time": 1424696644135951873,
+        "x": -5.7165833,
+        "y": 0.5273895000000001,
+        "z": 8.207947,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7080078,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1557,
+      1558
+    ],
+    "original_indices": [
+      "1559",
+      "1558"
+    ],
+    "creation_times": [
+      1424696649621371055,
+      1424696649613772178
+    ],
+    "original_rows": [
+      {
+        "Index": 1559,
+        "Arrival_Time": 1424696651612,
+        "Creation_Time": 1424696649621371055,
+        "x": -5.848694,
+        "y": -0.32359314,
+        "z": 8.261505,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1558,
+        "Arrival_Time": 1424696651612,
+        "Creation_Time": 1424696649613772178,
+        "x": -5.766571,
+        "y": -0.4592742999999999,
+        "z": 8.099639999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7598877,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1565,
+      1566
+    ],
+    "original_indices": [
+      "1567",
+      "1566"
+    ],
+    "creation_times": [
+      1424696649660280967,
+      1424696649653841758
+    ],
+    "original_rows": [
+      {
+        "Index": 1567,
+        "Arrival_Time": 1424696651652,
+        "Creation_Time": 1424696649660280967,
+        "x": -5.6808777,
+        "y": -0.2605133,
+        "z": 8.312683,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1566,
+        "Arrival_Time": 1424696651652,
+        "Creation_Time": 1424696649653841758,
+        "x": -5.7189636,
+        "y": -0.23908997,
+        "z": 8.379333500000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6439209,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1598,
+      1599
+    ],
+    "original_indices": [
+      "1600",
+      "1599"
+    ],
+    "creation_times": [
+      1424696649825106406,
+      1424696649820101524
+    ],
+    "original_rows": [
+      {
+        "Index": 1600,
+        "Arrival_Time": 1424696651823,
+        "Creation_Time": 1424696649825106406,
+        "x": -6.067688,
+        "y": -0.78300476,
+        "z": 8.343628,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1599,
+        "Arrival_Time": 1424696651823,
+        "Creation_Time": 1424696649820101524,
+        "x": -5.9808044,
+        "y": -0.7449188,
+        "z": 8.349578999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5004882,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1617,
+      1618
+    ],
+    "original_indices": [
+      "1619",
+      "1618"
+    ],
+    "creation_times": [
+      1424696649923037315,
+      1424696649915682578
+    ],
+    "original_rows": [
+      {
+        "Index": 1619,
+        "Arrival_Time": 1424696651914,
+        "Creation_Time": 1424696649923037315,
+        "x": -5.7832336,
+        "y": -0.5735321,
+        "z": 7.925872999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1618,
+        "Arrival_Time": 1424696651914,
+        "Creation_Time": 1424696649915682578,
+        "x": -5.926056,
+        "y": -0.6247100999999999,
+        "z": 7.968719500000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7354737,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1646,
+      1647
+    ],
+    "original_indices": [
+      "1648",
+      "1647"
+    ],
+    "creation_times": [
+      1424696650069826865,
+      1424696650061983848
+    ],
+    "original_rows": [
+      {
+        "Index": 1648,
+        "Arrival_Time": 1424696652060,
+        "Creation_Time": 1424696650069826865,
+        "x": -6.296203599999999,
+        "y": 0.9332428,
+        "z": 8.262694999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1647,
+        "Arrival_Time": 1424696652060,
+        "Creation_Time": 1424696650061983848,
+        "x": -6.3211975,
+        "y": 0.7428130999999999,
+        "z": 8.217467999999998,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7843017,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1665,
+      1666
+    ],
+    "original_indices": [
+      "1667",
+      "1666"
+    ],
+    "creation_times": [
+      1424696650162630821,
+      1424696650157473350
+    ],
+    "original_rows": [
+      {
+        "Index": 1667,
+        "Arrival_Time": 1424696652156,
+        "Creation_Time": 1424696650162630821,
+        "x": -6.9948425,
+        "y": 1.358139,
+        "z": 7.940155,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1666,
+        "Arrival_Time": 1424696652156,
+        "Creation_Time": 1424696650157473350,
+        "x": -6.921050999999999,
+        "y": 1.447403,
+        "z": 7.831848,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5157471,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1686,
+      1687
+    ],
+    "original_indices": [
+      "1688",
+      "1687"
+    ],
+    "creation_times": [
+      1424696650268191123,
+      1424696650263247276
+    ],
+    "original_rows": [
+      {
+        "Index": 1688,
+        "Arrival_Time": 1424696652261,
+        "Creation_Time": 1424696650268191123,
+        "x": -6.1783752,
+        "y": 1.0177459999999998,
+        "z": 7.605713000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1687,
+        "Arrival_Time": 1424696652261,
+        "Creation_Time": 1424696650263247276,
+        "x": -6.202179,
+        "y": 0.9070587,
+        "z": 7.493835400000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 4943847,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1726,
+      1727
+    ],
+    "original_indices": [
+      "1728",
+      "1727"
+    ],
+    "creation_times": [
+      1424696650471895957,
+      1424696650465456748
+    ],
+    "original_rows": [
+      {
+        "Index": 1728,
+        "Arrival_Time": 1424696652462,
+        "Creation_Time": 1424696650471895957,
+        "x": -6.214081,
+        "y": 1.0570221000000002,
+        "z": 7.149872,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1727,
+        "Arrival_Time": 1424696652462,
+        "Creation_Time": 1424696650465456748,
+        "x": -6.248596,
+        "y": 1.1129608,
+        "z": 7.211761500000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6439209,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1764,
+      1765
+    ],
+    "original_indices": [
+      "1766",
+      "1765"
+    ],
+    "creation_times": [
+      1424696650662569785,
+      1424696650655855918
+    ],
+    "original_rows": [
+      {
+        "Index": 1766,
+        "Arrival_Time": 1424696652653,
+        "Creation_Time": 1424696650662569785,
+        "x": -6.490204,
+        "y": 1.2403107,
+        "z": 7.383147999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1765,
+        "Arrival_Time": 1424696652653,
+        "Creation_Time": 1424696650655855918,
+        "x": -6.442596400000001,
+        "y": 1.2117462,
+        "z": 7.3533936,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6713867,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1795,
+      1796
+    ],
+    "original_indices": [
+      "1797",
+      "1796"
+    ],
+    "creation_times": [
+      1424696650818270469,
+      1424696650811953330
+    ],
+    "original_rows": [
+      {
+        "Index": 1797,
+        "Arrival_Time": 1424696652809,
+        "Creation_Time": 1424696650818270469,
+        "x": -6.5342407,
+        "y": 1.2819672,
+        "z": 7.653320299999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1796,
+        "Arrival_Time": 1424696652809,
+        "Creation_Time": 1424696650811953330,
+        "x": -6.524719,
+        "y": 1.3426666,
+        "z": 7.692596400000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6317139,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1805,
+      1806
+    ],
+    "original_indices": [
+      "1807",
+      "1806"
+    ],
+    "creation_times": [
+      1424696650867739463,
+      1424696650862337852
+    ],
+    "original_rows": [
+      {
+        "Index": 1807,
+        "Arrival_Time": 1424696652860,
+        "Creation_Time": 1424696650867739463,
+        "x": -6.5830383,
+        "y": 1.3260040000000002,
+        "z": 7.584289599999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1806,
+        "Arrival_Time": 1424696652860,
+        "Creation_Time": 1424696650862337852,
+        "x": -6.5842285,
+        "y": 1.331955,
+        "z": 7.568817,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5401611,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1854,
+      1855
+    ],
+    "original_indices": [
+      "1856",
+      "1855"
+    ],
+    "creation_times": [
+      1424696651114199424,
+      1424696651109164024
+    ],
+    "original_rows": [
+      {
+        "Index": 1856,
+        "Arrival_Time": 1424696653108,
+        "Creation_Time": 1424696651114199424,
+        "x": -6.662781,
+        "y": 1.0939178,
+        "z": 7.5247803,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1855,
+        "Arrival_Time": 1424696653108,
+        "Creation_Time": 1424696651109164024,
+        "x": -6.675872999999999,
+        "y": 1.0998688,
+        "z": 7.4283752,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1883,
+      1884
+    ],
+    "original_indices": [
+      "1885",
+      "1884"
+    ],
+    "creation_times": [
+      1424696651261843467,
+      1424696651255190635
+    ],
+    "original_rows": [
+      {
+        "Index": 1885,
+        "Arrival_Time": 1424696653252,
+        "Creation_Time": 1424696651261843467,
+        "x": -6.643738000000001,
+        "y": 1.0736847,
+        "z": 7.466461,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1884,
+        "Arrival_Time": 1424696653252,
+        "Creation_Time": 1424696651255190635,
+        "x": -6.594939999999999,
+        "y": 1.0713043,
+        "z": 7.4878845,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1891,
+      1892
+    ],
+    "original_indices": [
+      "1893",
+      "1892"
+    ],
+    "creation_times": [
+      1424696651301913047,
+      1424696651295351768
+    ],
+    "original_rows": [
+      {
+        "Index": 1893,
+        "Arrival_Time": 1424696653293,
+        "Creation_Time": 1424696651301913047,
+        "x": -6.559234599999999,
+        "y": 1.1058197,
+        "z": 7.6021423,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1892,
+        "Arrival_Time": 1424696653293,
+        "Creation_Time": 1424696651295351768,
+        "x": -6.5782776,
+        "y": 1.1093903,
+        "z": 7.6342773,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6561279,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1903,
+      1904
+    ],
+    "original_indices": [
+      "1905",
+      "1904"
+    ],
+    "creation_times": [
+      1424696651363955283,
+      1424696651356142783
+    ],
+    "original_rows": [
+      {
+        "Index": 1905,
+        "Arrival_Time": 1424696653355,
+        "Creation_Time": 1424696651363955283,
+        "x": -6.602081299999999,
+        "y": 1.1688995,
+        "z": 7.521209700000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1904,
+        "Arrival_Time": 1424696653355,
+        "Creation_Time": 1424696651356142783,
+        "x": -6.5520935,
+        "y": 1.1248627,
+        "z": 7.5378723,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7812500,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1943,
+      1944
+    ],
+    "original_indices": [
+      "1945",
+      "1944"
+    ],
+    "creation_times": [
+      1424696651562350059,
+      1424696651557314658
+    ],
+    "original_rows": [
+      {
+        "Index": 1945,
+        "Arrival_Time": 1424696653555,
+        "Creation_Time": 1424696651562350059,
+        "x": -6.6473083,
+        "y": 1.1522369,
+        "z": 7.346252400000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1944,
+        "Arrival_Time": 1424696653555,
+        "Creation_Time": 1424696651557314658,
+        "x": -6.631836,
+        "y": 1.146286,
+        "z": 7.3783875,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      1992,
+      1993
+    ],
+    "original_indices": [
+      "1994",
+      "1993"
+    ],
+    "creation_times": [
+      1424696651810183311,
+      1424696651803957725
+    ],
+    "original_rows": [
+      {
+        "Index": 1994,
+        "Arrival_Time": 1424696653802,
+        "Creation_Time": 1424696651810183311,
+        "x": -6.697296000000001,
+        "y": 1.1736603,
+        "z": 7.342682000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1993,
+        "Arrival_Time": 1424696653802,
+        "Creation_Time": 1424696651803957725,
+        "x": -6.662781,
+        "y": 1.2236481,
+        "z": 7.424804700000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6225586,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2001,
+      2002
+    ],
+    "original_indices": [
+      "2003",
+      "2002"
+    ],
+    "creation_times": [
+      1424696651855623985,
+      1424696651849276328
+    ],
+    "original_rows": [
+      {
+        "Index": 2003,
+        "Arrival_Time": 1424696653847,
+        "Creation_Time": 1424696651855623985,
+        "x": -6.684203999999999,
+        "y": 1.2034148999999998,
+        "z": 7.466461,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2002,
+        "Arrival_Time": 1424696653847,
+        "Creation_Time": 1424696651849276328,
+        "x": -6.690155,
+        "y": 1.2176971,
+        "z": 7.429565400000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6347657,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2042,
+      2043
+    ],
+    "original_indices": [
+      "2044",
+      "2043"
+    ],
+    "creation_times": [
+      1424696652061037803,
+      1424696652055910850
+    ],
+    "original_rows": [
+      {
+        "Index": 2044,
+        "Arrival_Time": 1424696654051,
+        "Creation_Time": 1424696652061037803,
+        "x": -6.6473083,
+        "y": 1.2712555,
+        "z": 7.434325999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2043,
+        "Arrival_Time": 1424696654051,
+        "Creation_Time": 1424696652055910850,
+        "x": -6.65802,
+        "y": 1.2200775,
+        "z": 7.4759827,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5126953,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2052,
+      2053
+    ],
+    "original_indices": [
+      "2054",
+      "2053"
+    ],
+    "creation_times": [
+      1424696652114413047,
+      1424696652106508994
+    ],
+    "original_rows": [
+      {
+        "Index": 2054,
+        "Arrival_Time": 1424696654105,
+        "Creation_Time": 1424696652114413047,
+        "x": -6.653259299999999,
+        "y": 1.2010345,
+        "z": 7.449798599999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2053,
+        "Arrival_Time": 1424696654105,
+        "Creation_Time": 1424696652106508994,
+        "x": -6.7568054,
+        "y": 1.2319794,
+        "z": 7.472411999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7904053,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2061,
+      2062
+    ],
+    "original_indices": [
+      "2063",
+      "2062"
+    ],
+    "creation_times": [
+      1424696652156588340,
+      1424696652151369834
+    ],
+    "original_rows": [
+      {
+        "Index": 2063,
+        "Arrival_Time": 1424696654147,
+        "Creation_Time": 1424696652156588340,
+        "x": -6.729431,
+        "y": 1.2307892,
+        "z": 7.412903,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2062,
+        "Arrival_Time": 1424696654147,
+        "Creation_Time": 1424696652151369834,
+        "x": -6.7520447,
+        "y": 1.2343597,
+        "z": 7.427185000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2091,
+      2092
+    ],
+    "original_indices": [
+      "2093",
+      "2092"
+    ],
+    "creation_times": [
+      1424696652306665574,
+      1424696652301691209
+    ],
+    "original_rows": [
+      {
+        "Index": 2093,
+        "Arrival_Time": 1424696654301,
+        "Creation_Time": 1424696652306665574,
+        "x": -6.697296000000001,
+        "y": 1.1177216,
+        "z": 7.4176636,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2092,
+        "Arrival_Time": 1424696654301,
+        "Creation_Time": 1424696652301691209,
+        "x": -6.706817599999999,
+        "y": 1.1248627,
+        "z": 7.456939699999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 4974365,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2131,
+      2132
+    ],
+    "original_indices": [
+      "2133",
+      "2132"
+    ],
+    "creation_times": [
+      1424696652510370408,
+      1424696652503015672
+    ],
+    "original_rows": [
+      {
+        "Index": 2133,
+        "Arrival_Time": 1424696654502,
+        "Creation_Time": 1424696652510370408,
+        "x": -6.6473083,
+        "y": 1.184372,
+        "z": 7.403381299999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2132,
+        "Arrival_Time": 1424696654502,
+        "Creation_Time": 1424696652503015672,
+        "x": -6.6556396,
+        "y": 1.178421,
+        "z": 7.399811,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7354736,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2151,
+      2152
+    ],
+    "original_indices": [
+      "2153",
+      "2152"
+    ],
+    "creation_times": [
+      1424696652610773240,
+      1424696652603784715
+    ],
+    "original_rows": [
+      {
+        "Index": 2153,
+        "Arrival_Time": 1424696654602,
+        "Creation_Time": 1424696652610773240,
+        "x": -6.6853943,
+        "y": 1.0701141,
+        "z": 7.385528599999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2152,
+        "Arrival_Time": 1424696654602,
+        "Creation_Time": 1424696652603784715,
+        "x": -6.6984863,
+        "y": 1.1260529,
+        "z": 7.4355164,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6988525,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2161,
+      2162
+    ],
+    "original_indices": [
+      "2163",
+      "2162"
+    ],
+    "creation_times": [
+      1424696652659326707,
+      1424696652654077684
+    ],
+    "original_rows": [
+      {
+        "Index": 2163,
+        "Arrival_Time": 1424696654654,
+        "Creation_Time": 1424696652659326707,
+        "x": -6.6092224,
+        "y": 1.1260529,
+        "z": 7.440277,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2162,
+        "Arrival_Time": 1424696654654,
+        "Creation_Time": 1424696652654077684,
+        "x": -6.6294556,
+        "y": 1.1629486,
+        "z": 7.393860000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5249023,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2210,
+      2211
+    ],
+    "original_indices": [
+      "2212",
+      "2211"
+    ],
+    "creation_times": [
+      1424696658064240850,
+      1424696658058228887
+    ],
+    "original_rows": [
+      {
+        "Index": 2212,
+        "Arrival_Time": 1424696660055,
+        "Creation_Time": 1424696658064240850,
+        "x": -6.5520935,
+        "y": 1.1177216,
+        "z": 7.498596000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2211,
+        "Arrival_Time": 1424696660055,
+        "Creation_Time": 1424696658058228887,
+        "x": -6.577087400000001,
+        "y": 1.0998688,
+        "z": 7.561675999999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6011963,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2249,
+      2250
+    ],
+    "original_indices": [
+      "2251",
+      "2250"
+    ],
+    "creation_times": [
+      1424696658259675421,
+      1424696658254640020
+    ],
+    "original_rows": [
+      {
+        "Index": 2251,
+        "Arrival_Time": 1424696660253,
+        "Creation_Time": 1424696658259675421,
+        "x": -6.516388,
+        "y": 1.127243,
+        "z": 7.5700073,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2250,
+        "Arrival_Time": 1424696660253,
+        "Creation_Time": 1424696658254640020,
+        "x": -6.535431,
+        "y": 1.0653534,
+        "z": 7.666412400000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2289,
+      2290
+    ],
+    "original_indices": [
+      "2291",
+      "2290"
+    ],
+    "creation_times": [
+      1424696658461213507,
+      1424696658456086553
+    ],
+    "original_rows": [
+      {
+        "Index": 2291,
+        "Arrival_Time": 1424696660452,
+        "Creation_Time": 1424696658461213507,
+        "x": -6.414032,
+        "y": 1.0427399,
+        "z": 7.664032000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2290,
+        "Arrival_Time": 1424696660452,
+        "Creation_Time": 1424696658456086553,
+        "x": -6.5128174,
+        "y": 1.0998688,
+        "z": 7.734253,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5126954,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2377,
+      2378
+    ],
+    "original_indices": [
+      "2379",
+      "2378"
+    ],
+    "creation_times": [
+      1424696658904938044,
+      1424696658898834529
+    ],
+    "original_rows": [
+      {
+        "Index": 2379,
+        "Arrival_Time": 1424696660897,
+        "Creation_Time": 1424696658904938044,
+        "x": -6.0903015,
+        "y": 1.1201019,
+        "z": 7.9365845,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2378,
+        "Arrival_Time": 1424696660897,
+        "Creation_Time": 1424696658898834529,
+        "x": -6.085541,
+        "y": 1.1522369,
+        "z": 7.8592224,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6103515,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2397,
+      2398
+    ],
+    "original_indices": [
+      "2399",
+      "2398"
+    ],
+    "creation_times": [
+      1424696659007934870,
+      1424696659000000300
+    ],
+    "original_rows": [
+      {
+        "Index": 2399,
+        "Arrival_Time": 1424696660999,
+        "Creation_Time": 1424696659007934870,
+        "x": -5.9689026,
+        "y": 1.1284332,
+        "z": 7.929443400000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2398,
+        "Arrival_Time": 1424696660999,
+        "Creation_Time": 1424696659000000300,
+        "x": -6.08197,
+        "y": 1.1224823,
+        "z": 7.994903599999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7934570,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2475,
+      2476
+    ],
+    "original_indices": [
+      "2477",
+      "2476"
+    ],
+    "creation_times": [
+      1424696659400608434,
+      1424696659392643346
+    ],
+    "original_rows": [
+      {
+        "Index": 2477,
+        "Arrival_Time": 1424696661392,
+        "Creation_Time": 1424696659400608434,
+        "x": -6.0069885,
+        "y": 1.0391693000000002,
+        "z": 7.9353943,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2476,
+        "Arrival_Time": 1424696661392,
+        "Creation_Time": 1424696659392643346,
+        "x": -6.0188904,
+        "y": 1.1082001,
+        "z": 7.8794556,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7965088,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2485,
+      2486
+    ],
+    "original_indices": [
+      "2487",
+      "2486"
+    ],
+    "creation_times": [
+      1424696659449222936,
+      1424696659442570104
+    ],
+    "original_rows": [
+      {
+        "Index": 2487,
+        "Arrival_Time": 1424696661440,
+        "Creation_Time": 1424696659449222936,
+        "x": -5.885589599999999,
+        "y": 1.0034637,
+        "z": 7.919922,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2486,
+        "Arrival_Time": 1424696661440,
+        "Creation_Time": 1424696659442570104,
+        "x": -5.912964,
+        "y": 1.0058440999999998,
+        "z": 8.015137,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2514,
+      2515
+    ],
+    "original_indices": [
+      "2516",
+      "2515"
+    ],
+    "creation_times": [
+      1424696659593815221,
+      1424696659588749303
+    ],
+    "original_rows": [
+      {
+        "Index": 2516,
+        "Arrival_Time": 1424696661588,
+        "Creation_Time": 1424696659593815221,
+        "x": -6.0248413,
+        "y": 1.1320038,
+        "z": 7.9865723,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2515,
+        "Arrival_Time": 1424696661588,
+        "Creation_Time": 1424696659588749303,
+        "x": -5.985565,
+        "y": 1.1522369,
+        "z": 8.021088,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2526,
+      2527
+    ],
+    "original_indices": [
+      "2528",
+      "2527"
+    ],
+    "creation_times": [
+      1424696659654178991,
+      1424696659649204625
+    ],
+    "original_rows": [
+      {
+        "Index": 2528,
+        "Arrival_Time": 1424696661658,
+        "Creation_Time": 1424696659654178991,
+        "x": -6.0391235,
+        "y": 1.0546417,
+        "z": 7.9758606,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2527,
+        "Arrival_Time": 1424696661658,
+        "Creation_Time": 1424696659649204625,
+        "x": -5.991516000000001,
+        "y": 1.1486664,
+        "z": 8.024658,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 4974366,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2545,
+      2546
+    ],
+    "original_indices": [
+      "2547",
+      "2546"
+    ],
+    "creation_times": [
+      1424696659751316442,
+      1424696659744694127
+    ],
+    "original_rows": [
+      {
+        "Index": 2547,
+        "Arrival_Time": 1424696661743,
+        "Creation_Time": 1424696659751316442,
+        "x": -6.002228,
+        "y": 1.1046295,
+        "z": 7.9960938,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2546,
+        "Arrival_Time": 1424696661743,
+        "Creation_Time": 1424696659744694127,
+        "x": -6.0141296,
+        "y": 1.1748505,
+        "z": 7.955627400000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6622315,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2555,
+      2556
+    ],
+    "original_indices": [
+      "2557",
+      "2556"
+    ],
+    "creation_times": [
+      1424696659800144567,
+      1424696659795017614
+    ],
+    "original_rows": [
+      {
+        "Index": 2557,
+        "Arrival_Time": 1424696661792,
+        "Creation_Time": 1424696659800144567,
+        "x": -6.0069885,
+        "y": 1.0129852,
+        "z": 8.067505,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2556,
+        "Arrival_Time": 1424696661792,
+        "Creation_Time": 1424696659795017614,
+        "x": -5.9093933,
+        "y": 1.0522614,
+        "z": 8.03775,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5126953,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2565,
+      2566
+    ],
+    "original_indices": [
+      "2567",
+      "2566"
+    ],
+    "creation_times": [
+      1424696659852146520,
+      1424696659845402135
+    ],
+    "original_rows": [
+      {
+        "Index": 2567,
+        "Arrival_Time": 1424696661844,
+        "Creation_Time": 1424696659852146520,
+        "x": -5.9748535,
+        "y": 1.0129852,
+        "z": 7.9234924,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2566,
+        "Arrival_Time": 1424696661844,
+        "Creation_Time": 1424696659845402135,
+        "x": -5.958191,
+        "y": 1.0677338,
+        "z": 7.8973083,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6744385,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2624,
+      2625
+    ],
+    "original_indices": [
+      "2626",
+      "2625"
+    ],
+    "creation_times": [
+      1424696660147469406,
+      1424696660142434005
+    ],
+    "original_rows": [
+      {
+        "Index": 2626,
+        "Arrival_Time": 1424696662141,
+        "Creation_Time": 1424696660147469406,
+        "x": -5.9605713,
+        "y": 1.1153412,
+        "z": 8.060364,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2625,
+        "Arrival_Time": 1424696662141,
+        "Creation_Time": 1424696660142434005,
+        "x": -5.972473,
+        "y": 1.0962982,
+        "z": 7.958008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2645,
+      2646
+    ],
+    "original_indices": [
+      "2647",
+      "2646"
+    ],
+    "creation_times": [
+      1424696660256661300,
+      1424696660248635177
+    ],
+    "original_rows": [
+      {
+        "Index": 2647,
+        "Arrival_Time": 1424696662248,
+        "Creation_Time": 1424696660256661300,
+        "x": -6.0069885,
+        "y": 1.0939178,
+        "z": 8.071075,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2646,
+        "Arrival_Time": 1424696662248,
+        "Creation_Time": 1424696660248635177,
+        "x": -5.996277,
+        "y": 1.1046295,
+        "z": 8.052032,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 8026123,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2684,
+      2685
+    ],
+    "original_indices": [
+      "2686",
+      "2685"
+    ],
+    "creation_times": [
+      1424696660449746017,
+      1424696660444680099
+    ],
+    "original_rows": [
+      {
+        "Index": 2686,
+        "Arrival_Time": 1424696662444,
+        "Creation_Time": 1424696660449746017,
+        "x": -6.101013,
+        "y": 1.0546417,
+        "z": 8.057983,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2685,
+        "Arrival_Time": 1424696662444,
+        "Creation_Time": 1424696660444680099,
+        "x": -6.022461,
+        "y": 1.0724945,
+        "z": 7.968719500000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2850,
+      2851
+    ],
+    "original_indices": [
+      "2852",
+      "2851"
+    ],
+    "creation_times": [
+      1424696661285591964,
+      1424696661280709152
+    ],
+    "original_rows": [
+      {
+        "Index": 2852,
+        "Arrival_Time": 1424696663284,
+        "Creation_Time": 1424696661285591964,
+        "x": -6.028412,
+        "y": 1.0653534,
+        "z": 8.034180000000001,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2851,
+        "Arrival_Time": 1424696663284,
+        "Creation_Time": 1424696661280709152,
+        "x": -6.030792,
+        "y": 1.0641632,
+        "z": 7.985382,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 4882812,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "acc",
+    "original_positions": [
+      2960,
+      2961
+    ],
+    "original_indices": [
+      "2962",
+      "2961"
+    ],
+    "creation_times": [
+      1424696661880002591,
+      1424696661874753567
+    ],
+    "original_rows": [
+      {
+        "Index": 2962,
+        "Arrival_Time": 1424696663871,
+        "Creation_Time": 1424696661880002591,
+        "x": -5.992706299999999,
+        "y": 1.0236969,
+        "z": 7.944916,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2961,
+        "Arrival_Time": 1424696663871,
+        "Creation_Time": 1424696661874753567,
+        "x": -5.976043700000001,
+        "y": 1.0070343000000002,
+        "z": 8.000854499999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5249024,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      8,
+      9
+    ],
+    "original_indices": [
+      "9",
+      "8"
+    ],
+    "creation_times": [
+      1424696631961191687,
+      1424696631954447302
+    ],
+    "original_rows": [
+      {
+        "Index": 9,
+        "Arrival_Time": 1424696633952,
+        "Creation_Time": 1424696631961191687,
+        "x": 0.009475708,
+        "y": -0.016647339,
+        "z": -0.02230835,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 8,
+        "Arrival_Time": 1424696633952,
+        "Creation_Time": 1424696631954447302,
+        "x": 0.010543823,
+        "y": -0.016647339,
+        "z": -0.021240234,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6744385,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      18,
+      19
+    ],
+    "original_indices": [
+      "19",
+      "18"
+    ],
+    "creation_times": [
+      1424696632011209997,
+      1424696632004831824
+    ],
+    "original_rows": [
+      {
+        "Index": 19,
+        "Arrival_Time": 1424696634003,
+        "Creation_Time": 1424696632011209997,
+        "x": 0.008407593,
+        "y": -0.0070343018,
+        "z": -0.0126953125,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 18,
+        "Arrival_Time": 1424696634003,
+        "Creation_Time": 1424696632004831824,
+        "x": 0.0073394775,
+        "y": -0.0059661865,
+        "z": -0.0126953125,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6378173,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      48,
+      49
+    ],
+    "original_indices": [
+      "49",
+      "48"
+    ],
+    "creation_times": [
+      1424696632160929236,
+      1424696632155924353
+    ],
+    "original_rows": [
+      {
+        "Index": 49,
+        "Arrival_Time": 1424696634160,
+        "Creation_Time": 1424696632160929236,
+        "x": -0.015090942,
+        "y": -0.011306763,
+        "z": 0.033233643,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 48,
+        "Arrival_Time": 1424696634160,
+        "Creation_Time": 1424696632155924353,
+        "x": -0.0118865969999999,
+        "y": -0.013442993,
+        "z": 0.027893066,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      78,
+      79
+    ],
+    "original_indices": [
+      "79",
+      "78"
+    ],
+    "creation_times": [
+      1424696632312876257,
+      1424696632306803259
+    ],
+    "original_rows": [
+      {
+        "Index": 79,
+        "Arrival_Time": 1424696634303,
+        "Creation_Time": 1424696632312876257,
+        "x": -0.041793823,
+        "y": -0.01878357,
+        "z": 0.07595825,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 78,
+        "Arrival_Time": 1424696634303,
+        "Creation_Time": 1424696632306803259,
+        "x": -0.040725708,
+        "y": -0.016647339,
+        "z": 0.072753906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6072998,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      215,
+      216
+    ],
+    "original_indices": [
+      "216",
+      "215"
+    ],
+    "creation_times": [
+      1424696633001922630,
+      1424696632996856712
+    ],
+    "original_rows": [
+      {
+        "Index": 216,
+        "Arrival_Time": 1424696635004,
+        "Creation_Time": 1424696633001922630,
+        "x": 0.039382935,
+        "y": 0.013259888,
+        "z": -0.032989502,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 215,
+        "Arrival_Time": 1424696635004,
+        "Creation_Time": 1424696632996856712,
+        "x": 0.039382935,
+        "y": 0.012191772,
+        "z": -0.029785156,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      224,
+      225
+    ],
+    "original_indices": [
+      "225",
+      "224"
+    ],
+    "creation_times": [
+      1424696633047241234,
+      1424696633042236351
+    ],
+    "original_rows": [
+      {
+        "Index": 225,
+        "Arrival_Time": 1424696635045,
+        "Creation_Time": 1424696633047241234,
+        "x": 0.041519165,
+        "y": 0.011123657,
+        "z": -0.038330078,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 224,
+        "Arrival_Time": 1424696635045,
+        "Creation_Time": 1424696633042236351,
+        "x": 0.039382935,
+        "y": 0.013259888,
+        "z": -0.0372619629999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      244,
+      245
+    ],
+    "original_indices": [
+      "245",
+      "244"
+    ],
+    "creation_times": [
+      1424696633148803734,
+      1424696633142761253
+    ],
+    "original_rows": [
+      {
+        "Index": 245,
+        "Arrival_Time": 1424696635139,
+        "Creation_Time": 1424696633148803734,
+        "x": 0.031906128,
+        "y": -0.0081024169999999,
+        "z": -0.031921387,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 244,
+        "Arrival_Time": 1424696635139,
+        "Creation_Time": 1424696633142761253,
+        "x": 0.03404236,
+        "y": -0.0081024169999999,
+        "z": -0.034057617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6042481,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      254,
+      255
+    ],
+    "original_indices": [
+      "255",
+      "254"
+    ],
+    "creation_times": [
+      1424696633199798607,
+      1424696633193237327
+    ],
+    "original_rows": [
+      {
+        "Index": 255,
+        "Arrival_Time": 1424696635191,
+        "Creation_Time": 1424696633199798607,
+        "x": 0.0158844,
+        "y": -0.013442993,
+        "z": -0.0126953125,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 254,
+        "Arrival_Time": 1424696635191,
+        "Creation_Time": 1424696633193237327,
+        "x": 0.01802063,
+        "y": -0.012374878,
+        "z": -0.016967773,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6561280,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      262,
+      263
+    ],
+    "original_indices": [
+      "263",
+      "262"
+    ],
+    "creation_times": [
+      1424696633241851829,
+      1424696633234710716
+    ],
+    "original_rows": [
+      {
+        "Index": 263,
+        "Arrival_Time": 1424696635233,
+        "Creation_Time": 1424696633241851829,
+        "x": 0.0062713623,
+        "y": -0.032669067,
+        "z": -0.010559082,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 262,
+        "Arrival_Time": 1424696635233,
+        "Creation_Time": 1424696633234710716,
+        "x": 0.009475708,
+        "y": -0.027328491,
+        "z": -0.0116271969999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7141113,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      274,
+      275
+    ],
+    "original_indices": [
+      "275",
+      "274"
+    ],
+    "creation_times": [
+      1424696633299865745,
+      1424696633293853782
+    ],
+    "original_rows": [
+      {
+        "Index": 275,
+        "Arrival_Time": 1424696635293,
+        "Creation_Time": 1424696633299865745,
+        "x": -0.00440979,
+        "y": -0.02519226,
+        "z": -0.0009460449,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 274,
+        "Arrival_Time": 1424696635293,
+        "Creation_Time": 1424696633293853782,
+        "x": -0.00440979,
+        "y": -0.029464722,
+        "z": -0.0009460449,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6011963,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      284,
+      285
+    ],
+    "original_indices": [
+      "285",
+      "284"
+    ],
+    "creation_times": [
+      1424696633349395775,
+      1424696633344329857
+    ],
+    "original_rows": [
+      {
+        "Index": 285,
+        "Arrival_Time": 1424696635352,
+        "Creation_Time": 1424696633349395775,
+        "x": -0.009750366,
+        "y": -0.0209198,
+        "z": 0.0150756839999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 284,
+        "Arrival_Time": 1424696635352,
+        "Creation_Time": 1424696633344329857,
+        "x": -0.010818481,
+        "y": -0.017715454,
+        "z": 0.014007568,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      324,
+      325
+    ],
+    "original_indices": [
+      "325",
+      "324"
+    ],
+    "creation_times": [
+      1424696633554016136,
+      1424696633546844505
+    ],
+    "original_rows": [
+      {
+        "Index": 325,
+        "Arrival_Time": 1424696635545,
+        "Creation_Time": 1424696633554016136,
+        "x": -0.0118865969999999,
+        "y": -0.024124146,
+        "z": 0.0054626465,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 324,
+        "Arrival_Time": 1424696635545,
+        "Creation_Time": 1424696633546844505,
+        "x": -0.0118865969999999,
+        "y": -0.021987915,
+        "z": 0.008666992,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7171631,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      332,
+      333
+    ],
+    "original_indices": [
+      "333",
+      "332"
+    ],
+    "creation_times": [
+      1424696633592803978,
+      1424696633586578392
+    ],
+    "original_rows": [
+      {
+        "Index": 333,
+        "Arrival_Time": 1424696635583,
+        "Creation_Time": 1424696633592803978,
+        "x": -0.0033416747999999,
+        "y": -0.011306763,
+        "z": -0.0073547363,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 332,
+        "Arrival_Time": 1424696635583,
+        "Creation_Time": 1424696633586578392,
+        "x": -0.0054779053,
+        "y": -0.015579224,
+        "z": -0.0052185059999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6225586,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      354,
+      355
+    ],
+    "original_indices": [
+      "355",
+      "354"
+    ],
+    "creation_times": [
+      1424696633705017112,
+      1424696633697845482
+    ],
+    "original_rows": [
+      {
+        "Index": 355,
+        "Arrival_Time": 1424696635696,
+        "Creation_Time": 1424696633705017112,
+        "x": 0.0073394775,
+        "y": -0.003829956,
+        "z": -0.035125732,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 354,
+        "Arrival_Time": 1424696635696,
+        "Creation_Time": 1424696633697845482,
+        "x": 0.0062713623,
+        "y": -0.0059661865,
+        "z": -0.035125732,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7171630,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      401,
+      402
+    ],
+    "original_indices": [
+      "402",
+      "401"
+    ],
+    "creation_times": [
+      1424696633938537620,
+      1424696633933502220
+    ],
+    "original_rows": [
+      {
+        "Index": 402,
+        "Arrival_Time": 1424696635932,
+        "Creation_Time": 1424696633938537620,
+        "x": 0.0158844,
+        "y": 0.008987427,
+        "z": -0.034057617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 401,
+        "Arrival_Time": 1424696635932,
+        "Creation_Time": 1424696633933502220,
+        "x": 0.0148162839999999,
+        "y": 0.0079193115,
+        "z": -0.034057617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      421,
+      422
+    ],
+    "original_indices": [
+      "422",
+      "421"
+    ],
+    "creation_times": [
+      1424696634039337181,
+      1424696634034271263
+    ],
+    "original_rows": [
+      {
+        "Index": 422,
+        "Arrival_Time": 1424696636030,
+        "Creation_Time": 1424696634039337181,
+        "x": 0.028701782,
+        "y": 0.014328003,
+        "z": -0.041534424,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 421,
+        "Arrival_Time": 1424696636030,
+        "Creation_Time": 1424696634034271263,
+        "x": 0.027633667,
+        "y": 0.016464233,
+        "z": -0.04473877,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      431,
+      432
+    ],
+    "original_indices": [
+      "432",
+      "431"
+    ],
+    "creation_times": [
+      1424696634089691185,
+      1424696634084899925
+    ],
+    "original_rows": [
+      {
+        "Index": 432,
+        "Arrival_Time": 1424696636081,
+        "Creation_Time": 1424696634089691185,
+        "x": 0.01802063,
+        "y": 0.0015106201,
+        "z": -0.038330078,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 431,
+        "Arrival_Time": 1424696636081,
+        "Creation_Time": 1424696634084899925,
+        "x": 0.01802063,
+        "y": 0.0015106201,
+        "z": -0.038330078,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 4791260,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      441,
+      442
+    ],
+    "original_indices": [
+      "442",
+      "441"
+    ],
+    "creation_times": [
+      1424696634140014671,
+      1424696634134796165
+    ],
+    "original_rows": [
+      {
+        "Index": 442,
+        "Arrival_Time": 1424696636131,
+        "Creation_Time": 1424696634140014671,
+        "x": 0.008407593,
+        "y": 0.02394104,
+        "z": -0.013763428,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 441,
+        "Arrival_Time": 1424696636131,
+        "Creation_Time": 1424696634134796165,
+        "x": 0.009475708,
+        "y": 0.022872925,
+        "z": -0.013763428,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      472,
+      473
+    ],
+    "original_indices": [
+      "473",
+      "472"
+    ],
+    "creation_times": [
+      1424696634295928978,
+      1424696634290863060
+    ],
+    "original_rows": [
+      {
+        "Index": 473,
+        "Arrival_Time": 1424696636287,
+        "Creation_Time": 1424696634295928978,
+        "x": -0.00440979,
+        "y": 0.012191772,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 472,
+        "Arrival_Time": 1424696636287,
+        "Creation_Time": 1424696634290863060,
+        "x": -0.0033416747999999,
+        "y": 0.0100555419999999,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      490,
+      491
+    ],
+    "original_indices": [
+      "491",
+      "490"
+    ],
+    "creation_times": [
+      1424696634386688255,
+      1424696634381652855
+    ],
+    "original_rows": [
+      {
+        "Index": 491,
+        "Arrival_Time": 1424696636380,
+        "Creation_Time": 1424696634386688255,
+        "x": -0.0012054442999999,
+        "y": 0.0025787354,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 490,
+        "Arrival_Time": 1424696636380,
+        "Creation_Time": 1424696634381652855,
+        "x": 0.00093078613,
+        "y": 0.0036468506,
+        "z": -0.0020141601999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      500,
+      501
+    ],
+    "original_indices": [
+      "501",
+      "500"
+    ],
+    "creation_times": [
+      1424696634438507103,
+      1424696634431945823
+    ],
+    "original_rows": [
+      {
+        "Index": 501,
+        "Arrival_Time": 1424696636429,
+        "Creation_Time": 1424696634438507103,
+        "x": -0.0012054442999999,
+        "y": 0.00044250488,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 500,
+        "Arrival_Time": 1424696636429,
+        "Creation_Time": 1424696634431945823,
+        "x": -0.0022735596,
+        "y": -0.00062561035,
+        "z": 0.0011901855,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6561280,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      520,
+      521
+    ],
+    "original_indices": [
+      "521",
+      "520"
+    ],
+    "creation_times": [
+      1424696634538024925,
+      1424696634532531761
+    ],
+    "original_rows": [
+      {
+        "Index": 521,
+        "Arrival_Time": 1424696636528,
+        "Creation_Time": 1424696634538024925,
+        "x": 0.00093078613,
+        "y": 0.0015106201,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 520,
+        "Arrival_Time": 1424696636528,
+        "Creation_Time": 1424696634532531761,
+        "x": 0.00093078613,
+        "y": 0.0036468506,
+        "z": 0.0011901855,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5493164,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      528,
+      529
+    ],
+    "original_indices": [
+      "529",
+      "528"
+    ],
+    "creation_times": [
+      1424696634579193138,
+      1424696634572845482
+    ],
+    "original_rows": [
+      {
+        "Index": 529,
+        "Arrival_Time": 1424696636570,
+        "Creation_Time": 1424696634579193138,
+        "x": 0.0019989014,
+        "y": 0.005783081,
+        "z": -0.0020141601999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 528,
+        "Arrival_Time": 1424696636570,
+        "Creation_Time": 1424696634572845482,
+        "x": 0.0019989014,
+        "y": 0.0015106201,
+        "z": -0.0041503906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6347656,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      590,
+      591
+    ],
+    "original_indices": [
+      "591",
+      "590"
+    ],
+    "creation_times": [
+      1424696634891693138,
+      1424696634885131859
+    ],
+    "original_rows": [
+      {
+        "Index": 591,
+        "Arrival_Time": 1424696636883,
+        "Creation_Time": 1424696634891693138,
+        "x": 0.0073394775,
+        "y": 0.008987427,
+        "z": -0.0030822754,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 590,
+        "Arrival_Time": 1424696636883,
+        "Creation_Time": 1424696634885131859,
+        "x": 0.0062713623,
+        "y": 0.008987427,
+        "z": -0.0041503906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6561279,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      661,
+      662
+    ],
+    "original_indices": [
+      "662",
+      "661"
+    ],
+    "creation_times": [
+      1424696635247619651,
+      1424696635242614769
+    ],
+    "original_rows": [
+      {
+        "Index": 662,
+        "Arrival_Time": 1424696637242,
+        "Creation_Time": 1424696635247619651,
+        "x": -0.0065460205,
+        "y": -0.0059661865,
+        "z": 0.01828003,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 661,
+        "Arrival_Time": 1424696637242,
+        "Creation_Time": 1424696635242614769,
+        "x": -0.0076141356999999,
+        "y": -0.0059661865,
+        "z": 0.016143799,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5004882,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      710,
+      711
+    ],
+    "original_indices": [
+      "711",
+      "710"
+    ],
+    "creation_times": [
+      1424696635494659446,
+      1424696635489196800
+    ],
+    "original_rows": [
+      {
+        "Index": 711,
+        "Arrival_Time": 1424696637485,
+        "Creation_Time": 1424696635494659446,
+        "x": 0.0062713623,
+        "y": -0.010238647,
+        "z": -0.013763428,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 710,
+        "Arrival_Time": 1424696637485,
+        "Creation_Time": 1424696635489196800,
+        "x": 0.0062713623,
+        "y": -0.011306763,
+        "z": -0.0126953125,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5462646,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      749,
+      750
+    ],
+    "original_indices": [
+      "750",
+      "749"
+    ],
+    "creation_times": [
+      1424696635690856956,
+      1424696635685821556
+    ],
+    "original_rows": [
+      {
+        "Index": 750,
+        "Arrival_Time": 1424696637694,
+        "Creation_Time": 1424696635690856956,
+        "x": 0.0062713623,
+        "y": -0.010238647,
+        "z": -0.0041503906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 749,
+        "Arrival_Time": 1424696637694,
+        "Creation_Time": 1424696635685821556,
+        "x": 0.0062713623,
+        "y": -0.0081024169999999,
+        "z": -0.0041503906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      778,
+      779
+    ],
+    "original_indices": [
+      "779",
+      "778"
+    ],
+    "creation_times": [
+      1424696641060514307,
+      1424696641054654932
+    ],
+    "original_rows": [
+      {
+        "Index": 779,
+        "Arrival_Time": 1424696643051,
+        "Creation_Time": 1424696641060514307,
+        "x": -0.008682251,
+        "y": -0.013442993,
+        "z": 0.0065307617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 778,
+        "Arrival_Time": 1424696643051,
+        "Creation_Time": 1424696641054654932,
+        "x": -0.009750366,
+        "y": -0.015579224,
+        "z": 0.0065307617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5859375,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      848,
+      849
+    ],
+    "original_indices": [
+      "849",
+      "848"
+    ],
+    "creation_times": [
+      1424696641411374903,
+      1424696641406125879
+    ],
+    "original_rows": [
+      {
+        "Index": 849,
+        "Arrival_Time": 1424696643403,
+        "Creation_Time": 1424696641411374903,
+        "x": -0.019363403,
+        "y": -0.031600952,
+        "z": 0.019348145,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 848,
+        "Arrival_Time": 1424696643403,
+        "Creation_Time": 1424696641406125879,
+        "x": -0.020431519,
+        "y": -0.033737183,
+        "z": 0.021484375,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5249024,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      927,
+      928
+    ],
+    "original_indices": [
+      "928",
+      "927"
+    ],
+    "creation_times": [
+      1424696641810148096,
+      1424696641803922510
+    ],
+    "original_rows": [
+      {
+        "Index": 928,
+        "Arrival_Time": 1424696643801,
+        "Creation_Time": 1424696641810148096,
+        "x": -0.0076141356999999,
+        "y": -0.03694153,
+        "z": -0.0052185059999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 927,
+        "Arrival_Time": 1424696643801,
+        "Creation_Time": 1424696641803922510,
+        "x": -0.00440979,
+        "y": -0.034805298,
+        "z": -0.009490967,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6225586,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      937,
+      938
+    ],
+    "original_indices": [
+      "938",
+      "937"
+    ],
+    "creation_times": [
+      1424696641861478662,
+      1424696641854276514
+    ],
+    "original_rows": [
+      {
+        "Index": 938,
+        "Arrival_Time": 1424696643852,
+        "Creation_Time": 1424696641861478662,
+        "x": -0.0065460205,
+        "y": -0.040145874,
+        "z": 0.0011901855,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 937,
+        "Arrival_Time": 1424696643852,
+        "Creation_Time": 1424696641854276514,
+        "x": -0.010818481,
+        "y": -0.04121399,
+        "z": 0.0011901855,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7202148,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      947,
+      948
+    ],
+    "original_indices": [
+      "948",
+      "947"
+    ],
+    "creation_times": [
+      1424696641911130762,
+      1424696641904569483
+    ],
+    "original_rows": [
+      {
+        "Index": 948,
+        "Arrival_Time": 1424696643902,
+        "Creation_Time": 1424696641911130762,
+        "x": -0.0001373291,
+        "y": -0.085006714,
+        "z": -0.008422852,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 947,
+        "Arrival_Time": 1424696643902,
+        "Creation_Time": 1424696641904569483,
+        "x": -0.0001373291,
+        "y": -0.08180237,
+        "z": -0.0052185059999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6561279,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1015,
+      1016
+    ],
+    "original_indices": [
+      "1016",
+      "1015"
+    ],
+    "creation_times": [
+      1424696642252073145,
+      1424696642247037744
+    ],
+    "original_rows": [
+      {
+        "Index": 1016,
+        "Arrival_Time": 1424696644243,
+        "Creation_Time": 1424696642252073145,
+        "x": 0.025497437,
+        "y": -0.0016937256,
+        "z": -0.034057617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1015,
+        "Arrival_Time": 1424696644243,
+        "Creation_Time": 1424696642247037744,
+        "x": 0.026565552,
+        "y": -0.0027618408,
+        "z": -0.032989502,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1023,
+      1024
+    ],
+    "original_indices": [
+      "1024",
+      "1023"
+    ],
+    "creation_times": [
+      1424696642295255518,
+      1424696642287229395
+    ],
+    "original_rows": [
+      {
+        "Index": 1024,
+        "Arrival_Time": 1424696644286,
+        "Creation_Time": 1424696642295255518,
+        "x": 0.0308380129999999,
+        "y": 0.022872925,
+        "z": -0.0372619629999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1023,
+        "Arrival_Time": 1424696644286,
+        "Creation_Time": 1424696642287229395,
+        "x": 0.027633667,
+        "y": 0.016464233,
+        "z": -0.038330078,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 8026123,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1035,
+      1036
+    ],
+    "original_indices": [
+      "1036",
+      "1035"
+    ],
+    "creation_times": [
+      1424696642353605127,
+      1424696642347715235
+    ],
+    "original_rows": [
+      {
+        "Index": 1036,
+        "Arrival_Time": 1424696644345,
+        "Creation_Time": 1424696642353605127,
+        "x": 0.02015686,
+        "y": -0.01878357,
+        "z": -0.030853271,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1035,
+        "Arrival_Time": 1424696644345,
+        "Creation_Time": 1424696642347715235,
+        "x": 0.02015686,
+        "y": -0.015579224,
+        "z": -0.034057617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5889892,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1094,
+      1095
+    ],
+    "original_indices": [
+      "1095",
+      "1094"
+    ],
+    "creation_times": [
+      1424696642650089578,
+      1424696642644687967
+    ],
+    "original_rows": [
+      {
+        "Index": 1095,
+        "Arrival_Time": 1424696644641,
+        "Creation_Time": 1424696642650089578,
+        "x": 0.013748169,
+        "y": 0.035690308,
+        "z": -0.015899658,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1094,
+        "Arrival_Time": 1424696644641,
+        "Creation_Time": 1424696642644687967,
+        "x": 0.0116119385,
+        "y": 0.035690308,
+        "z": -0.016967773,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5401611,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1102,
+      1103
+    ],
+    "original_indices": [
+      "1103",
+      "1102"
+    ],
+    "creation_times": [
+      1424696642693699197,
+      1424696642684757547
+    ],
+    "original_rows": [
+      {
+        "Index": 1103,
+        "Arrival_Time": 1424696644685,
+        "Creation_Time": 1424696642693699197,
+        "x": 0.0116119385,
+        "y": -0.0027618408,
+        "z": -0.008422852,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1102,
+        "Arrival_Time": 1424696644685,
+        "Creation_Time": 1424696642684757547,
+        "x": 0.012680054,
+        "y": 0.0025787354,
+        "z": -0.010559082,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 8941650,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1134,
+      1135
+    ],
+    "original_indices": [
+      "1135",
+      "1134"
+    ],
+    "creation_times": [
+      1424696642852207498,
+      1424696642845798806
+    ],
+    "original_rows": [
+      {
+        "Index": 1135,
+        "Arrival_Time": 1424696644851,
+        "Creation_Time": 1424696642852207498,
+        "x": -0.0001373291,
+        "y": -0.003829956,
+        "z": 0.0033264159999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1134,
+        "Arrival_Time": 1424696644851,
+        "Creation_Time": 1424696642845798806,
+        "x": -0.0012054442999999,
+        "y": -0.003829956,
+        "z": 0.0043945313,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6408692,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1153,
+      1154
+    ],
+    "original_indices": [
+      "1154",
+      "1153"
+    ],
+    "creation_times": [
+      1424696642946567849,
+      1424696642941562967
+    ],
+    "original_rows": [
+      {
+        "Index": 1154,
+        "Arrival_Time": 1424696644941,
+        "Creation_Time": 1424696642946567849,
+        "x": -0.0054779053,
+        "y": 0.0068511963,
+        "z": 0.010803223,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1153,
+        "Arrival_Time": 1424696644941,
+        "Creation_Time": 1424696642941562967,
+        "x": -0.00440979,
+        "y": 0.011123657,
+        "z": 0.011871338,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5004882,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1194,
+      1195
+    ],
+    "original_indices": [
+      "1195",
+      "1194"
+    ],
+    "creation_times": [
+      1424696643156528787,
+      1424696643147983865
+    ],
+    "original_rows": [
+      {
+        "Index": 1195,
+        "Arrival_Time": 1424696645148,
+        "Creation_Time": 1424696643156528787,
+        "x": 0.004135132,
+        "y": 0.004714966,
+        "z": -0.0041503906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1194,
+        "Arrival_Time": 1424696645148,
+        "Creation_Time": 1424696643147983865,
+        "x": 0.0030670166,
+        "y": 0.0036468506,
+        "z": -0.0030822754,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 8544922,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1203,
+      1204
+    ],
+    "original_indices": [
+      "1204",
+      "1203"
+    ],
+    "creation_times": [
+      1424696643200352029,
+      1424696643193210916
+    ],
+    "original_rows": [
+      {
+        "Index": 1204,
+        "Arrival_Time": 1424696645192,
+        "Creation_Time": 1424696643200352029,
+        "x": 0.0073394775,
+        "y": 0.015396118,
+        "z": -0.0009460449,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1203,
+        "Arrival_Time": 1424696645192,
+        "Creation_Time": 1424696643193210916,
+        "x": 0.0062713623,
+        "y": 0.013259888,
+        "z": 0.00012207031,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7141113,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1252,
+      1253
+    ],
+    "original_indices": [
+      "1253",
+      "1252"
+    ],
+    "creation_times": [
+      1424696643445064422,
+      1424696643440029022
+    ],
+    "original_rows": [
+      {
+        "Index": 1253,
+        "Arrival_Time": 1424696645440,
+        "Creation_Time": 1424696643445064422,
+        "x": 0.0062713623,
+        "y": 0.008987427,
+        "z": -0.006286621,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1252,
+        "Arrival_Time": 1424696645440,
+        "Creation_Time": 1424696643440029022,
+        "x": 0.0073394775,
+        "y": 0.008987427,
+        "z": -0.009490967,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1281,
+      1282
+    ],
+    "original_indices": [
+      "1282",
+      "1281"
+    ],
+    "creation_times": [
+      1424696643591915008,
+      1424696643586025115
+    ],
+    "original_rows": [
+      {
+        "Index": 1282,
+        "Arrival_Time": 1424696645583,
+        "Creation_Time": 1424696643591915008,
+        "x": 0.005203247,
+        "y": 0.008987427,
+        "z": -0.0020141601999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1281,
+        "Arrival_Time": 1424696645583,
+        "Creation_Time": 1424696643586025115,
+        "x": 0.0062713623,
+        "y": 0.0079193115,
+        "z": -0.0030822754,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5889893,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1298,
+      1299
+    ],
+    "original_indices": [
+      "1299",
+      "1298"
+    ],
+    "creation_times": [
+      1424696643676570770,
+      1424696643673427459
+    ],
+    "original_rows": [
+      {
+        "Index": 1299,
+        "Arrival_Time": 1424696645670,
+        "Creation_Time": 1424696643676570770,
+        "x": -0.0012054442999999,
+        "y": 0.0036468506,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1298,
+        "Arrival_Time": 1424696645670,
+        "Creation_Time": 1424696643673427459,
+        "x": -0.0012054442999999,
+        "y": 0.0036468506,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 3143311,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1301,
+      1302
+    ],
+    "original_indices": [
+      "1302",
+      "1301"
+    ],
+    "creation_times": [
+      1424696643692897674,
+      1424696643686702606
+    ],
+    "original_rows": [
+      {
+        "Index": 1302,
+        "Arrival_Time": 1424696645686,
+        "Creation_Time": 1424696643692897674,
+        "x": -0.0033416747999999,
+        "y": -0.003829956,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1301,
+        "Arrival_Time": 1424696645686,
+        "Creation_Time": 1424696643686702606,
+        "x": 0.00093078613,
+        "y": -0.00062561035,
+        "z": 0.0033264159999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6195068,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1372,
+      1373
+    ],
+    "original_indices": [
+      "1373",
+      "1372"
+    ],
+    "creation_times": [
+      1424696644051265594,
+      1424696644044185516
+    ],
+    "original_rows": [
+      {
+        "Index": 1373,
+        "Arrival_Time": 1424696646043,
+        "Creation_Time": 1424696644051265594,
+        "x": 0.00093078613,
+        "y": 0.02180481,
+        "z": -0.006286621,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1372,
+        "Arrival_Time": 1424696646043,
+        "Creation_Time": 1424696644044185516,
+        "x": 0.0019989014,
+        "y": 0.027145386,
+        "z": -0.0041503906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7080078,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1412,
+      1413
+    ],
+    "original_indices": [
+      "1413",
+      "1412"
+    ],
+    "creation_times": [
+      1424696644250728485,
+      1424696644245693084
+    ],
+    "original_rows": [
+      {
+        "Index": 1413,
+        "Arrival_Time": 1424696646245,
+        "Creation_Time": 1424696644250728485,
+        "x": 0.0116119385,
+        "y": -0.033737183,
+        "z": -0.029785156,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1412,
+        "Arrival_Time": 1424696646245,
+        "Creation_Time": 1424696644245693084,
+        "x": 0.010543823,
+        "y": -0.032669067,
+        "z": -0.02658081,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1421,
+      1422
+    ],
+    "original_indices": [
+      "1422",
+      "1421"
+    ],
+    "creation_times": [
+      1424696644296047088,
+      1424696644290950653
+    ],
+    "original_rows": [
+      {
+        "Index": 1422,
+        "Arrival_Time": 1424696646291,
+        "Creation_Time": 1424696644296047088,
+        "x": 0.024429321,
+        "y": -0.019851685,
+        "z": -0.038330078,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1421,
+        "Arrival_Time": 1424696646291,
+        "Creation_Time": 1424696644290950653,
+        "x": 0.02229309,
+        "y": -0.0209198,
+        "z": -0.034057617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5096435,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1450,
+      1451
+    ],
+    "original_indices": [
+      "1451",
+      "1450"
+    ],
+    "creation_times": [
+      1424696649080813194,
+      1424696649075686240
+    ],
+    "original_rows": [
+      {
+        "Index": 1451,
+        "Arrival_Time": 1424696651072,
+        "Creation_Time": 1424696649080813194,
+        "x": -0.015090942,
+        "y": 0.016464233,
+        "z": -0.07678223,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1450,
+        "Arrival_Time": 1424696651072,
+        "Creation_Time": 1424696649075686240,
+        "x": -0.018295288,
+        "y": 0.011123657,
+        "z": -0.07678223,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5126954,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1510,
+      1511
+    ],
+    "original_indices": [
+      "1511",
+      "1510"
+    ],
+    "creation_times": [
+      1424696649382815147,
+      1424696649377810264
+    ],
+    "original_rows": [
+      {
+        "Index": 1511,
+        "Arrival_Time": 1424696651400,
+        "Creation_Time": 1424696649382815147,
+        "x": -0.08985901,
+        "y": 0.005783081,
+        "z": -0.027648926,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1510,
+        "Arrival_Time": 1424696651400,
+        "Creation_Time": 1424696649377810264,
+        "x": -0.08879089,
+        "y": 0.014328003,
+        "z": -0.027648926,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5004883,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1539,
+      1540
+    ],
+    "original_indices": [
+      "1540",
+      "1539"
+    ],
+    "creation_times": [
+      1424696649530367637,
+      1424696649523775840
+    ],
+    "original_rows": [
+      {
+        "Index": 1540,
+        "Arrival_Time": 1424696651521,
+        "Creation_Time": 1424696649530367637,
+        "x": -0.14219666,
+        "y": -0.06791687,
+        "z": 0.030029297,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1539,
+        "Arrival_Time": 1424696651521,
+        "Creation_Time": 1424696649523775840,
+        "x": -0.14967346,
+        "y": -0.06791687,
+        "z": 0.031097412,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6591797,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1549,
+      1550
+    ],
+    "original_indices": [
+      "1550",
+      "1549"
+    ],
+    "creation_times": [
+      1424696649582064414,
+      1424696649574892783
+    ],
+    "original_rows": [
+      {
+        "Index": 1550,
+        "Arrival_Time": 1424696651572,
+        "Creation_Time": 1424696649582064414,
+        "x": -0.12083435,
+        "y": 0.05064392,
+        "z": 0.028961182,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1549,
+        "Arrival_Time": 1424696651572,
+        "Creation_Time": 1424696649574892783,
+        "x": -0.11869812,
+        "y": 0.043167114,
+        "z": 0.031097412,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7171631,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1597,
+      1598
+    ],
+    "original_indices": [
+      "1598",
+      "1597"
+    ],
+    "creation_times": [
+      1424696649820925498,
+      1424696649815890098
+    ],
+    "original_rows": [
+      {
+        "Index": 1598,
+        "Arrival_Time": 1424696651813,
+        "Creation_Time": 1424696649820925498,
+        "x": 0.28825378,
+        "y": 0.17774963,
+        "z": -0.12271118,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1597,
+        "Arrival_Time": 1424696651813,
+        "Creation_Time": 1424696649815890098,
+        "x": 0.27330017,
+        "y": 0.18736267,
+        "z": -0.10028076,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1617,
+      1618
+    ],
+    "original_indices": [
+      "1618",
+      "1617"
+    ],
+    "creation_times": [
+      1424696649923800254,
+      1424696649916781211
+    ],
+    "original_rows": [
+      {
+        "Index": 1618,
+        "Arrival_Time": 1424696651913,
+        "Creation_Time": 1424696649923800254,
+        "x": 0.56596375,
+        "y": 0.0517120359999999,
+        "z": -0.5520935,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1617,
+        "Arrival_Time": 1424696651913,
+        "Creation_Time": 1424696649916781211,
+        "x": 0.54460144,
+        "y": 0.0495758059999999,
+        "z": -0.5446167,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7019043,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1646,
+      1647
+    ],
+    "original_indices": [
+      "1647",
+      "1646"
+    ],
+    "creation_times": [
+      1424696650070559287,
+      1424696650063326621
+    ],
+    "original_rows": [
+      {
+        "Index": 1647,
+        "Arrival_Time": 1424696652061,
+        "Creation_Time": 1424696650070559287,
+        "x": 0.46235657,
+        "y": 0.24824524,
+        "z": -0.22525024,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1646,
+        "Arrival_Time": 1424696652061,
+        "Creation_Time": 1424696650063326621,
+        "x": 0.50401306,
+        "y": 0.2525177,
+        "z": -0.25195313,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7232666,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1746,
+      1747
+    ],
+    "original_indices": [
+      "1747",
+      "1746"
+    ],
+    "creation_times": [
+      1424696650571047569,
+      1424696650566012168
+    ],
+    "original_rows": [
+      {
+        "Index": 1747,
+        "Arrival_Time": 1424696652574,
+        "Creation_Time": 1424696650571047569,
+        "x": 0.037246704,
+        "y": 0.13929749,
+        "z": 0.028961182,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1746,
+        "Arrival_Time": 1424696652574,
+        "Creation_Time": 1424696650566012168,
+        "x": 0.04045105,
+        "y": 0.15531921,
+        "z": 0.025756836,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1766,
+      1767
+    ],
+    "original_indices": [
+      "1767",
+      "1766"
+    ],
+    "creation_times": [
+      1424696650672152305,
+      1424696650666689658
+    ],
+    "original_rows": [
+      {
+        "Index": 1767,
+        "Arrival_Time": 1424696652661,
+        "Creation_Time": 1424696650672152305,
+        "x": 0.0351104739999999,
+        "y": 0.036758423,
+        "z": 0.00012207031,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1766,
+        "Arrival_Time": 1424696652661,
+        "Creation_Time": 1424696650666689658,
+        "x": 0.03617859,
+        "y": 0.02607727,
+        "z": 0.0011901855,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5462647,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1776,
+      1777
+    ],
+    "original_indices": [
+      "1777",
+      "1776"
+    ],
+    "creation_times": [
+      1424696650722018028,
+      1424696650716982627
+    ],
+    "original_rows": [
+      {
+        "Index": 1777,
+        "Arrival_Time": 1424696652712,
+        "Creation_Time": 1424696650722018028,
+        "x": 0.016952515,
+        "y": 0.0912323,
+        "z": 0.032165527,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1776,
+        "Arrival_Time": 1424696652712,
+        "Creation_Time": 1424696650716982627,
+        "x": 0.019088745,
+        "y": 0.0912323,
+        "z": 0.028961182,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1805,
+      1806
+    ],
+    "original_indices": [
+      "1806",
+      "1805"
+    ],
+    "creation_times": [
+      1424696650868502403,
+      1424696650863100791
+    ],
+    "original_rows": [
+      {
+        "Index": 1806,
+        "Arrival_Time": 1424696652859,
+        "Creation_Time": 1424696650868502403,
+        "x": -0.1101531999999999,
+        "y": -0.013442993,
+        "z": 0.12722778,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1805,
+        "Arrival_Time": 1424696652859,
+        "Creation_Time": 1424696650863100791,
+        "x": -0.10588074,
+        "y": -0.012374878,
+        "z": 0.12615967,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5401612,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1895,
+      1896
+    ],
+    "original_indices": [
+      "1896",
+      "1895"
+    ],
+    "creation_times": [
+      1424696651324740196,
+      1424696651317477012
+    ],
+    "original_rows": [
+      {
+        "Index": 1896,
+        "Arrival_Time": 1424696653314,
+        "Creation_Time": 1424696651324740196,
+        "x": -0.012954712,
+        "y": 0.033554077,
+        "z": -0.009490967,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1895,
+        "Arrival_Time": 1424696653314,
+        "Creation_Time": 1424696651317477012,
+        "x": -0.015090942,
+        "y": 0.037826538,
+        "z": -0.006286621,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7263184,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      1964,
+      1965
+    ],
+    "original_indices": [
+      "1965",
+      "1964"
+    ],
+    "creation_times": [
+      1424696651671480918,
+      1424696651664339805
+    ],
+    "original_rows": [
+      {
+        "Index": 1965,
+        "Arrival_Time": 1424696653661,
+        "Creation_Time": 1424696651671480918,
+        "x": 0.012680054,
+        "y": 0.028213501,
+        "z": -0.016967773,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 1964,
+        "Arrival_Time": 1424696653661,
+        "Creation_Time": 1424696651664339805,
+        "x": 0.012680054,
+        "y": 0.033554077,
+        "z": -0.021240234,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7141113,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2042,
+      2043
+    ],
+    "original_indices": [
+      "2043",
+      "2042"
+    ],
+    "creation_times": [
+      1424696652061800742,
+      1424696652056673789
+    ],
+    "original_rows": [
+      {
+        "Index": 2043,
+        "Arrival_Time": 1424696654052,
+        "Creation_Time": 1424696652061800742,
+        "x": 0.012680054,
+        "y": -0.012374878,
+        "z": -0.015899658,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2042,
+        "Arrival_Time": 1424696654052,
+        "Creation_Time": 1424696652056673789,
+        "x": 0.012680054,
+        "y": -0.0081024169999999,
+        "z": -0.016967773,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5126953,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2052,
+      2053
+    ],
+    "original_indices": [
+      "2053",
+      "2052"
+    ],
+    "creation_times": [
+      1424696652115175987,
+      1424696652107973838
+    ],
+    "original_rows": [
+      {
+        "Index": 2053,
+        "Arrival_Time": 1424696654105,
+        "Creation_Time": 1424696652115175987,
+        "x": 0.0030670166,
+        "y": -0.0070343018,
+        "z": -0.0020141601999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2052,
+        "Arrival_Time": 1424696654105,
+        "Creation_Time": 1424696652107973838,
+        "x": 0.004135132,
+        "y": -0.009170532,
+        "z": -0.0041503906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7202149,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2071,
+      2072
+    ],
+    "original_indices": [
+      "2072",
+      "2071"
+    ],
+    "creation_times": [
+      1424696652207674766,
+      1424696652202456260
+    ],
+    "original_rows": [
+      {
+        "Index": 2072,
+        "Arrival_Time": 1424696654197,
+        "Creation_Time": 1424696652207674766,
+        "x": -0.018295288,
+        "y": -0.003829956,
+        "z": 0.0075988769999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2071,
+        "Arrival_Time": 1424696654197,
+        "Creation_Time": 1424696652202456260,
+        "x": -0.018295288,
+        "y": -0.0059661865,
+        "z": 0.008666992,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2131,
+      2132
+    ],
+    "original_indices": [
+      "2132",
+      "2131"
+    ],
+    "creation_times": [
+      1424696652511133348,
+      1424696652503870164
+    ],
+    "original_rows": [
+      {
+        "Index": 2132,
+        "Arrival_Time": 1424696654502,
+        "Creation_Time": 1424696652511133348,
+        "x": 0.0030670166,
+        "y": -0.013442993,
+        "z": -0.0030822754,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2131,
+        "Arrival_Time": 1424696654502,
+        "Creation_Time": 1424696652503870164,
+        "x": 0.0019989014,
+        "y": -0.009170532,
+        "z": -0.0052185059999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7263184,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2149,
+      2150
+    ],
+    "original_indices": [
+      "2150",
+      "2149"
+    ],
+    "creation_times": [
+      1424696652600092088,
+      1424696652594507371
+    ],
+    "original_rows": [
+      {
+        "Index": 2150,
+        "Arrival_Time": 1424696654590,
+        "Creation_Time": 1424696652600092088,
+        "x": -0.0076141356999999,
+        "y": -0.0209198,
+        "z": 0.008666992,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2149,
+        "Arrival_Time": 1424696654590,
+        "Creation_Time": 1424696652594507371,
+        "x": -0.008682251,
+        "y": -0.019851685,
+        "z": 0.009735107,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5584717,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2159,
+      2160
+    ],
+    "original_indices": [
+      "2160",
+      "2159"
+    ],
+    "creation_times": [
+      1424696652651514207,
+      1424696652644861375
+    ],
+    "original_rows": [
+      {
+        "Index": 2160,
+        "Arrival_Time": 1424696654642,
+        "Creation_Time": 1424696652651514207,
+        "x": -0.0054779053,
+        "y": -0.01878357,
+        "z": 0.00012207031,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2159,
+        "Arrival_Time": 1424696654642,
+        "Creation_Time": 1424696652644861375,
+        "x": -0.0065460205,
+        "y": -0.019851685,
+        "z": 0.0011901855,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2169,
+      2170
+    ],
+    "original_indices": [
+      "2170",
+      "2169"
+    ],
+    "creation_times": [
+      1424696652701624071,
+      1424696652695245897
+    ],
+    "original_rows": [
+      {
+        "Index": 2170,
+        "Arrival_Time": 1424696654694,
+        "Creation_Time": 1424696652701624071,
+        "x": -0.0012054442999999,
+        "y": -0.010238647,
+        "z": -0.0020141601999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2169,
+        "Arrival_Time": 1424696654694,
+        "Creation_Time": 1424696652695245897,
+        "x": -0.0022735596,
+        "y": -0.012374878,
+        "z": -0.0020141601999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6378174,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2179,
+      2180
+    ],
+    "original_indices": [
+      "2180",
+      "2179"
+    ],
+    "creation_times": [
+      1424696652750635301,
+      1424696652745599901
+    ],
+    "original_rows": [
+      {
+        "Index": 2180,
+        "Arrival_Time": 1424696654750,
+        "Creation_Time": 1424696652750635301,
+        "x": -0.0012054442999999,
+        "y": -0.016647339,
+        "z": 0.0043945313,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2179,
+        "Arrival_Time": 1424696654750,
+        "Creation_Time": 1424696652745599901,
+        "x": -0.0012054442999999,
+        "y": -0.017715454,
+        "z": 0.0043945313,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2206,
+      2207
+    ],
+    "original_indices": [
+      "2207",
+      "2206"
+    ],
+    "creation_times": [
+      1424696658046021856,
+      1424696658039155401
+    ],
+    "original_rows": [
+      {
+        "Index": 2207,
+        "Arrival_Time": 1424696660037,
+        "Creation_Time": 1424696658046021856,
+        "x": -0.008682251,
+        "y": -0.0059661865,
+        "z": -0.0020141601999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2206,
+        "Arrival_Time": 1424696660037,
+        "Creation_Time": 1424696658039155401,
+        "x": -0.008682251,
+        "y": -0.009170532,
+        "z": -0.0020141601999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6866455,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2220,
+      2221
+    ],
+    "original_indices": [
+      "2221",
+      "2220"
+    ],
+    "creation_times": [
+      1424696658115479864,
+      1424696658110627569
+    ],
+    "original_rows": [
+      {
+        "Index": 2221,
+        "Arrival_Time": 1424696660106,
+        "Creation_Time": 1424696658115479864,
+        "x": -0.014022827,
+        "y": -0.0059661865,
+        "z": -0.0030822754,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2220,
+        "Arrival_Time": 1424696660106,
+        "Creation_Time": 1424696658110627569,
+        "x": -0.010818481,
+        "y": -0.0048980713,
+        "z": -0.0009460449,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 4852295,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2249,
+      2250
+    ],
+    "original_indices": [
+      "2250",
+      "2249"
+    ],
+    "creation_times": [
+      1424696658260438360,
+      1424696658255402960
+    ],
+    "original_rows": [
+      {
+        "Index": 2250,
+        "Arrival_Time": 1424696660252,
+        "Creation_Time": 1424696658260438360,
+        "x": -0.009750366,
+        "y": -0.017715454,
+        "z": -0.0030822754,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2249,
+        "Arrival_Time": 1424696660252,
+        "Creation_Time": 1424696658255402960,
+        "x": -0.012954712,
+        "y": -0.016647339,
+        "z": 0.0011901855,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2299,
+      2300
+    ],
+    "original_indices": [
+      "2300",
+      "2299"
+    ],
+    "creation_times": [
+      1424696658515077032,
+      1424696658508393682
+    ],
+    "original_rows": [
+      {
+        "Index": 2300,
+        "Arrival_Time": 1424696660505,
+        "Creation_Time": 1424696658515077032,
+        "x": -0.016159058,
+        "y": -0.089279175,
+        "z": 0.02041626,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2299,
+        "Arrival_Time": 1424696660505,
+        "Creation_Time": 1424696658508393682,
+        "x": -0.015090942,
+        "y": -0.08821106,
+        "z": 0.016143799,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6683350,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2359,
+      2360
+    ],
+    "original_indices": [
+      "2360",
+      "2359"
+    ],
+    "creation_times": [
+      1424696658814484991,
+      1424696658809449591
+    ],
+    "original_rows": [
+      {
+        "Index": 2360,
+        "Arrival_Time": 1424696660817,
+        "Creation_Time": 1424696658814484991,
+        "x": -0.019363403,
+        "y": -0.10850525,
+        "z": -0.0041503906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2359,
+        "Arrival_Time": 1424696660817,
+        "Creation_Time": 1424696658809449591,
+        "x": -0.019363403,
+        "y": -0.109573364,
+        "z": -0.0073547363,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2377,
+      2378
+    ],
+    "original_indices": [
+      "2378",
+      "2377"
+    ],
+    "creation_times": [
+      1424696658905700984,
+      1424696658899627986
+    ],
+    "original_rows": [
+      {
+        "Index": 2378,
+        "Arrival_Time": 1424696660897,
+        "Creation_Time": 1424696658905700984,
+        "x": -0.018295288,
+        "y": -0.04121399,
+        "z": 0.008666992,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2377,
+        "Arrival_Time": 1424696660897,
+        "Creation_Time": 1424696658899627986,
+        "x": -0.018295288,
+        "y": -0.04335022,
+        "z": 0.0075988769999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6072998,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2387,
+      2388
+    ],
+    "original_indices": [
+      "2388",
+      "2387"
+    ],
+    "creation_times": [
+      1424696658955200495,
+      1424696658949951472
+    ],
+    "original_rows": [
+      {
+        "Index": 2388,
+        "Arrival_Time": 1424696660945,
+        "Creation_Time": 1424696658955200495,
+        "x": -0.027908325,
+        "y": -0.05937195,
+        "z": 0.012939453,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2387,
+        "Arrival_Time": 1424696660945,
+        "Creation_Time": 1424696658949951472,
+        "x": -0.02684021,
+        "y": -0.057235718,
+        "z": 0.0065307617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5249023,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2395,
+      2396
+    ],
+    "original_indices": [
+      "2396",
+      "2395"
+    ],
+    "creation_times": [
+      1424696658995544734,
+      1424696658990265193
+    ],
+    "original_rows": [
+      {
+        "Index": 2396,
+        "Arrival_Time": 1424696660986,
+        "Creation_Time": 1424696658995544734,
+        "x": -0.02897644,
+        "y": -0.07539368,
+        "z": 0.030029297,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2395,
+        "Arrival_Time": 1424696660986,
+        "Creation_Time": 1424696658990265193,
+        "x": -0.030044556,
+        "y": -0.07646179,
+        "z": 0.027893066,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5279541,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2397,
+      2398
+    ],
+    "original_indices": [
+      "2398",
+      "2397"
+    ],
+    "creation_times": [
+      1424696659008697810,
+      1424696659001495661
+    ],
+    "original_rows": [
+      {
+        "Index": 2398,
+        "Arrival_Time": 1424696660999,
+        "Creation_Time": 1424696659008697810,
+        "x": -0.02470398,
+        "y": -0.07539368,
+        "z": 0.033233643,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2397,
+        "Arrival_Time": 1424696660999,
+        "Creation_Time": 1424696659001495661,
+        "x": -0.02684021,
+        "y": -0.07646179,
+        "z": 0.030029297,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7202149,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2405,
+      2406
+    ],
+    "original_indices": [
+      "2406",
+      "2405"
+    ],
+    "creation_times": [
+      1424696659049133601,
+      1424696659041870417
+    ],
+    "original_rows": [
+      {
+        "Index": 2406,
+        "Arrival_Time": 1424696661040,
+        "Creation_Time": 1424696659049133601,
+        "x": -0.015090942,
+        "y": -0.044418335,
+        "z": 0.019348145,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2405,
+        "Arrival_Time": 1424696661040,
+        "Creation_Time": 1424696659041870417,
+        "x": -0.018295288,
+        "y": -0.0561676029999999,
+        "z": 0.02255249,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7263184,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2458,
+      2459
+    ],
+    "original_indices": [
+      "2459",
+      "2458"
+    ],
+    "creation_times": [
+      1424696659315891637,
+      1424696659308720006
+    ],
+    "original_rows": [
+      {
+        "Index": 2459,
+        "Arrival_Time": 1424696661306,
+        "Creation_Time": 1424696659315891637,
+        "x": -0.008682251,
+        "y": -0.0059661865,
+        "z": 0.014007568,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2458,
+        "Arrival_Time": 1424696661306,
+        "Creation_Time": 1424696659308720006,
+        "x": -0.008682251,
+        "y": -0.0059661865,
+        "z": 0.017211914,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7171631,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2487,
+      2488
+    ],
+    "original_indices": [
+      "2488",
+      "2487"
+    ],
+    "creation_times": [
+      1424696659459171666,
+      1424696659453373326
+    ],
+    "original_rows": [
+      {
+        "Index": 2488,
+        "Arrival_Time": 1424696661450,
+        "Creation_Time": 1424696659459171666,
+        "x": -0.00440979,
+        "y": -0.0048980713,
+        "z": -0.015899658,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2487,
+        "Arrival_Time": 1424696661450,
+        "Creation_Time": 1424696659453373326,
+        "x": -0.00440979,
+        "y": -0.0048980713,
+        "z": -0.010559082,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5798340,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2527,
+      2528
+    ],
+    "original_indices": [
+      "2528",
+      "2527"
+    ],
+    "creation_times": [
+      1424696659660038366,
+      1424696659654972448
+    ],
+    "original_rows": [
+      {
+        "Index": 2528,
+        "Arrival_Time": 1424696661668,
+        "Creation_Time": 1424696659660038366,
+        "x": 0.025497437,
+        "y": -0.021987915,
+        "z": -0.0372619629999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2527,
+        "Arrival_Time": 1424696661668,
+        "Creation_Time": 1424696659654972448,
+        "x": 0.026565552,
+        "y": -0.021987915,
+        "z": -0.039398193,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2545,
+      2546
+    ],
+    "original_indices": [
+      "2546",
+      "2545"
+    ],
+    "creation_times": [
+      1424696659752079381,
+      1424696659745579137
+    ],
+    "original_rows": [
+      {
+        "Index": 2546,
+        "Arrival_Time": 1424696661742,
+        "Creation_Time": 1424696659752079381,
+        "x": 0.0019989014,
+        "y": -0.003829956,
+        "z": 0.0065307617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2545,
+        "Arrival_Time": 1424696661742,
+        "Creation_Time": 1424696659745579137,
+        "x": 0.0030670166,
+        "y": -0.003829956,
+        "z": 0.0065307617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6500244,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2555,
+      2556
+    ],
+    "original_indices": [
+      "2556",
+      "2555"
+    ],
+    "creation_times": [
+      1424696659800876989,
+      1424696659795780553
+    ],
+    "original_rows": [
+      {
+        "Index": 2556,
+        "Arrival_Time": 1424696661791,
+        "Creation_Time": 1424696659800876989,
+        "x": -0.0054779053,
+        "y": -0.013442993,
+        "z": 0.0150756839999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2555,
+        "Arrival_Time": 1424696661791,
+        "Creation_Time": 1424696659795780553,
+        "x": -0.00440979,
+        "y": -0.012374878,
+        "z": 0.011871338,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5096436,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2565,
+      2566
+    ],
+    "original_indices": [
+      "2566",
+      "2565"
+    ],
+    "creation_times": [
+      1424696659852909459,
+      1424696659846287145
+    ],
+    "original_rows": [
+      {
+        "Index": 2566,
+        "Arrival_Time": 1424696661843,
+        "Creation_Time": 1424696659852909459,
+        "x": 0.00093078613,
+        "y": -0.0070343018,
+        "z": -0.0009460449,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2565,
+        "Arrival_Time": 1424696661843,
+        "Creation_Time": 1424696659846287145,
+        "x": 0.00093078613,
+        "y": -0.0070343018,
+        "z": 0.0011901855,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6622314,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2575,
+      2576
+    ],
+    "original_indices": [
+      "2576",
+      "2575"
+    ],
+    "creation_times": [
+      1424696659902042760,
+      1424696659896519078
+    ],
+    "original_rows": [
+      {
+        "Index": 2576,
+        "Arrival_Time": 1424696661892,
+        "Creation_Time": 1424696659902042760,
+        "x": -0.0065460205,
+        "y": 0.008987427,
+        "z": 0.0054626465,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2575,
+        "Arrival_Time": 1424696661892,
+        "Creation_Time": 1424696659896519078,
+        "x": -0.0054779053,
+        "y": 0.008987427,
+        "z": 0.0054626465,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5523682,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2593,
+      2594
+    ],
+    "original_indices": [
+      "2594",
+      "2593"
+    ],
+    "creation_times": [
+      1424696659992405309,
+      1424696659987339391
+    ],
+    "original_rows": [
+      {
+        "Index": 2594,
+        "Arrival_Time": 1424696661985,
+        "Creation_Time": 1424696659992405309,
+        "x": -0.015090942,
+        "y": 0.0015106201,
+        "z": 0.027893066,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2593,
+        "Arrival_Time": 1424696661985,
+        "Creation_Time": 1424696659987339391,
+        "x": -0.016159058,
+        "y": 0.0025787354,
+        "z": 0.027893066,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5065918,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2645,
+      2646
+    ],
+    "original_indices": [
+      "2646",
+      "2645"
+    ],
+    "creation_times": [
+      1424696660257424239,
+      1424696660250161056
+    ],
+    "original_rows": [
+      {
+        "Index": 2646,
+        "Arrival_Time": 1424696662248,
+        "Creation_Time": 1424696660257424239,
+        "x": -0.0054779053,
+        "y": 0.020736694,
+        "z": 0.00012207031,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2645,
+        "Arrival_Time": 1424696662248,
+        "Creation_Time": 1424696660250161056,
+        "x": -0.0065460205,
+        "y": 0.025009155,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7263183,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2655,
+      2656
+    ],
+    "original_indices": [
+      "2656",
+      "2655"
+    ],
+    "creation_times": [
+      1424696660306069259,
+      1424696660299416427
+    ],
+    "original_rows": [
+      {
+        "Index": 2656,
+        "Arrival_Time": 1424696662297,
+        "Creation_Time": 1424696660306069259,
+        "x": -0.0054779053,
+        "y": 0.005783081,
+        "z": 0.009735107,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2655,
+        "Arrival_Time": 1424696662297,
+        "Creation_Time": 1424696660299416427,
+        "x": -0.00440979,
+        "y": 0.005783081,
+        "z": 0.0065307617,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6652832,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2693,
+      2694
+    ],
+    "original_indices": [
+      "2694",
+      "2693"
+    ],
+    "creation_times": [
+      1424696660495858077,
+      1424696660490822677
+    ],
+    "original_rows": [
+      {
+        "Index": 2694,
+        "Arrival_Time": 1424696662488,
+        "Creation_Time": 1424696660495858077,
+        "x": -0.0001373291,
+        "y": 0.005783081,
+        "z": -0.006286621,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2693,
+        "Arrival_Time": 1424696662488,
+        "Creation_Time": 1424696660490822677,
+        "x": 0.00093078613,
+        "y": 0.0068511963,
+        "z": -0.0052185059999999,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035400,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2701,
+      2702
+    ],
+    "original_indices": [
+      "2702",
+      "2701"
+    ],
+    "creation_times": [
+      1424696660536141281,
+      1424696660531105880
+    ],
+    "original_rows": [
+      {
+        "Index": 2702,
+        "Arrival_Time": 1424696662532,
+        "Creation_Time": 1424696660536141281,
+        "x": -0.00440979,
+        "y": 0.00044250488,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2701,
+        "Arrival_Time": 1424696662532,
+        "Creation_Time": 1424696660531105880,
+        "x": -0.0033416747999999,
+        "y": -0.00062561035,
+        "z": 0.0022583008,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5035401,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2714,
+      2715
+    ],
+    "original_indices": [
+      "2715",
+      "2714"
+    ],
+    "creation_times": [
+      1424696660604683761,
+      1424696660597237472
+    ],
+    "original_rows": [
+      {
+        "Index": 2715,
+        "Arrival_Time": 1424696662596,
+        "Creation_Time": 1424696660604683761,
+        "x": -0.0076141356999999,
+        "y": 0.012191772,
+        "z": 0.009735107,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2714,
+        "Arrival_Time": 1424696662596,
+        "Creation_Time": 1424696660597237472,
+        "x": -0.009750366,
+        "y": 0.012191772,
+        "z": 0.008666992,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 7446289,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2823,
+      2824
+    ],
+    "original_indices": [
+      "2824",
+      "2823"
+    ],
+    "creation_times": [
+      1424696661152352218,
+      1424696661145546798
+    ],
+    "original_rows": [
+      {
+        "Index": 2824,
+        "Arrival_Time": 1424696663143,
+        "Creation_Time": 1424696661152352218,
+        "x": 0.005203247,
+        "y": -0.003829956,
+        "z": -0.009490967,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2823,
+        "Arrival_Time": 1424696663143,
+        "Creation_Time": 1424696661145546798,
+        "x": 0.0073394775,
+        "y": -0.0059661865,
+        "z": -0.009490967,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 6805420,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  },
+  {
+    "sensor": "gyro",
+    "original_positions": [
+      2960,
+      2961
+    ],
+    "original_indices": [
+      "2961",
+      "2960"
+    ],
+    "creation_times": [
+      1424696661880765530,
+      1424696661875547024
+    ],
+    "original_rows": [
+      {
+        "Index": 2961,
+        "Arrival_Time": 1424696663872,
+        "Creation_Time": 1424696661880765530,
+        "x": -0.0033416747999999,
+        "y": -0.0016937256,
+        "z": -0.0041503906,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      },
+      {
+        "Index": 2960,
+        "Arrival_Time": 1424696663872,
+        "Creation_Time": 1424696661875547024,
+        "x": -0.0022735596,
+        "y": -0.0027618408,
+        "z": -0.0030822754,
+        "User": "a",
+        "Model": "nexus4",
+        "Device": "nexus4_1",
+        "gt": "stand"
+      }
+    ],
+    "backward_displacement_ns": 5218506,
+    "evidence": "Index decrement by one, equal Arrival_Time, bounded backward Creation_Time, local swap restores order"
+  }
+]
