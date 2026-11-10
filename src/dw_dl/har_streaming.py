@@ -7,12 +7,21 @@ import json
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Iterable
+from dataclasses import asdict, replace
 
 import numpy as np
 import pandas as pd
 
-from .har_preprocessing import GROUP_COLUMNS, repair_adjacent_swaps
+from .har_preprocessing import (
+    GROUP_COLUMNS,
+    PreprocessingConfig,
+    Rejection,
+    align_sensor_segments,
+    generate_windows,
+    repair_adjacent_swaps,
+    split_at_interpolation_gaps,
+    split_sensor_segments,
+)
 
 REQUIRED_METADATA_FIELDS = frozenset(
     {
@@ -37,6 +46,9 @@ class ChunkRepairState:
     """Per-group look-behind state for the provisional adjacent-swap repair."""
 
     pending_rows: dict[tuple[str, str, str, str], list[pd.Series]] = field(default_factory=dict)
+    pending_positions: dict[tuple[str, str, str, str], list[int]] = field(default_factory=dict)
+    group_row_counts: dict[tuple[str, str, str], int] = field(default_factory=dict)
+    last_emitted_rows: dict[tuple[str, str, str, str], pd.Series] = field(default_factory=dict)
     pending_eligible_pair: dict[tuple[str, str, str, str], bool] = field(default_factory=dict)
     group_context: dict[tuple[str, str, str], tuple[str, str]] = field(default_factory=dict)
     boundary_context: dict[tuple[str, str, str], str] = field(default_factory=dict)
@@ -51,27 +63,56 @@ class ChunkRepairState:
         for _, row in chunk.iterrows():
             group_key = tuple(str(row[column]) for column in GROUP_COLUMNS)
             boundary = self._boundary_token(row)
+            source_position = self.group_row_counts.get(group_key, 0)
+            self.group_row_counts[group_key] = source_position + 1
             previous_boundary = self.boundary_context.get(group_key)
             if previous_boundary is not None and previous_boundary != boundary:
                 old_key = (*group_key, previous_boundary)
                 emitted.extend(self.pending_rows.pop(old_key, []))
+                self.pending_positions.pop(old_key, None)
                 self.pending_eligible_pair.pop(old_key, None)
             self.boundary_context[group_key] = boundary
             key = (*group_key, boundary)
             buffer = self.pending_rows.setdefault(key, [])
+            positions = self.pending_positions.setdefault(key, [])
             buffer.append(row.copy())
+            positions.append(source_position)
             self.group_context[group_key] = (sensor, boundary)
             if len(buffer) < 3:
                 self._update_pending_flag(key)
                 continue
-            candidate = pd.DataFrame(buffer)
+            context = self.last_emitted_rows.get(key)
+            candidate = pd.DataFrame(([context] if context is not None else []) + buffer)
             repaired, candidate_records = repair_adjacent_swaps(candidate, sensor)
-            emitted.append(repaired.iloc[0].copy())
-            records.extend(candidate_records)
-            self.pending_rows[key] = [
-                repaired.iloc[1].copy(),
-                repaired.iloc[2].copy(),
-            ]
+            offset = 1 if context is not None else 0
+            pair_record = next(
+                (
+                    record for record in candidate_records
+                    if record.original_positions == (offset, offset + 1)
+                ),
+                None,
+            )
+            if pair_record is not None:
+                emitted.extend(
+                    repaired.iloc[index].copy() for index in (offset, offset + 1)
+                )
+                self.last_emitted_rows[key] = repaired.iloc[offset + 1].copy()
+                records.append(
+                    replace(
+                        pair_record,
+                        original_positions=(
+                            positions[0],
+                            positions[1],
+                        ),
+                    )
+                )
+                self.pending_rows[key] = buffer[2:]
+                self.pending_positions[key] = positions[2:]
+            else:
+                emitted.append(buffer[0].copy())
+                self.last_emitted_rows[key] = buffer[0].copy()
+                self.pending_rows[key] = buffer[1:]
+                self.pending_positions[key] = positions[1:]
             self._update_pending_flag(key)
         if not emitted:
             return chunk.iloc[0:0].copy(), records
@@ -82,15 +123,32 @@ class ChunkRepairState:
         records: list[object] = []
         for key in list(self.pending_rows):
             buffer = self.pending_rows.pop(key)
+            positions = self.pending_positions.pop(key)
             if buffer:
-                repaired, candidate_records = repair_adjacent_swaps(
-                    pd.DataFrame(buffer), sensor
+                context = self.last_emitted_rows.get(key)
+                candidate = pd.DataFrame(([context] if context is not None else []) + buffer)
+                repaired, candidate_records = repair_adjacent_swaps(candidate, sensor)
+                offset = 1 if context is not None else 0
+                emitted.extend(
+                    repaired.iloc[index].copy()
+                    for index in range(offset, len(repaired))
                 )
-                emitted.extend(repaired.iloc[index].copy() for index in range(len(repaired)))
-                records.extend(candidate_records)
+                records.extend(
+                    replace(
+                        record,
+                        original_positions=(
+                            positions[record.original_positions[0] - offset],
+                            positions[record.original_positions[1] - offset],
+                        ),
+                    )
+                    for record in candidate_records
+                    if record.original_positions[0] >= offset
+                )
             self.pending_eligible_pair.pop(key, None)
             self.group_context.pop(key[:3], None)
             self.boundary_context.pop(key[:3], None)
+            self.group_row_counts.pop(key[:3], None)
+            self.last_emitted_rows.pop(key, None)
         if not emitted:
             return pd.DataFrame(), records
         return pd.DataFrame(emitted), records
@@ -291,3 +349,150 @@ class CheckpointStore:
                 raise RuntimeError("output exists without checkpoint")
             return None
         return self.load_validated(manifest_path)
+
+
+def _read_repaired_stream(
+    path: Path,
+    sensor: str,
+    chunk_size: int,
+) -> tuple[pd.DataFrame, list[object]]:
+    state = ChunkRepairState()
+    emitted: list[pd.DataFrame] = []
+    records: list[object] = []
+    for chunk in pd.read_csv(path, chunksize=chunk_size):
+        rows, chunk_records = state.process_chunk(chunk, sensor)
+        if not rows.empty:
+            emitted.append(rows)
+        records.extend(chunk_records)
+    tail, tail_records = state.finish(sensor)
+    if not tail.empty:
+        emitted.append(tail)
+    records.extend(tail_records)
+    if not emitted:
+        return pd.read_csv(path, nrows=0), records
+    return pd.concat(emitted, ignore_index=True), records
+
+
+def preprocess_saved_fixture_streaming(
+    fixture_directory: Path,
+    output_directory: Path,
+    config: PreprocessingConfig = PreprocessingConfig(),
+    chunk_size: int = 25_000,
+) -> dict[str, object]:
+    """Run the existing fixture semantics through bounded streaming components."""
+    if chunk_size < 1:
+        raise ValueError("chunk_size must be positive")
+    streams: dict[str, pd.DataFrame] = {}
+    repaired_blocks: list[object] = []
+    for sensor, filename in (("acc", "accelerometer.csv"), ("gyro", "gyroscope.csv")):
+        streams[sensor], records = _read_repaired_stream(
+            fixture_directory / filename, sensor, chunk_size
+        )
+        repaired_blocks.extend(records)
+
+    groups = set(
+        map(
+            tuple,
+            streams["acc"][list(GROUP_COLUMNS)].drop_duplicates().astype(str).to_numpy(),
+        )
+    ) & set(
+        map(
+            tuple,
+            streams["gyro"][list(GROUP_COLUMNS)].drop_duplicates().astype(str).to_numpy(),
+        )
+    )
+    writer = CompressedShardWriter(output_directory)
+    rejections: list[Rejection] = []
+    filter_states = {"acc": FilterState(), "gyro": FilterState()}
+    window_index = 0
+    for group in sorted(groups):
+        group_frames = {
+            sensor: streams[sensor][
+                (streams[sensor]["User"].astype(str) == group[0])
+                & (streams[sensor]["Model"].astype(str) == group[1])
+                & (streams[sensor]["Device"].astype(str) == group[2])
+            ].reset_index(drop=True)
+            for sensor in ("acc", "gyro")
+        }
+        sessions: dict[str, list[object]] = {}
+        for sensor in ("acc", "gyro"):
+            sessions[sensor], session_rejections = split_sensor_segments(
+                group_frames[sensor], config
+            )
+            rejections.extend(session_rejections)
+        for acc_session in sessions["acc"]:
+            for gyro_session in sessions["gyro"]:
+                acc_fragments = split_at_interpolation_gaps(acc_session, config)
+                gyro_fragments = split_at_interpolation_gaps(gyro_session, config)
+                for acc_segment in acc_fragments:
+                    filter_states["acc"].begin_segment(str(acc_segment.segment_id))
+                    for gyro_segment in gyro_fragments:
+                        filter_states["gyro"].begin_segment(str(gyro_segment.segment_id))
+                        timestamps, values, labels, alignment_rejections = align_sensor_segments(
+                            acc_segment, gyro_segment, config, group
+                        )
+                        rejections.extend(alignment_rejections)
+                        if len(timestamps) == 0:
+                            continue
+                        windows, window_labels, metadata, window_rejections = generate_windows(
+                            timestamps, values, labels, group,
+                            f"{acc_segment.segment_id}_{gyro_segment.segment_id}", config
+                        )
+                        rejections.extend(window_rejections)
+                        overlap_buffer = WindowOverlapBuffer(
+                            config.samples_per_window, config.step_samples
+                        )
+                        streamed_windows = overlap_buffer.append(values, labels)
+                        if len(streamed_windows) != len(windows):
+                            raise RuntimeError("streaming overlap buffer disagrees with baseline window count")
+                        for streamed, baseline in zip(streamed_windows, windows):
+                            if not np.array_equal(streamed[0], baseline):
+                                raise RuntimeError("streaming overlap buffer changed window samples")
+                        for window, label, item in zip(windows, window_labels, metadata):
+                            trace = {
+                                "shard_sequence": 0,
+                                "window_index": window_index,
+                                "user": item["User"],
+                                "model": item["Model"],
+                                "device": item["Device"],
+                                "source_segment_ids": [str(acc_segment.segment_id), str(gyro_segment.segment_id)],
+                                "start_timestamp_raw": item["start_timestamp_raw"],
+                                "end_timestamp_raw": item["end_timestamp_raw"],
+                                "label": label,
+                                "config_version": "har-streaming-fixture-v1",
+                            }
+                            writer.append(window, label, trace)
+                            window_index += 1
+    writer.close()
+    manifest_path = output_directory / "shard_manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else {"shards": []}
+    if manifest["shards"]:
+        last = manifest["shards"][-1]
+        CheckpointStore(output_directory / "checkpoint.json").save(
+            Checkpoint(
+                input_position=0,
+                last_committed_sequence=last["sequence"],
+                last_committed_sha256=last["sha256"],
+            )
+        )
+    rejection_counts = pd.Series(
+        [item.reason for item in rejections], dtype="string"
+    ).value_counts().to_dict()
+    output_directory.mkdir(parents=True, exist_ok=True)
+    (output_directory / "repaired_blocks.json").write_text(
+        json.dumps([asdict(record) for record in repaired_blocks], indent=2),
+        encoding="utf-8",
+    )
+    summary = {
+        "status": "complete" if window_index else "no_accepted_windows",
+        "accepted_windows": window_index,
+        "window_shape": [128, 6] if window_index else [0, 0, 6],
+        "groups_processed": [list(group) for group in sorted(groups)],
+        "rejections": rejection_counts,
+        "repaired_block_count": len(repaired_blocks),
+        "output_directory": str(output_directory),
+    }
+    (output_directory / "stream_summary.json").write_text(
+        json.dumps(summary, indent=2), encoding="utf-8"
+    )
+    return summary

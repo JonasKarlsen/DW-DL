@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -22,6 +23,8 @@ from dw_dl.har_streaming import (
     CompressedShardWriter,
     FilterState,
     WindowOverlapBuffer,
+    _read_repaired_stream,
+    preprocess_saved_fixture_streaming,
 )
 
 
@@ -526,3 +529,72 @@ def test_incomplete_metadata_is_rejected(tmp_path):
         assert "metadata" in str(error)
     else:
         raise AssertionError("incomplete metadata was accepted")
+
+
+FIXTURE_DIRECTORY = Path("code/har_smoke_fixture_v2")
+V2_OUTPUT = Path("code/har_smoke_preprocessed_repaired_v2")
+
+
+def test_streaming_fixture_repair_matches_existing_path():
+    original = pd.read_csv(FIXTURE_DIRECTORY / "accelerometer.csv")
+    streamed, records = _read_repaired_stream(
+        FIXTURE_DIRECTORY / "accelerometer.csv", "acc", chunk_size=101
+    )
+    expected, expected_records = repair_adjacent_swaps(original, "acc")
+    pd.testing.assert_frame_equal(streamed, expected)
+    assert [record.original_rows for record in records] == [
+        record.original_rows for record in expected_records
+    ]
+
+
+def test_streaming_fixture_filter_resets_preserve_segment_boundaries(tmp_path):
+    summary = preprocess_saved_fixture_streaming(
+        FIXTURE_DIRECTORY, tmp_path / "streamed", chunk_size=101
+    )
+    assert summary["accepted_windows"] == 2
+    assert summary["rejections"] == json.loads(
+        (V2_OUTPUT / "rejections.json").read_text()
+    )
+
+
+def test_streaming_fixture_overlap_matches_two_v2_windows(tmp_path):
+    output = tmp_path / "streamed"
+    preprocess_saved_fixture_streaming(FIXTURE_DIRECTORY, output, chunk_size=101)
+    with np.load(output / "windows-000000.npz") as shard:
+        streamed = shard["X"]
+    expected = np.load(V2_OUTPUT / "X_raw.npy")
+    assert streamed.shape == (2, 128, 6)
+    np.testing.assert_array_equal(streamed, expected)
+
+
+def test_streaming_fixture_shard_contains_exactly_two_windows(tmp_path):
+    output = tmp_path / "streamed"
+    preprocess_saved_fixture_streaming(FIXTURE_DIRECTORY, output, chunk_size=101)
+    manifest = json.loads((output / "shard_manifest.json").read_text())
+    assert len(manifest["shards"]) == 1
+    assert manifest["shards"][0]["window_count"] == 2
+
+
+def test_streaming_fixture_checkpoint_resume_has_no_duplicates(tmp_path):
+    output = tmp_path / "streamed"
+    preprocess_saved_fixture_streaming(FIXTURE_DIRECTORY, output, chunk_size=101)
+    store = CheckpointStore(output / "checkpoint.json")
+    checkpoint = store.load_validated(output / "shard_manifest.json")
+    assert checkpoint.last_committed_sequence == 0
+    with np.load(output / "windows-000000.npz") as shard:
+        assert shard["X"].shape[0] == 2
+
+
+def test_streaming_fixture_metadata_matches_v2_semantics(tmp_path):
+    output = tmp_path / "streamed"
+    preprocess_saved_fixture_streaming(FIXTURE_DIRECTORY, output, chunk_size=101)
+    with np.load(output / "windows-000000.npz") as shard:
+        records = [json.loads(item) for item in shard["metadata"]]
+        assert shard["labels"].tolist() == ["stand", "stand"]
+    expected = pd.read_csv(V2_OUTPUT / "metadata.csv")
+    assert [record["source_segment_ids"] for record in records] == [
+        ["2.0", "1.0"], ["2.1", "1.1"]
+    ]
+    assert [record["start_timestamp_raw"] for record in records] == (
+        expected["start_timestamp_raw"].tolist()
+    )
