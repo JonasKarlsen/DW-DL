@@ -598,3 +598,128 @@ def test_streaming_fixture_metadata_matches_v2_semantics(tmp_path):
     assert [record["start_timestamp_raw"] for record in records] == (
         expected["start_timestamp_raw"].tolist()
     )
+
+
+def _write_unequal_rate_fixture(directory: Path) -> tuple[Path, float, float]:
+    directory.mkdir()
+    rows_by_sensor = {}
+    rates = {"accelerometer.csv": 100.0, "gyroscope.csv": 80.0}
+    for filename, rate in rates.items():
+        seconds = np.arange(0, 6, 1 / rate)
+        seconds = seconds[(seconds < 3.0) | (seconds >= 3.5)]
+        timestamps = np.rint(seconds * 1_000_000_000).astype(np.int64)
+        rows_by_sensor[filename] = pd.DataFrame(
+            {
+                "Index": np.arange(len(seconds)),
+                "Arrival_Time": timestamps // 1_000_000,
+                "Creation_Time": timestamps,
+                "x": np.sin(seconds),
+                "y": np.cos(seconds),
+                "z": seconds,
+                "User": "synthetic",
+                "Model": "unequal",
+                "Device": "paired-1",
+                "gt": "walk",
+            }
+        )
+        rows_by_sensor[filename].to_csv(directory / filename, index=False)
+    return directory, rates["accelerometer.csv"], rates["gyroscope.csv"]
+
+
+def test_unequal_rate_fixture_reaches_same_50_hz_grid(tmp_path):
+    fixture, acc_rate, gyro_rate = _write_unequal_rate_fixture(tmp_path / "fixture")
+    config = PreprocessingConfig(minimum_segment_overlap_seconds=2.56)
+    acc_frame = pd.read_csv(fixture / "accelerometer.csv")
+    gyro_frame = pd.read_csv(fixture / "gyroscope.csv")
+    acc = split_at_interpolation_gaps(
+        split_sensor_segments(acc_frame, config)[0][0], config
+    )[0]
+    gyro = split_at_interpolation_gaps(
+        split_sensor_segments(gyro_frame, config)[0][0], config
+    )[0]
+    timestamps, values, _, rejections = align_sensor_segments(
+        acc, gyro, config
+    )
+    assert acc_rate != gyro_rate
+    assert not rejections
+    assert np.median(np.diff(timestamps)) == 20_000_000
+    assert values.shape[1] == 6
+    assert timestamps[0] == max(acc.timestamp[0], gyro.timestamp[0])
+    assert timestamps[-1] <= min(acc.timestamp[-1], gyro.timestamp[-1])
+    assert timestamps[0] == 0
+    assert timestamps[0] % 20_000_000 == 0
+
+
+def test_unequal_rate_alignment_stays_inside_source_intersection():
+    config = PreprocessingConfig(minimum_segment_overlap_seconds=2.56)
+    acc = _segment(100, offset=0.0, duration=4.0)
+    gyro = _segment(80, offset=0.5, duration=4.0)
+    timestamps, _, _, rejections = align_sensor_segments(acc, gyro, config)
+    assert not rejections
+    assert timestamps[0] >= gyro.timestamp[0]
+    assert timestamps[-1] <= acc.timestamp[-1]
+    assert timestamps[-1] <= gyro.timestamp[-1]
+
+
+def test_unequal_rate_filter_state_resets_between_fragments():
+    config = PreprocessingConfig(interpolation_gap_seconds=0.25)
+    timestamps = np.r_[
+        np.arange(0, 3, 0.01),
+        np.arange(3.5, 6, 0.01),
+    ]
+    frame = pd.DataFrame(
+        {
+            "Creation_Time": np.rint(timestamps * 1_000_000_000).astype(np.int64),
+            "x": np.sin(timestamps),
+            "y": np.cos(timestamps),
+            "z": timestamps,
+            "gt": "walk",
+        }
+    )
+    sessions, _ = split_sensor_segments(frame, config)
+    fragments = split_at_interpolation_gaps(sessions[0], config)
+    state = FilterState()
+    for fragment in fragments:
+        state.begin_segment(str(fragment.segment_id))
+    assert len(fragments) == 2
+    assert state.reset_count == 2
+    assert fragments[0].timestamp[-1] < 3_000_000_000
+    assert fragments[1].timestamp[0] >= 3_500_000_000
+
+
+def test_unequal_rate_gap_blocks_cross_gap_windows(tmp_path):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    output = tmp_path / "output"
+    summary = preprocess_saved_fixture_streaming(fixture, output, chunk_size=37)
+    assert summary["accepted_windows"] == 1
+    assert summary["rejections"]["insufficient_intersection"] == 3
+    with np.load(output / "windows-000000.npz") as shard:
+        record = json.loads(shard["metadata"][0])
+        assert record["source_segment_ids"] == ["0.0", "0.0"]
+        assert record["end_timestamp_raw"] < 3_000_000_000
+
+
+def test_unequal_rate_metadata_has_traceable_source_fields(tmp_path):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    output = tmp_path / "output"
+    preprocess_saved_fixture_streaming(fixture, output, chunk_size=37)
+    with np.load(output / "windows-000000.npz") as shard:
+        record = json.loads(shard["metadata"][0])
+    assert record["source_segment_ids"] == ["0.0", "0.0"]
+    assert record["start_timestamp_raw"] < record["end_timestamp_raw"]
+    assert record["label"] == "walk"
+    assert record["user"] == "synthetic"
+    assert record["config_version"] == "har-streaming-fixture-v1"
+    assert record["source_segment_ids"] == ["0.0", "0.0"]
+    assert "start_timestamp_raw" in record
+    assert "end_timestamp_raw" in record
+
+
+def test_unequal_rate_shard_has_one_finite_window(tmp_path):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    output = tmp_path / "output"
+    preprocess_saved_fixture_streaming(fixture, output, chunk_size=37)
+    with np.load(output / "windows-000000.npz") as shard:
+        assert shard["X"].shape == (1, 128, 6)
+        assert np.isfinite(shard["X"]).all()
+        assert shard["labels"].tolist() == ["walk"]
