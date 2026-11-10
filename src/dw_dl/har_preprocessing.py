@@ -66,6 +66,7 @@ class SensorSegment:
     segment_id: int
     start_raw: int
     end_raw: int
+    source_positions: np.ndarray | None = None
 
 
 @dataclass
@@ -215,11 +216,25 @@ def split_sensor_segments(
             ts = ts[order]
             vals = values[valid_indices][order]
             labs = labels[valid_indices][order]
+            positions = valid_indices[order]
             unique = np.r_[True, np.diff(ts) > 0]
-            ts, vals, labs = ts[unique], vals[unique], labs[unique]
+            ts, vals, labs, positions = (
+                ts[unique],
+                vals[unique],
+                labs[unique],
+                positions[unique],
+            )
             if len(ts) >= 2:
                 segments.append(
-                    SensorSegment(ts, vals, labs, segment_id, int(ts[0]), int(ts[-1]))
+                    SensorSegment(
+                        ts,
+                        vals,
+                        labs,
+                        segment_id,
+                        int(ts[0]),
+                        int(ts[-1]),
+                        positions,
+                    )
                 )
                 segment_id += 1
         start = None
@@ -354,7 +369,11 @@ def align_sensor_segments(
     acc_labels = _label_at(acc.timestamp, acc.labels, target, config.interpolation_gap_seconds)
     gyro_labels = _label_at(gyro.timestamp, gyro.labels, target, config.interpolation_gap_seconds)
     labels = np.where(acc_labels == gyro_labels, acc_labels, "")
-    labels[(acc_labels == "") | (gyro_labels == "")] = ""
+    missing = (acc_labels == "") | (gyro_labels == "")
+    disagreement = (acc_labels != gyro_labels) & ~missing
+    if np.any(disagreement):
+        rejection.append(Rejection("sensor_label_disagreement", *key))
+    labels[missing | disagreement] = ""
     return target, np.column_stack((acc_values, gyro_values)).astype(np.float32), labels, rejection
 
 
@@ -382,6 +401,11 @@ def split_at_interpolation_gaps(
                 f"{segment.segment_id}.{sub_id}",
                 int(timestamps[0]),
                 int(timestamps[-1]),
+                (
+                    segment.source_positions[start:end]
+                    if segment.source_positions is not None
+                    else None
+                ),
             )
         )
     return result

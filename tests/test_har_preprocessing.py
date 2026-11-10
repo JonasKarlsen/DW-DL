@@ -1,8 +1,10 @@
+import gzip
 import json
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import pytest
 
 from dw_dl.har_preprocessing import (
     PreprocessingConfig,
@@ -19,13 +21,18 @@ from dw_dl.har_preprocessing import (
 from dw_dl.har_streaming import (
     Checkpoint,
     CheckpointStore,
+    BoundedStage2Config,
+    STAGE2_RSS_LIMIT_BYTES,
     ChunkRepairState,
     CompressedShardWriter,
     FilterState,
     WindowOverlapBuffer,
     _read_repaired_stream,
+    interval_sweep_overlaps,
+    preprocess_stage2_validation,
     preprocess_saved_fixture_streaming,
 )
+import dw_dl.har_streaming as har_streaming
 
 
 def _segment(rate: float, offset: float = 0.0, duration: float = 8.0) -> SensorSegment:
@@ -723,3 +730,130 @@ def test_unequal_rate_shard_has_one_finite_window(tmp_path):
         assert shard["X"].shape == (1, 128, 6)
         assert np.isfinite(shard["X"]).all()
         assert shard["labels"].tolist() == ["walk"]
+
+
+def test_stage2_validation_uses_selected_group_and_records_provenance(tmp_path):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    output = tmp_path / "stage2"
+    summary = preprocess_stage2_validation(
+        fixture / "accelerometer.csv",
+        fixture / "gyroscope.csv",
+        output,
+        chunk_size=37,
+    )
+    assert summary["validation_only"] is True
+    assert summary["accepted_windows"] == 1
+    assert summary["pair_comparisons"] == 2
+    assert summary["shard_count"] == 1
+    with np.load(output / "windows-000000.npz") as shard:
+        record = json.loads(shard["metadata"][0])
+        assert shard["X"].shape == (1, 128, 6)
+        assert np.isfinite(shard["X"]).all()
+    assert record["source_segment_ids"] == ["0.0", "0.0"]
+    assert record["source_traceability_ref"]
+    assert record["config_version"] == "har-stage2-bounded-v1"
+    assert record["end_timestamp_raw"] < 3_000_000_000
+
+
+def test_stage2_validation_rejects_sensor_label_disagreement(tmp_path):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    for filename in ("accelerometer.csv", "gyroscope.csv"):
+        frame = pd.read_csv(fixture / filename)
+        if filename == "gyroscope.csv":
+            frame.loc[100:160, "gt"] = "sit"
+        frame.to_csv(fixture / filename, index=False)
+    output = tmp_path / "stage2"
+    summary = preprocess_stage2_validation(
+        fixture / "accelerometer.csv",
+        fixture / "gyroscope.csv",
+        output,
+        chunk_size=37,
+    )
+    assert summary["accepted_windows"] == 0
+    assert summary["rejections"]["sensor_label_disagreement"] >= 1
+
+
+def test_stage2_validation_does_not_create_cross_user_split_leakage():
+    splits = make_subject_splits(["u1", "u2", "u3", "u4"], seed=4786)
+    by_split = {}
+    for user, split in splits.items():
+        by_split.setdefault(split, set()).add(user)
+    assert sum(len(users) for users in by_split.values()) == len(splits)
+    assert not (by_split["train"] & by_split["val"])
+    assert not (by_split["train"] & by_split["test"])
+    assert not (by_split["val"] & by_split["test"])
+
+
+def test_interval_sweep_returns_only_overlapping_pairs():
+    left = [_segment(100, duration=3), _segment(100, offset=10, duration=3)]
+    right = [_segment(100, offset=1, duration=3), _segment(100, offset=20, duration=1)]
+    pairs = interval_sweep_overlaps(left, right)
+    assert len(pairs) == 1
+    assert pairs[0][0] is left[0]
+    assert pairs[0][1] is right[0]
+
+
+def test_stage2_rejects_fragments_above_supported_filter_length(tmp_path):
+    fixture = FIXTURE_DIRECTORY
+    output = tmp_path / "stage2"
+    summary = preprocess_stage2_validation(
+        fixture / "accelerometer.csv",
+        fixture / "gyroscope.csv",
+        output,
+        chunk_size=37,
+        stage2_config=BoundedStage2Config(max_in_memory_fragment_samples=10),
+    )
+    assert summary["accepted_windows"] == 0
+    assert summary["rejections"]["fragment_exceeds_supported_filter_length"] >= 1
+    assert not (output / "shard_manifest.json").exists()
+    with gzip.open(output / "repair_provenance.jsonl.gz", "rt", encoding="utf-8") as handle:
+        assert sum(1 for _ in handle) == 173
+
+
+def test_stage2_rss_guard_fails_closed(tmp_path, monkeypatch):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    output = tmp_path / "stage2"
+    monkeypatch.setattr(
+        har_streaming,
+        "process_rss_bytes",
+        lambda: STAGE2_RSS_LIMIT_BYTES + 1,
+    )
+    with pytest.raises(MemoryError):
+        preprocess_stage2_validation(
+            fixture / "accelerometer.csv",
+            fixture / "gyroscope.csv",
+            output,
+            selected_groups={("synthetic", "unequal", "paired-1")},
+            chunk_size=37,
+        )
+    failure = json.loads((output / "stage2_failure.json").read_text())
+    assert failure["status"] == "failed_closed"
+
+
+def test_bounded_stage2_matches_v2_oracle(tmp_path):
+    output = tmp_path / "stage2"
+    summary = preprocess_stage2_validation(
+        FIXTURE_DIRECTORY / "accelerometer.csv",
+        FIXTURE_DIRECTORY / "gyroscope.csv",
+        output,
+        chunk_size=101,
+    )
+    assert summary["accepted_windows"] == 2
+    with np.load(output / "windows-000000.npz") as shard:
+        expected_x = np.load(V2_OUTPUT / "X_raw.npy")
+        expected_metadata = pd.read_csv(V2_OUTPUT / "metadata.csv")
+        records = [json.loads(value) for value in shard["metadata"]]
+        np.testing.assert_array_equal(shard["X"], expected_x)
+        assert shard["labels"].tolist() == expected_metadata["label"].tolist()
+    assert [
+        (item["start_timestamp_raw"], item["end_timestamp_raw"])
+        for item in records
+    ] == list(
+        zip(
+            expected_metadata["start_timestamp_raw"],
+            expected_metadata["end_timestamp_raw"],
+        )
+    )
+    assert [item["source_segment_ids"] for item in records] == [
+        ["2.0", "1.0"], ["2.1", "1.1"]
+    ]
