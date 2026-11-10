@@ -9,8 +9,10 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
+import os
 import statistics
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
@@ -18,6 +20,55 @@ from pathlib import Path
 from typing import Iterable
 
 import pandas as pd
+
+
+def process_rss_bytes() -> int:
+    """Return current process RSS without adding a runtime dependency."""
+    if os.name == "nt":
+        import ctypes
+        from ctypes import wintypes
+
+        class PROCESS_MEMORY_COUNTERS(ctypes.Structure):
+            _fields_ = [
+                ("cb", wintypes.DWORD),
+                ("PageFaultCount", wintypes.DWORD),
+                ("PeakWorkingSetSize", ctypes.c_size_t),
+                ("WorkingSetSize", ctypes.c_size_t),
+                ("QuotaPeakPagedPoolUsage", ctypes.c_size_t),
+                ("QuotaPagedPoolUsage", ctypes.c_size_t),
+                ("QuotaPeakNonPagedPoolUsage", ctypes.c_size_t),
+                ("QuotaNonPagedPoolUsage", ctypes.c_size_t),
+                ("PagefileUsage", ctypes.c_size_t),
+                ("PeakPagefileUsage", ctypes.c_size_t),
+            ]
+
+        counters = PROCESS_MEMORY_COUNTERS()
+        counters.cb = ctypes.sizeof(counters)
+        handle = ctypes.windll.kernel32.GetCurrentProcess()
+        get_info = ctypes.windll.psapi.GetProcessMemoryInfo
+        get_info.argtypes = [
+            wintypes.HANDLE,
+            ctypes.POINTER(PROCESS_MEMORY_COUNTERS),
+            wintypes.DWORD,
+        ]
+        get_info.restype = wintypes.BOOL
+        if not get_info(handle, ctypes.byref(counters), counters.cb):
+            raise OSError("GetProcessMemoryInfo failed")
+        return int(counters.WorkingSetSize)
+    import resource
+
+    return int(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * 1024)
+
+
+def _check_rss(max_rss_bytes: int, peak: int) -> int:
+    current = process_rss_bytes()
+    peak = max(peak, current)
+    if current > max_rss_bytes:
+        raise MemoryError(
+            f"process RSS {current / 2**20:.1f} MiB exceeds "
+            f"limit {max_rss_bytes / 2**20:.1f} MiB"
+        )
+    return peak
 
 
 GROUP_COLUMNS = ("User", "Model", "Device")
@@ -296,6 +347,9 @@ def _read_groups(
     sensor: str,
     chunk_size: int,
     gap_seconds: float,
+    max_rss_bytes: int,
+    progress_handle: object,
+    telemetry: dict[str, int],
 ) -> dict[tuple[str, str, str], GroupState]:
     states: dict[tuple[str, str, str], GroupState] = {}
     usecols = list(CSV_COLUMNS)
@@ -318,6 +372,24 @@ def _read_groups(
         chunksize=chunk_size,
         low_memory=False,
     ):
+        telemetry["chunks"] += 1
+        telemetry["rows_scanned"] += len(chunk)
+        telemetry["peak_rss_bytes"] = _check_rss(
+            max_rss_bytes, telemetry["peak_rss_bytes"]
+        )
+        progress_handle.write(
+            json.dumps(
+                {
+                    "file": str(path),
+                    "sensor": sensor,
+                    "chunks": telemetry["chunks"],
+                    "rows_scanned": telemetry["rows_scanned"],
+                    "rss_bytes": process_rss_bytes(),
+                }
+            )
+            + "\n"
+        )
+        progress_handle.flush()
         for values in chunk.itertuples(index=False, name=None):
             row = dict(zip(usecols, values))
             key = tuple(str(row[column]) for column in GROUP_COLUMNS)
@@ -553,9 +625,15 @@ def run_audit(
     output_directory: Path,
     chunk_size: int = 250_000,
     gap_seconds: float = 5.0,
+    max_rss_mib: int = 1024,
 ) -> dict[str, object]:
     """Run the Stage 1 audit and write reports to a new directory."""
     output_directory.mkdir(parents=True, exist_ok=True)
+    if max_rss_mib < 1:
+        raise ValueError("max_rss_mib must be positive")
+    max_rss_bytes = max_rss_mib * 2**20
+    progress_path = output_directory / "progress.jsonl"
+    telemetry = {"chunks": 0, "rows_scanned": 0, "peak_rss_bytes": 0}
     input_files = {
         "acc": {
             "Phones": data_directory / "Phones_accelerometer.csv",
@@ -570,13 +648,25 @@ def run_audit(
         "acc": {},
         "gyro": {},
     }
-    for sensor, files in input_files.items():
-        for path in files.values():
-            if not path.is_file():
-                raise FileNotFoundError(path)
-            states[sensor].update(
-                _read_groups(path, sensor, chunk_size, gap_seconds)
-            )
+    with progress_path.open("w", encoding="utf-8") as progress_handle:
+        for sensor, files in input_files.items():
+            for path in files.values():
+                if not path.is_file():
+                    raise FileNotFoundError(path)
+                states[sensor].update(
+                    _read_groups(
+                        path,
+                        sensor,
+                        chunk_size,
+                        gap_seconds,
+                        max_rss_bytes,
+                        progress_handle,
+                        telemetry,
+                    )
+                )
+                telemetry["peak_rss_bytes"] = _check_rss(
+                    max_rss_bytes, telemetry["peak_rss_bytes"]
+                )
 
     stream_rows = [
         state.values()
@@ -628,6 +718,52 @@ def run_audit(
     (output_directory / "audit_summary.json").write_text(
         json.dumps(summary, indent=2), encoding="utf-8"
     )
+    summary.update(
+        {
+            "rows_scanned": telemetry["rows_scanned"],
+            "peak_rss_bytes": telemetry["peak_rss_bytes"],
+            "max_rss_mib": max_rss_mib,
+            "shards_written": 0,
+            "status": "audit_complete_no_preprocessing_or_training_run",
+        }
+    )
+    (output_directory / "audit_summary.json").write_text(
+        json.dumps(summary, indent=2), encoding="utf-8"
+    )
+    artifacts = [
+        "stream_group_quality.csv",
+        "stream_segments.csv",
+        "paired_clock_compatibility.csv",
+        "sampling_rate_comparison.csv",
+        "audit_summary.json",
+        "progress.jsonl",
+    ]
+    manifest = {
+        "artifacts": [
+            {
+                "filename": filename,
+                "sha256": hashlib.sha256(
+                    (output_directory / filename).read_bytes()
+                ).hexdigest(),
+            }
+            for filename in artifacts
+        ]
+    }
+    (output_directory / "audit_manifest.json").write_text(
+        json.dumps(manifest, indent=2), encoding="utf-8"
+    )
+    (output_directory / "checkpoint.json").write_text(
+        json.dumps(
+            {
+                "status": "committed",
+                "artifact_manifest": "audit_manifest.json",
+                "rows_scanned": telemetry["rows_scanned"],
+                "peak_rss_bytes": telemetry["peak_rss_bytes"],
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
     return summary
 
 
@@ -645,12 +781,14 @@ def main() -> None:
     )
     parser.add_argument("--chunk-size", type=int, default=250_000)
     parser.add_argument("--gap-seconds", type=float, default=5.0)
+    parser.add_argument("--max-rss-mib", type=int, default=1024)
     args = parser.parse_args()
     summary = run_audit(
         args.data_directory,
         args.output_directory,
         chunk_size=args.chunk_size,
         gap_seconds=args.gap_seconds,
+        max_rss_mib=args.max_rss_mib,
     )
     print(json.dumps(summary, indent=2))
 

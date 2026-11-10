@@ -1,0 +1,6 @@
+{
+  "status": "committed",
+  "artifact_manifest": "audit_manifest.json",
+  "rows_scanned": 33741500,
+  "peak_rss_bytes": 180232192
+}

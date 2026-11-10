@@ -28,8 +28,10 @@ from dw_dl.har_streaming import (
     FilterState,
     WindowOverlapBuffer,
     _read_repaired_stream,
+    _spool_repaired_stream,
     interval_sweep_overlaps,
     preprocess_stage2_validation,
+    resample_and_window_stage2,
     preprocess_saved_fixture_streaming,
 )
 import dw_dl.har_streaming as har_streaming
@@ -137,6 +139,21 @@ def test_duplicate_timestamp_is_not_silently_repaired():
     segments, rejections = split_sensor_segments(frame, PreprocessingConfig())
     assert sum(item.reason == "clock_reset_or_out_of_order" for item in rejections) == 1
     assert sum(len(segment.timestamp) for segment in segments) == 4
+
+
+def test_nonfinite_sensor_value_is_rejected_as_a_boundary():
+    frame = pd.DataFrame(
+        {
+            "Creation_Time": [0, 20_000_000, 40_000_000, 60_000_000],
+            "x": [1.0, np.nan, 1.0, 1.0],
+            "y": [1.0] * 4,
+            "z": [1.0] * 4,
+            "gt": ["walk"] * 4,
+        }
+    )
+    segments, rejections = split_sensor_segments(frame, PreprocessingConfig())
+    assert any(item.reason == "nonfinite_sensor_value" for item in rejections)
+    assert sum(len(segment.timestamp) for segment in segments) == 2
 
 
 def test_small_out_of_order_block_is_reported_as_boundary():
@@ -755,6 +772,45 @@ def test_stage2_validation_uses_selected_group_and_records_provenance(tmp_path):
     assert record["end_timestamp_raw"] < 3_000_000_000
 
 
+def test_selected_group_spooling_filters_before_repair_and_reports_progress(
+    tmp_path, capsys
+):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    spool = tmp_path / "spool"
+    spool.mkdir()
+    selected = {("synthetic", "unequal", "paired-1")}
+
+    paths = _spool_repaired_stream(
+        fixture / "accelerometer.csv",
+        "acc",
+        spool,
+        None,
+        chunk_size=37,
+        rss_config=BoundedStage2Config(),
+        selected_groups=selected,
+    )
+
+    assert len(paths) == 1
+    spool_files = list(spool.glob("*.csv"))
+    assert len(spool_files) == 1
+    assert set(
+        map(
+            tuple,
+            pd.read_csv(spool_files[0])[["User", "Model", "Device"]]
+            .astype(str)
+            .drop_duplicates()
+            .to_numpy(),
+        )
+    ) == selected
+    progress = capsys.readouterr().out
+    assert "sensor=acc" in progress
+    assert "chunks=" in progress
+    assert "rows_read=" in progress
+    assert "elapsed_seconds=" in progress
+    assert "selected_rows=" in progress
+    assert "rows_spooled=" in progress
+
+
 def test_stage2_validation_rejects_sensor_label_disagreement(tmp_path):
     fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
     for filename in ("accelerometer.csv", "gyroscope.csv"):
@@ -805,7 +861,8 @@ def test_stage2_rejects_fragments_above_supported_filter_length(tmp_path):
     )
     assert summary["accepted_windows"] == 0
     assert summary["rejections"]["fragment_exceeds_supported_filter_length"] >= 1
-    assert not (output / "shard_manifest.json").exists()
+    manifest = json.loads((output / "shard_manifest.json").read_text())
+    assert manifest["shards"] == []
     with gzip.open(output / "repair_provenance.jsonl.gz", "rt", encoding="utf-8") as handle:
         assert sum(1 for _ in handle) == 173
 
@@ -828,6 +885,89 @@ def test_stage2_rss_guard_fails_closed(tmp_path, monkeypatch):
         )
     failure = json.loads((output / "stage2_failure.json").read_text())
     assert failure["status"] == "failed_closed"
+
+
+def test_stage2_resumes_from_last_completed_group(tmp_path, monkeypatch):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    for filename in ("accelerometer.csv", "gyroscope.csv"):
+        path = fixture / filename
+        frame = pd.read_csv(path)
+        duplicate = frame.copy()
+        duplicate["User"] = "synthetic-2"
+        duplicate["Device"] = "paired-2"
+        pd.concat([frame, duplicate], ignore_index=True).to_csv(path, index=False)
+    output = tmp_path / "stage2"
+    original_sweep = har_streaming.interval_sweep_overlaps
+    calls = {"count": 0}
+
+    def interrupt_after_first_group(left, right):
+        calls["count"] += 1
+        if calls["count"] == 2:
+            raise RuntimeError("intentional interruption")
+        return original_sweep(left, right)
+
+    monkeypatch.setattr(har_streaming, "interval_sweep_overlaps", interrupt_after_first_group)
+    with pytest.raises(RuntimeError, match="intentional interruption"):
+        preprocess_stage2_validation(
+            fixture / "accelerometer.csv",
+            fixture / "gyroscope.csv",
+            output,
+            chunk_size=37,
+        )
+    checkpoint = json.loads((output / "checkpoint.json").read_text())
+    assert checkpoint["completed_group"] == ["synthetic", "unequal", "paired-1"]
+    monkeypatch.setattr(har_streaming, "interval_sweep_overlaps", original_sweep)
+    summary = preprocess_stage2_validation(
+        fixture / "accelerometer.csv",
+        fixture / "gyroscope.csv",
+        output,
+        chunk_size=37,
+    )
+    assert summary["accepted_windows"] == 2
+    manifest = json.loads((output / "shard_manifest.json").read_text())
+    assert sum(item["window_count"] for item in manifest["shards"]) == 2
+
+
+def test_stage2_checkpoint_without_manifest_fails_closed(tmp_path):
+    output = tmp_path / "stage2"
+    output.mkdir()
+    (output / "checkpoint.json").write_text(
+        json.dumps(
+            {
+                "input_position": 0,
+                "last_committed_sequence": 0,
+                "last_committed_sha256": "missing",
+                "completed_group_index": 0,
+                "completed_group": ["a", "m", "d"],
+            }
+        )
+    )
+    with pytest.raises(RuntimeError, match="manifest"):
+        preprocess_stage2_validation(
+            FIXTURE_DIRECTORY / "accelerometer.csv",
+            FIXTURE_DIRECTORY / "gyroscope.csv",
+            output,
+        )
+
+
+def test_stage2_checkpoint_is_not_advanced_when_window_write_fails(tmp_path, monkeypatch):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    output = tmp_path / "stage2"
+    original_append = har_streaming.CompressedShardWriter.append
+
+    def fail_append(self, values, label, metadata):
+        raise OSError("injected window write failure")
+
+    monkeypatch.setattr(har_streaming.CompressedShardWriter, "append", fail_append)
+    with pytest.raises(OSError, match="window write failure"):
+        preprocess_stage2_validation(
+            fixture / "accelerometer.csv",
+            fixture / "gyroscope.csv",
+            output,
+            chunk_size=37,
+        )
+    assert not (output / "checkpoint.json").exists()
+    monkeypatch.setattr(har_streaming.CompressedShardWriter, "append", original_append)
 
 
 def test_bounded_stage2_matches_v2_oracle(tmp_path):
@@ -857,3 +997,36 @@ def test_bounded_stage2_matches_v2_oracle(tmp_path):
     assert [item["source_segment_ids"] for item in records] == [
         ["2.0", "1.0"], ["2.1", "1.1"]
     ]
+
+
+def test_resample_and_window_stage2_emits_contract_metadata(tmp_path):
+    output = tmp_path / "windows"
+    summary = resample_and_window_stage2(
+        FIXTURE_DIRECTORY / "accelerometer.csv",
+        FIXTURE_DIRECTORY / "gyroscope.csv",
+        output,
+        chunk_size=101,
+    )
+    assert summary["accepted_windows"] == 2
+    with np.load(output / "windows-000000.npz") as shard:
+        records = [json.loads(value) for value in shard["metadata"]]
+        assert shard["X"].shape == (2, 128, 6)
+        assert all(
+            record["target_sample_count"] == window.shape[0] == 128
+            for record, window in zip(records, shard["X"])
+        )
+    for record in records:
+        assert record["input_shard"] == {
+            "acc": "accelerometer.csv",
+            "gyro": "gyroscope.csv",
+        }
+        assert record["target_sample_count"] >= 128
+        assert record["target_sample_count"] == 128
+        assert record["aligned_target_grid_sample_count"] >= 128
+        assert record["source_sample_counts"]["acc"] >= 128
+        assert record["source_sample_counts"]["gyro"] >= 128
+        assert record["resampling"]["target_hz"] == 50.0
+        assert record["resampling"]["target_step_raw"] == 20_000_000
+        assert record["resampling"]["filter_semantics"] == (
+            "complete-fragment-zero-phase"
+        )

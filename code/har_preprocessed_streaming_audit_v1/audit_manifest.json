@@ -1,0 +1,28 @@
+{
+  "artifacts": [
+    {
+      "filename": "stream_group_quality.csv",
+      "sha256": "ce2cf5b8939c294e8f1496b5ee0bb2ded6eca9793b37766fd034877f320f8be3"
+    },
+    {
+      "filename": "stream_segments.csv",
+      "sha256": "f1d20ef83911c7d193e0d4b0917f52762c4af4da70c8e97b279a1aebb0fb92ac"
+    },
+    {
+      "filename": "paired_clock_compatibility.csv",
+      "sha256": "d0ab931482437ad1f534a1529505daaba5336828428b6d2bd17d55e09303ccd4"
+    },
+    {
+      "filename": "sampling_rate_comparison.csv",
+      "sha256": "818e2b09e395bf62361dda15cb1d85a5165e6b2176c402317d899f8f225233d9"
+    },
+    {
+      "filename": "audit_summary.json",
+      "sha256": "40941e1f376ed4e30d965374b5b63a3b5249b8c1118acaea6bdd9a1f92b788e0"
+    },
+    {
+      "filename": "progress.jsonl",
+      "sha256": "541ab6e3d329d3bcd084fc25f8f4499e07b7e443ee4318f009efbce90255b786"
+    }
+  ]
+}

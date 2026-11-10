@@ -247,6 +247,12 @@ def split_sensor_segments(
             rejections.append(Rejection("missing_timestamp", "", "", ""))
             previous = None
             continue
+        if not np.isfinite(values[index]).all():
+            if start is not None:
+                finish(index)
+            rejections.append(Rejection("nonfinite_sensor_value", "", "", ""))
+            previous = None
+            continue
         current = int(raw)
         if start is None:
             start = index

@@ -7,6 +7,7 @@ import gzip
 import json
 import os
 import tempfile
+import time
 from dataclasses import dataclass, field
 from pathlib import Path
 from dataclasses import asdict, replace
@@ -31,6 +32,41 @@ STAGE2_MAX_IN_MEMORY_FRAGMENT_SAMPLES = 500_000
 STAGE2_RESAMPLING_BLOCK_SAMPLES = 25_000
 STAGE2_MAX_DISK_BACKED_FRAGMENT_SAMPLES = 5_000_000
 STAGE2_RSS_LIMIT_BYTES = 1_024 * 1024 * 1024
+
+
+def _input_identity(path: Path) -> dict[str, object]:
+    stat = path.stat()
+    return {
+        "path": str(path.resolve()),
+        "size": stat.st_size,
+        "mtime_ns": stat.st_mtime_ns,
+    }
+
+
+def _median_rate_hz(timestamps: np.ndarray) -> float | None:
+    if len(timestamps) < 2:
+        return None
+    intervals = np.diff(timestamps) / 1_000_000_000
+    if not np.all(intervals > 0):
+        return None
+    return float(1.0 / np.median(intervals))
+
+
+def _stage2_configuration_id(
+    config: PreprocessingConfig,
+    stage2_config: BoundedStage2Config,
+    chunk_size: int,
+    groups: list[tuple[str, str, str]],
+) -> str:
+    payload = {
+        "preprocessing": asdict(config),
+        "stage2": asdict(stage2_config),
+        "chunk_size": chunk_size,
+        "groups": groups,
+    }
+    return hashlib.sha256(
+        json.dumps(payload, sort_keys=True).encode("utf-8")
+    ).hexdigest()
 
 
 @dataclass(frozen=True)
@@ -72,12 +108,19 @@ def _spool_repaired_stream(
     repair_handle,
     chunk_size: int,
     rss_config: BoundedStage2Config,
+    selected_groups: set[tuple[str, str, str]] | None = None,
 ) -> set[tuple[str, str, str]]:
     state = ChunkRepairState()
     paths: dict[tuple[str, str, str], Path] = {}
     headers: dict[tuple[str, str, str], bool] = {}
+    started_at = time.monotonic()
+    chunks_read = 0
+    rows_read = 0
+    selected_rows = 0
+    rows_spooled = 0
 
-    def write_rows(rows: pd.DataFrame) -> None:
+    def write_rows(rows: pd.DataFrame) -> int:
+        written = 0
         for group, group_frame in rows.groupby(list(GROUP_COLUMNS), sort=False):
             key = tuple(str(value) for value in group)
             target = paths.setdefault(key, spool_directory / f"{sensor}-{len(paths):06d}.csv")
@@ -88,6 +131,8 @@ def _spool_repaired_stream(
                 index=False,
             )
             headers[key] = True
+            written += len(group_frame)
+        return written
 
     reader = iter(pd.read_csv(path, chunksize=chunk_size))
     while True:
@@ -96,14 +141,37 @@ def _spool_repaired_stream(
             chunk = next(reader)
         except StopIteration:
             break
+        chunks_read += 1
+        rows_read += len(chunk)
+        if selected_groups is not None:
+            chunk = chunk[
+                pd.MultiIndex.from_frame(
+                    chunk[list(GROUP_COLUMNS)].astype(str)
+                ).isin(selected_groups)
+            ]
+        selected_rows += len(chunk)
         rows, records = state.process_chunk(chunk, sensor)
-        write_rows(rows)
+        rows_spooled += write_rows(rows)
+        if repair_handle is not None:
+            for record in records:
+                repair_handle.write(json.dumps(asdict(record), sort_keys=True) + "\n")
+        print(
+            f"[stage2-spool] sensor={sensor} chunks={chunks_read} "
+            f"rows_read={rows_read} elapsed_seconds={time.monotonic() - started_at:.1f} "
+            f"selected_rows={selected_rows} rows_spooled={rows_spooled}",
+            flush=True,
+        )
+    tail, records = state.finish(sensor)
+    rows_spooled += write_rows(tail)
+    if repair_handle is not None:
         for record in records:
             repair_handle.write(json.dumps(asdict(record), sort_keys=True) + "\n")
-    tail, records = state.finish(sensor)
-    write_rows(tail)
-    for record in records:
-        repair_handle.write(json.dumps(asdict(record), sort_keys=True) + "\n")
+    print(
+        f"[stage2-spool] sensor={sensor} chunks={chunks_read} "
+        f"rows_read={rows_read} elapsed_seconds={time.monotonic() - started_at:.1f} "
+        f"selected_rows={selected_rows} rows_spooled={rows_spooled}",
+        flush=True,
+    )
     return set(paths)
 
 REQUIRED_METADATA_FIELDS = frozenset(
@@ -398,6 +466,10 @@ class Checkpoint:
     input_position: int
     last_committed_sequence: int | None
     last_committed_sha256: str | None
+    completed_group_index: int = -1
+    completed_group: tuple[str, str, str] | None = None
+    input_identity: dict[str, object] | None = None
+    configuration_id: str | None = None
 
 
 class CheckpointStore:
@@ -765,6 +837,17 @@ def _preprocess_stage2_validation_bounded(
     output_directory.mkdir(parents=True, exist_ok=True)
     if (output_directory / "stage2_summary.json").exists():
         raise RuntimeError("Stage 2 output already exists; resume is fail-closed")
+    checkpoint_path = output_directory / "checkpoint.json"
+    manifest_path = output_directory / "shard_manifest.json"
+    existing_checkpoint = checkpoint_path.exists()
+    if existing_checkpoint and not manifest_path.exists():
+        raise RuntimeError("checkpoint exists without shard manifest")
+    if not existing_checkpoint and manifest_path.exists():
+        raise RuntimeError("output exists without checkpoint")
+    input_identity = {
+        "accelerometer": _input_identity(accelerometer_path),
+        "gyroscope": _input_identity(gyroscope_path),
+    }
     rejections_path = output_directory / "rejections.jsonl.gz"
     eligibility_path = output_directory / "group_eligibility.jsonl.gz"
     pair_path = output_directory / "pair_diagnostics.jsonl.gz"
@@ -775,27 +858,60 @@ def _preprocess_stage2_validation_bounded(
         spool_dirs["acc"].mkdir()
         spool_dirs["gyro"].mkdir()
         with (
-            gzip.open(repair_path, "wt", encoding="utf-8") as repair_handle,
-            gzip.open(rejections_path, "wt", encoding="utf-8") as rejection_handle,
-            gzip.open(pair_path, "wt", encoding="utf-8") as pair_handle,
+            gzip.open(repair_path, "at" if existing_checkpoint else "wt", encoding="utf-8") as repair_handle,
+            gzip.open(rejections_path, "at" if existing_checkpoint else "wt", encoding="utf-8") as rejection_handle,
+            gzip.open(pair_path, "at" if existing_checkpoint else "wt", encoding="utf-8") as pair_handle,
         ):
             acc_groups = _spool_repaired_stream(
-                accelerometer_path, "acc", spool_dirs["acc"], repair_handle,
+                accelerometer_path, "acc", spool_dirs["acc"],
+                repair_handle if not existing_checkpoint else None,
                 chunk_size, stage2_config,
+                selected_groups,
             )
             gyro_groups = _spool_repaired_stream(
-                gyroscope_path, "gyro", spool_dirs["gyro"], repair_handle,
+                gyroscope_path, "gyro", spool_dirs["gyro"],
+                repair_handle if not existing_checkpoint else None,
                 chunk_size, stage2_config,
+                selected_groups,
             )
             paired_groups = acc_groups & gyro_groups
             groups = sorted(
                 paired_groups if selected_groups is None
                 else paired_groups & selected_groups
             )
+            configuration_id = _stage2_configuration_id(
+                config, stage2_config, chunk_size, groups
+            )
             writer = CompressedShardWriter(
                 output_directory, stage2_config.windows_per_shard
             )
+            if existing_checkpoint:
+                checkpoint = CheckpointStore(checkpoint_path).load_validated(manifest_path)
+                if checkpoint.input_identity != input_identity:
+                    raise RuntimeError("checkpoint input identity mismatch")
+                if checkpoint.configuration_id != configuration_id:
+                    raise RuntimeError("checkpoint configuration mismatch")
+                if checkpoint.completed_group_index >= len(groups):
+                    raise RuntimeError("checkpoint group position is ahead of output")
+                if checkpoint.completed_group is not None and (
+                    tuple(groups[checkpoint.completed_group_index])
+                    != tuple(checkpoint.completed_group)
+                ):
+                    raise RuntimeError("checkpoint group identity mismatch")
+                manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+                writer._manifest = manifest["shards"]
+                writer._sequence = (
+                    manifest["shards"][-1]["sequence"] + 1
+                    if manifest["shards"] else 0
+                )
+                accepted = sum(item["window_count"] for item in manifest["shards"])
+                start_group_index = checkpoint.completed_group_index + 1
+            else:
+                start_group_index = 0
+                writer._write_manifest()
             accepted = 0
+            if existing_checkpoint:
+                accepted = sum(item["window_count"] for item in manifest["shards"])
             fragments = 0
             pair_comparisons = 0
             rejection_counts: dict[str, int] = {}
@@ -820,7 +936,9 @@ def _preprocess_stage2_validation_bounded(
                 rejection_counts[item.reason] = rejection_counts.get(item.reason, 0) + 1
                 rejection_handle.write(json.dumps(asdict(item), sort_keys=True) + "\n")
 
-            for group in groups:
+            for group_index, group in enumerate(groups):
+                if group_index < start_group_index:
+                    continue
                 _check_stage2_rss(stage2_config)
                 group_fragments: dict[str, list[SensorSegment]] = {}
                 for sensor in ("acc", "gyro"):
@@ -896,6 +1014,27 @@ def _preprocess_stage2_validation_bounded(
                                 f"{group[0]}|{group[1]}|{group[2]}|"
                                 f"acc:{acc_segment.segment_id}|gyro:{gyro_segment.segment_id}"
                             ),
+                            "input_shard": {
+                                "acc": accelerometer_path.name,
+                                "gyro": gyroscope_path.name,
+                            },
+                            "source_sample_counts": {
+                                "acc": int(len(acc_segment.timestamp)),
+                                "gyro": int(len(gyro_segment.timestamp)),
+                            },
+                            "target_sample_count": int(len(window)),
+                            "aligned_target_grid_sample_count": int(len(timestamps)),
+                            "resampling": {
+                                "target_hz": config.target_hz,
+                                "target_step_raw": int(
+                                    round(1_000_000_000 / config.target_hz)
+                                ),
+                                "source_rate_hz": {
+                                    "acc": _median_rate_hz(acc_segment.timestamp),
+                                    "gyro": _median_rate_hz(gyro_segment.timestamp),
+                                },
+                                "filter_semantics": "complete-fragment-zero-phase",
+                            },
                             "config_version": "har-stage2-bounded-v1",
                         }
                         writer.append(window, label, trace)
@@ -915,6 +1054,19 @@ def _preprocess_stage2_validation_bounded(
                 with gzip.open(eligibility_path, "at", encoding="utf-8") as handle:
                     handle.write(json.dumps(eligibility_record, sort_keys=True) + "\n")
                 writer.flush()
+                manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+                last = manifest["shards"][-1] if manifest["shards"] else None
+                CheckpointStore(checkpoint_path).save(
+                    Checkpoint(
+                        input_position=group_index,
+                        last_committed_sequence=last["sequence"] if last else None,
+                        last_committed_sha256=last["sha256"] if last else None,
+                        completed_group_index=group_index,
+                        completed_group=group,
+                        input_identity=input_identity,
+                        configuration_id=configuration_id,
+                    )
+                )
                 del group_fragments, candidate_pairs
                 _check_stage2_rss(stage2_config)
             writer.close()
@@ -950,6 +1102,27 @@ def _preprocess_stage2_validation_bounded(
     return summary
 
 
+def resample_and_window_stage2(
+    repaired_accelerometer_path: Path,
+    repaired_gyroscope_path: Path,
+    output_directory: Path,
+    selected_groups: set[tuple[str, str, str]] | None = None,
+    config: PreprocessingConfig = PreprocessingConfig(),
+    chunk_size: int = 25_000,
+    stage2_config: BoundedStage2Config = BoundedStage2Config(),
+) -> dict[str, object]:
+    """Create validated raw windows from repaired Stage 2 sensor streams."""
+    return preprocess_stage2_validation(
+        repaired_accelerometer_path,
+        repaired_gyroscope_path,
+        output_directory,
+        selected_groups,
+        config,
+        chunk_size,
+        stage2_config,
+    )
+
+
 def preprocess_stage2_validation(
     accelerometer_path: Path,
     gyroscope_path: Path,
@@ -973,12 +1146,9 @@ def preprocess_stage2_validation(
         output_directory.mkdir(parents=True, exist_ok=True)
         manifest_path = output_directory / "shard_manifest.json"
         checkpoint = None
-        if manifest_path.exists():
-            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-            if manifest["shards"]:
-                last = manifest["shards"][-1]
-                checkpoint = Checkpoint(0, last["sequence"], last["sha256"])
-                CheckpointStore(output_directory / "checkpoint.json").save(checkpoint)
+        checkpoint_path = output_directory / "checkpoint.json"
+        if checkpoint_path.exists():
+            checkpoint = json.loads(checkpoint_path.read_text(encoding="utf-8"))
         (output_directory / "stage2_failure.json").write_text(
             json.dumps(
                 {
