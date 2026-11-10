@@ -15,6 +15,14 @@ from dw_dl.har_preprocessing import (
     repair_adjacent_swaps,
     preprocess_saved_fixture,
 )
+from dw_dl.har_streaming import (
+    Checkpoint,
+    CheckpointStore,
+    ChunkRepairState,
+    CompressedShardWriter,
+    FilterState,
+    WindowOverlapBuffer,
+)
 
 
 def _segment(rate: float, offset: float = 0.0, duration: float = 8.0) -> SensorSegment:
@@ -308,3 +316,213 @@ def test_windows_do_not_cross_interpolation_gap_boundary():
     assert len(windows) == 2
     assert all(window.shape == (128, 6) for window in windows)
     assert [item["segment_id"] for item in metadata] == ["0.0", "0.1"]
+
+
+def _stream_rows(times, indices):
+    return pd.DataFrame(
+        {
+            "Index": indices,
+            "Arrival_Time": [100] * len(times),
+            "Creation_Time": times,
+            "x": np.arange(len(times), dtype=float),
+            "y": np.arange(len(times), dtype=float) + 10,
+            "z": np.arange(len(times), dtype=float) + 20,
+            "User": ["a"] * len(times),
+            "Model": ["m"] * len(times),
+            "Device": ["d"] * len(times),
+            "gt": ["walk"] * len(times),
+        }
+    )
+
+
+def test_chunk_repair_spanning_boundary_preserves_rows():
+    frame = _stream_rows([0, 30, 20, 40], [0, 2, 1, 3])
+    state = ChunkRepairState()
+    first, records = state.process_chunk(frame.iloc[:2], "acc")
+    second, more_records = state.process_chunk(frame.iloc[2:], "acc")
+    tail, final_records = state.finish("acc")
+    result = pd.concat([first, second, tail], ignore_index=True)
+    assert result.Creation_Time.tolist() == [0, 20, 30, 40]
+    assert result.x.tolist() == [0, 2, 1, 3]
+    assert len(records + more_records + final_records) == 1
+
+
+def test_chunk_repair_has_no_loss_duplication_or_unintended_reordering():
+    frame = _stream_rows([0, 30, 20, 40, 60], [0, 2, 1, 3, 4])
+    state = ChunkRepairState()
+    emitted = []
+    for chunk in (frame.iloc[:1], frame.iloc[1:3], frame.iloc[3:]):
+        output, _ = state.process_chunk(chunk, "acc")
+        emitted.append(output)
+    emitted.append(state.finish("acc")[0])
+    result = pd.concat(emitted, ignore_index=True)
+    assert len(result) == len(frame)
+    assert sorted(result.Index.tolist()) == sorted(frame.Index.tolist())
+    assert result.Creation_Time.tolist() == [0, 20, 30, 40, 60]
+
+
+def test_filter_state_resets_at_segment_boundaries():
+    state = FilterState()
+    state.begin_segment("segment-1")
+    state.begin_segment("segment-1")
+    state.begin_segment("segment-2")
+    assert state.reset_count == 2
+    assert state.segment_id == "segment-2"
+
+
+def test_overlapping_windows_continue_across_chunks():
+    buffer = WindowOverlapBuffer(4, 2)
+    values = np.arange(24, dtype=np.float32).reshape(4, 6)
+    first = buffer.append(values[:3], np.array(["walk"] * 3))
+    second = buffer.append(values[3:], np.array(["walk"]))
+    assert len(first) == 0
+    assert len(second) == 1
+    assert second[0][0][:, 0].tolist() == [0, 6, 12, 18]
+    assert buffer.values.shape[0] == 2
+
+
+def test_interrupted_resume_has_no_duplicate_shard_or_window(tmp_path):
+    writer = CompressedShardWriter(tmp_path, windows_per_shard=2)
+    for value in (1.0, 2.0):
+        writer.append(
+            np.full((2, 6), value),
+            "walk",
+            {
+                "shard_sequence": 0,
+                "window_index": int(value - 1),
+                "user": "a",
+                "model": "m",
+                "device": "d",
+                "source_segment_ids": ["acc-0", "gyro-0"],
+                "start_timestamp_raw": 0,
+                "end_timestamp_raw": 1,
+                "label": "walk",
+                "config_version": "test-v1",
+            },
+        )
+    writer.close()
+    manifest = json.loads((tmp_path / "shard_manifest.json").read_text())
+    shard = manifest["shards"][0]
+    checkpoint = Checkpoint(2, shard["sequence"], shard["sha256"])
+    store = CheckpointStore(tmp_path / "checkpoint.json")
+    store.save(checkpoint)
+    assert store.load_validated(tmp_path / "shard_manifest.json") == checkpoint
+    assert len(manifest["shards"]) == 1
+    assert np.load(tmp_path / shard["filename"])["X"].shape[0] == 2
+
+
+def test_corrupted_checkpoint_fails_closed(tmp_path):
+    writer = CompressedShardWriter(tmp_path, windows_per_shard=1)
+    writer.append(
+        np.zeros((2, 6)),
+        "walk",
+        {
+            "shard_sequence": 0,
+            "window_index": 0,
+            "user": "a",
+            "model": "m",
+            "device": "d",
+            "sensor_pair": "acc+gyro",
+            "start_timestamp_raw": 0,
+            "end_timestamp_raw": 1,
+            "label": "walk",
+            "config_version": "test-v1",
+        },
+    )
+    writer.close()
+    manifest_path = tmp_path / "shard_manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    store = CheckpointStore(tmp_path / "checkpoint.json")
+    store.save(Checkpoint(1, 0, "corrupted"))
+    try:
+        store.load_validated(manifest_path)
+    except RuntimeError as error:
+        assert "does not match" in str(error)
+    else:
+        raise AssertionError("corrupted checkpoint was accepted")
+
+
+def test_modified_shard_fails_fresh_checksum_validation(tmp_path):
+    writer = CompressedShardWriter(tmp_path, windows_per_shard=1)
+    writer.append(
+        np.zeros((2, 6)),
+        "walk",
+        {
+            "shard_sequence": 0, "window_index": 0, "user": "a", "model": "m",
+            "device": "d", "sensor_pair": "acc+gyro", "start_timestamp_raw": 0,
+            "end_timestamp_raw": 1, "label": "walk", "config_version": "test-v1",
+        },
+    )
+    writer.close()
+    manifest = json.loads((tmp_path / "shard_manifest.json").read_text())
+    shard_path = tmp_path / manifest["shards"][0]["filename"]
+    shard_path.write_bytes(shard_path.read_bytes() + b"tampered")
+    store = CheckpointStore(tmp_path / "checkpoint.json")
+    store.save(Checkpoint(1, 0, manifest["shards"][0]["sha256"]))
+    try:
+        store.load_validated(tmp_path / "shard_manifest.json")
+    except RuntimeError as error:
+        assert "checksum" in str(error)
+    else:
+        raise AssertionError("modified shard was accepted")
+
+
+def test_checkpoint_behind_output_fails_closed(tmp_path):
+    writer = CompressedShardWriter(tmp_path, windows_per_shard=1)
+    metadata = {
+        "shard_sequence": 0, "window_index": 0, "user": "a", "model": "m",
+        "device": "d", "sensor_pair": "acc+gyro", "start_timestamp_raw": 0,
+        "end_timestamp_raw": 1, "label": "walk", "config_version": "test-v1",
+    }
+    writer.append(np.zeros((2, 6)), "walk", metadata)
+    writer.flush()
+    metadata["shard_sequence"] = 1
+    writer.append(np.zeros((2, 6)), "walk", metadata)
+    writer.close()
+    manifest = json.loads((tmp_path / "shard_manifest.json").read_text())
+    store = CheckpointStore(tmp_path / "checkpoint.json")
+    store.save(Checkpoint(1, 0, manifest["shards"][0]["sha256"]))
+    try:
+        store.load_validated(tmp_path / "shard_manifest.json")
+    except RuntimeError as error:
+        assert "behind" in str(error)
+    else:
+        raise AssertionError("checkpoint behind output was accepted")
+
+
+def test_checkpoint_ahead_of_output_fails_closed(tmp_path):
+    writer = CompressedShardWriter(tmp_path, windows_per_shard=1)
+    writer.append(
+        np.zeros((2, 6)),
+        "walk",
+        {
+            "shard_sequence": 0, "window_index": 0, "user": "a", "model": "m",
+            "device": "d", "sensor_pair": "acc+gyro", "start_timestamp_raw": 0,
+            "end_timestamp_raw": 1, "label": "walk", "config_version": "test-v1",
+        },
+    )
+    writer.close()
+    store = CheckpointStore(tmp_path / "checkpoint.json")
+    store.save(Checkpoint(1, 1, "missing-shard"))
+    try:
+        store.load_validated(tmp_path / "shard_manifest.json")
+    except RuntimeError as error:
+        assert "manifest" in str(error)
+    else:
+        raise AssertionError("checkpoint ahead of output was accepted")
+
+
+def test_no_checkpoint_starts_only_with_empty_output(tmp_path):
+    manifest_path = tmp_path / "shard_manifest.json"
+    manifest_path.write_text(json.dumps({"shards": []}))
+    assert CheckpointStore(tmp_path / "checkpoint.json").load_or_start(manifest_path) is None
+
+
+def test_incomplete_metadata_is_rejected(tmp_path):
+    writer = CompressedShardWriter(tmp_path)
+    try:
+        writer.append(np.zeros((2, 6)), "walk", {"user": "a"})
+    except ValueError as error:
+        assert "metadata" in str(error)
+    else:
+        raise AssertionError("incomplete metadata was accepted")
