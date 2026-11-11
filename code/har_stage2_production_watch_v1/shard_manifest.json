@@ -1,0 +1,154 @@
+{
+  "shards": [
+    {
+      "sequence": 0,
+      "filename": "windows-000000.npz",
+      "window_count": 79,
+      "sha256": "dbc811416c5b4c2864baef1eb9c1a4f6e3ddd919dd64c2ae492c5ab77e85b47f"
+    },
+    {
+      "sequence": 1,
+      "filename": "windows-000001.npz",
+      "window_count": 34,
+      "sha256": "e0943a4d79c00548b7b6cee3a6216153965425ed1138021aa11331181f30548e"
+    },
+    {
+      "sequence": 2,
+      "filename": "windows-000002.npz",
+      "window_count": 505,
+      "sha256": "2ccda81644a99ce20656edf3db70af4cf4cdb7fbdc0e2be49647c83b5c9e83ab"
+    },
+    {
+      "sequence": 3,
+      "filename": "windows-000003.npz",
+      "window_count": 94,
+      "sha256": "1b6d684f2976a445d54a29e3374ba2f92f4bfc199d2c379125c0320d464f1840"
+    },
+    {
+      "sequence": 4,
+      "filename": "windows-000004.npz",
+      "window_count": 10,
+      "sha256": "08f2b11a91073002d21861a98354b53ebb1c0b3929c1c710e2421a277d954749"
+    },
+    {
+      "sequence": 5,
+      "filename": "windows-000005.npz",
+      "window_count": 718,
+      "sha256": "5b210c94b2073dd1c5e73c9cfcb4abaf1ab70ec095b85697a2f4695e1e6ad5c7"
+    },
+    {
+      "sequence": 6,
+      "filename": "windows-000006.npz",
+      "window_count": 88,
+      "sha256": "43fbf3b687d825b63a3f953c218d586db68a8b63560eb7531d69b06906fcfbe2"
+    },
+    {
+      "sequence": 7,
+      "filename": "windows-000007.npz",
+      "window_count": 20,
+      "sha256": "eec799e4373ee5d9b37ff4c3fd2282cd27ba80d5d6b1f93360c5a9460f8e959d"
+    },
+    {
+      "sequence": 8,
+      "filename": "windows-000008.npz",
+      "window_count": 607,
+      "sha256": "e0423a283ae51fc51cd4025996fefd37b6fcd54aae2f2173cbe21f48d32ada11"
+    },
+    {
+      "sequence": 9,
+      "filename": "windows-000009.npz",
+      "window_count": 1,
+      "sha256": "077898229c8c405c783eed456ec9fd90a293470757cb1a0701c60bfa6a6e67d0"
+    },
+    {
+      "sequence": 10,
+      "filename": "windows-000010.npz",
+      "window_count": 84,
+      "sha256": "daef9b748e716c1884dcb13bad0072728bee1ed3a03baa1d239e7122368d6b9e"
+    },
+    {
+      "sequence": 11,
+      "filename": "windows-000011.npz",
+      "window_count": 6,
+      "sha256": "8becb63964935c2011bd92c33f976b4a6d73d6c3be4ce4747fa15d1b3b663c37"
+    },
+    {
+      "sequence": 12,
+      "filename": "windows-000012.npz",
+      "window_count": 479,
+      "sha256": "f2ab250f531364b21f82d128a9d9130f5ee291707fe4a2b8b91b4f27125d3e0a"
+    },
+    {
+      "sequence": 13,
+      "filename": "windows-000013.npz",
+      "window_count": 2,
+      "sha256": "615adee833c7627c6dafaaa496586c9374738d19902e87bb8bc69d7b5a60dc31"
+    },
+    {
+      "sequence": 14,
+      "filename": "windows-000014.npz",
+      "window_count": 104,
+      "sha256": "faf30ae114e59c2488edfdb415ad29f70443276e5cd060a2d47c62b1f73bcdd7"
+    },
+    {
+      "sequence": 15,
+      "filename": "windows-000015.npz",
+      "window_count": 17,
+      "sha256": "8c07bcb8a63d984aa403a047ca1c6d5fb9c43ae124d795690e071ff765cdb597"
+    },
+    {
+      "sequence": 16,
+      "filename": "windows-000016.npz",
+      "window_count": 673,
+      "sha256": "4403abbc65f1cc483feeeefa0ac200d870b5fed6bd8c14944ed786074c18b2e1"
+    },
+    {
+      "sequence": 17,
+      "filename": "windows-000017.npz",
+      "window_count": 13,
+      "sha256": "94045d1cf2661f9f86d198575d179d100dbd665670c07f90fabc484625666939"
+    },
+    {
+      "sequence": 18,
+      "filename": "windows-000018.npz",
+      "window_count": 133,
+      "sha256": "8de6093732fb8428094cdf15efb140c245af06e6f052c9d0095d009488a927f6"
+    },
+    {
+      "sequence": 19,
+      "filename": "windows-000019.npz",
+      "window_count": 31,
+      "sha256": "254e1fd0726c981304a9310cf884910a26d25ab30ca349679e22c0e7373ceaae"
+    },
+    {
+      "sequence": 20,
+      "filename": "windows-000020.npz",
+      "window_count": 614,
+      "sha256": "507bae524881599a8776d28fedf626a7802a79ed53aaaba327a74e45be34e771"
+    },
+    {
+      "sequence": 21,
+      "filename": "windows-000021.npz",
+      "window_count": 74,
+      "sha256": "f872820193adf8534cd9b16d0984d28c3ffba5fab0c67d9b714c24e6199c38b9"
+    },
+    {
+      "sequence": 22,
+      "filename": "windows-000022.npz",
+      "window_count": 2,
+      "sha256": "8c943c7d728c25fee08103d31fceac3cddb848e5d2494c965d2d5afc1a5e7872"
+    },
+    {
+      "sequence": 23,
+      "filename": "windows-000023.npz",
+      "window_count": 643,
+      "sha256": "808359b3a10855783ee25dee45bdf8379648b9053c22bed30c075f237b0ccc50"
+    },
+    {
+      "sequence": 24,
+      "filename": "windows-000024.npz",
+      "window_count": 1,
+      "sha256": "f06ed92fabfb438a946928d710b30f57a57ea26b17dad1767636ac6be51eeae8"
+    }
+  ]
+}

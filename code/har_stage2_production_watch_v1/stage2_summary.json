@@ -1,0 +1,354 @@
+{
+  "status": "complete",
+  "validation_only": true,
+  "accepted_windows": 5032,
+  "window_shape": [
+    128,
+    6
+  ],
+  "paired_groups_processed": [
+    [
+      "a",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "a",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "a",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "a",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "b",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "b",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "b",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "c",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "c",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "c",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "c",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "d",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "d",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "d",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "d",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "e",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "e",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "e",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "e",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "f",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "f",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "f",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "f",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "g",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "g",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "g",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "h",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "h",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "h",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "i",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "i",
+      "lgwatch",
+      "lgwatch_2"
+    ]
+  ],
+  "paired_groups_available_after_repair": [
+    [
+      "a",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "a",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "a",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "a",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "b",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "b",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "b",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "c",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "c",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "c",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "c",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "d",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "d",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "d",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "d",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "e",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "e",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "e",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "e",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "f",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "f",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "f",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "f",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "g",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "g",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "g",
+      "lgwatch",
+      "lgwatch_2"
+    ],
+    [
+      "h",
+      "gear",
+      "gear_1"
+    ],
+    [
+      "h",
+      "gear",
+      "gear_2"
+    ],
+    [
+      "h",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "i",
+      "lgwatch",
+      "lgwatch_1"
+    ],
+    [
+      "i",
+      "lgwatch",
+      "lgwatch_2"
+    ]
+  ],
+  "unmatched_accelerometer_groups": [],
+  "unmatched_gyroscope_groups": [],
+  "fragment_count": 140239,
+  "pair_comparisons": 98673,
+  "rejections": {
+    "clock_reset_or_out_of_order": 460967,
+    "insufficient_intersection": 96524,
+    "invalid_or_missing_label": 1030,
+    "sensor_label_disagreement": 6,
+    "mixed_label": 76,
+    "session_gap": 397
+  },
+  "group_eligibility_count": 31,
+  "shard_count": 25,
+  "checkpoint": {
+    "input_position": 0,
+    "last_committed_sequence": 24,
+    "last_committed_sha256": "f06ed92fabfb438a946928d710b30f57a57ea26b17dad1767636ac6be51eeae8",
+    "completed_group_index": -1,
+    "completed_group": null,
+    "input_identity": null,
+    "configuration_id": null
+  },
+  "configuration": {
+    "max_in_memory_fragment_samples": 500000,
+    "resampling_block_samples": 25000,
+    "max_disk_backed_fragment_samples": 5000000,
+    "rss_limit_bytes": 1073741824,
+    "windows_per_shard": 1000
+  },
+  "output_directory": "C:\\Users\\Adrian\\VSCode_Projects\\machineLearning\\DW-DL\\code\\har_stage2_production_watch_v1"
+}

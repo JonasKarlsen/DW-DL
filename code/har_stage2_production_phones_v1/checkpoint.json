@@ -1,0 +1,9 @@
+{
+  "input_position": 0,
+  "last_committed_sequence": 55,
+  "last_committed_sha256": "6f36da9472dfe2402aa3b796fc48caeba5041fad50c37f8df5e42f7f87f4abe2",
+  "completed_group_index": -1,
+  "completed_group": null,
+  "input_identity": null,
+  "configuration_id": null
+}
