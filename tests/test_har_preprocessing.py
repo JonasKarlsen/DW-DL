@@ -811,6 +811,25 @@ def test_selected_group_spooling_filters_before_repair_and_reports_progress(
     assert "rows_spooled=" in progress
 
 
+def test_selected_group_spooling_matches_real_group_identity(tmp_path):
+    fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
+    spool = tmp_path / "spool"
+    spool.mkdir()
+    selected = {("synthetic", "unequal", "paired-1")}
+
+    paths = _spool_repaired_stream(
+        fixture / "accelerometer.csv",
+        "acc",
+        spool,
+        None,
+        chunk_size=37,
+        rss_config=BoundedStage2Config(),
+        selected_groups=selected,
+    )
+
+    assert len(paths) == 1
+
+
 def test_stage2_validation_rejects_sensor_label_disagreement(tmp_path):
     fixture, _, _ = _write_unequal_rate_fixture(tmp_path / "fixture")
     for filename in ("accelerometer.csv", "gyroscope.csv"):

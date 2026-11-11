@@ -1,0 +1,16 @@
+{
+  "shards": [
+    {
+      "sequence": 0,
+      "filename": "windows-000000.npz",
+      "window_count": 409,
+      "sha256": "3c17752e23ecc48b9acc313596e6b39c8c46506a3ef124b651ea41b6e2bf6012"
+    },
+    {
+      "sequence": 1,
+      "filename": "windows-000001.npz",
+      "window_count": 460,
+      "sha256": "04cdcdd0c91d8f62f6b4ffa42d1bab01d7f0baee7bf1881aa9f481132d5a1913"
+    }
+  ]
+}

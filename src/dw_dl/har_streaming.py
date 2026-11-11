@@ -144,12 +144,19 @@ def _spool_repaired_stream(
         chunks_read += 1
         rows_read += len(chunk)
         if selected_groups is not None:
-            chunk = chunk[
-                pd.MultiIndex.from_frame(
-                    chunk[list(GROUP_COLUMNS)].astype(str)
-                ).isin(selected_groups)
-            ]
+            selected_mask = pd.MultiIndex.from_frame(
+                chunk[list(GROUP_COLUMNS)].astype(str)
+            ).isin(list(selected_groups))
+            chunk = chunk.loc[selected_mask]
         selected_rows += len(chunk)
+        if chunk.empty:
+            print(
+                f"[stage2-spool] sensor={sensor} chunks={chunks_read} "
+                f"rows_read={rows_read} elapsed_seconds={time.monotonic() - started_at:.1f} "
+                f"selected_rows={selected_rows} rows_spooled={rows_spooled}",
+                flush=True,
+            )
+            continue
         rows, records = state.process_chunk(chunk, sensor)
         rows_spooled += write_rows(rows)
         if repair_handle is not None:

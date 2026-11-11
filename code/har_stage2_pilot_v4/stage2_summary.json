@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "validation_only": true,
+  "accepted_windows": 869,
+  "window_shape": [
+    128,
+    6
+  ],
+  "paired_groups_processed": [
+    [
+      "a",
+      "nexus4",
+      "nexus4_1"
+    ],
+    [
+      "a",
+      "nexus4",
+      "nexus4_2"
+    ]
+  ],
+  "paired_groups_available_after_repair": [
+    [
+      "a",
+      "nexus4",
+      "nexus4_1"
+    ],
+    [
+      "a",
+      "nexus4",
+      "nexus4_2"
+    ]
+  ],
+  "unmatched_accelerometer_groups": [],
+  "unmatched_gyroscope_groups": [],
+  "fragment_count": 2479,
+  "pair_comparisons": 2853,
+  "rejections": {
+    "clock_reset_or_out_of_order": 3459,
+    "session_gap": 43,
+    "insufficient_intersection": 2386,
+    "invalid_or_missing_label": 101,
+    "mixed_label": 6,
+    "sensor_label_disagreement": 1
+  },
+  "group_eligibility_count": 2,
+  "shard_count": 2,
+  "checkpoint": {
+    "input_position": 0,
+    "last_committed_sequence": 1,
+    "last_committed_sha256": "04cdcdd0c91d8f62f6b4ffa42d1bab01d7f0baee7bf1881aa9f481132d5a1913",
+    "completed_group_index": -1,
+    "completed_group": null,
+    "input_identity": null,
+    "configuration_id": null
+  },
+  "configuration": {
+    "max_in_memory_fragment_samples": 500000,
+    "resampling_block_samples": 25000,
+    "max_disk_backed_fragment_samples": 5000000,
+    "rss_limit_bytes": 1073741824,
+    "windows_per_shard": 1000
+  },
+  "output_directory": "code\\har_stage2_pilot_v4"
+}
