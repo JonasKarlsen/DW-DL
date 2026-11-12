@@ -1,7 +1,7 @@
 {
   "status": "complete",
   "validation_only": true,
-  "accepted_windows": 31291,
+  "accepted_windows": 32160,
   "window_shape": [
     128,
     6
@@ -261,6 +261,16 @@
       "i",
       "s3mini",
       "s3mini_2"
+    ],
+    [
+      "a",
+      "nexus4",
+      "nexus4_1"
+    ],
+    [
+      "a",
+      "nexus4",
+      "nexus4_2"
     ]
   ],
   "paired_groups_available_after_repair": [
@@ -518,26 +528,36 @@
       "i",
       "s3mini",
       "s3mini_2"
+    ],
+    [
+      "a",
+      "nexus4",
+      "nexus4_1"
+    ],
+    [
+      "a",
+      "nexus4",
+      "nexus4_2"
     ]
   ],
   "unmatched_accelerometer_groups": [],
   "unmatched_gyroscope_groups": [],
-  "fragment_count": 39812,
-  "pair_comparisons": 36506,
+  "fragment_count": 42291,
+  "pair_comparisons": 39359,
   "rejections": {
-    "clock_reset_or_out_of_order": 61616,
-    "insufficient_intersection": 28239,
-    "invalid_or_missing_label": 4714,
-    "mixed_label": 292,
-    "sensor_label_disagreement": 45,
-    "session_gap": 527
+    "clock_reset_or_out_of_order": 65075,
+    "insufficient_intersection": 30625,
+    "invalid_or_missing_label": 4815,
+    "mixed_label": 298,
+    "sensor_label_disagreement": 46,
+    "session_gap": 570
   },
-  "group_eligibility_count": 51,
-  "shard_count": 56,
+  "group_eligibility_count": 53,
+  "shard_count": 58,
   "checkpoint": {
     "input_position": 0,
-    "last_committed_sequence": 55,
-    "last_committed_sha256": "6f36da9472dfe2402aa3b796fc48caeba5041fad50c37f8df5e42f7f87f4abe2",
+    "last_committed_sequence": 57,
+    "last_committed_sha256": "7744bfba24b7cba183c8a538199927d6311afe35abe2b00768d07ae830539abe",
     "completed_group_index": -1,
     "completed_group": null,
     "input_identity": null,
@@ -550,5 +570,5 @@
     "rss_limit_bytes": 1073741824,
     "windows_per_shard": 1000
   },
-  "output_directory": "C:\\Users\\Adrian\\VSCode_Projects\\machineLearning\\DW-DL\\code\\har_stage2_production_phones_v1"
+  "output_directory": "C:\\Users\\adria\\VSCode_Projects\\machineLearning\\DW-DL\\code\\har_stage2_production_phones_v1"
 }

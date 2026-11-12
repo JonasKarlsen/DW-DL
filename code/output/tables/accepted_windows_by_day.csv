@@ -1,0 +1,15 @@
+dataset,start_day,accepted_windows
+phones,1970-01-01,12837
+phones,1970-01-02,3733
+phones,1970-01-03,0
+phones,1970-01-04,4451
+phones,1970-01-05,2933
+phones,2015-02-23,2508
+phones,2015-02-24,4829
+watch,1970-01-01,1419
+watch,1970-01-02,1
+watch,1970-01-03,1128
+watch,1970-01-04,2484
+watch,1970-01-05,0
+watch,2015-02-23,0
+watch,2015-02-24,0

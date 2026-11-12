@@ -1,0 +1,13 @@
+dataset,reason,diagnostic_records
+phones,clock_reset_or_out_of_order,61616
+phones,insufficient_intersection,28239
+phones,invalid_or_missing_label,4714
+phones,mixed_label,292
+phones,sensor_label_disagreement,45
+phones,session_gap,527
+watch,clock_reset_or_out_of_order,460967
+watch,insufficient_intersection,96524
+watch,invalid_or_missing_label,1030
+watch,mixed_label,76
+watch,sensor_label_disagreement,6
+watch,session_gap,397

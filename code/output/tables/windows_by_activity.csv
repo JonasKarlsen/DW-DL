@@ -1,0 +1,13 @@
+dataset,label_from_npz,accepted_windows
+phones,bike,4537
+phones,sit,6355
+phones,stairsdown,3861
+phones,stairsup,4780
+phones,stand,5305
+phones,walk,6453
+watch,bike,876
+watch,sit,773
+watch,stairsdown,816
+watch,stairsup,889
+watch,stand,760
+watch,walk,918

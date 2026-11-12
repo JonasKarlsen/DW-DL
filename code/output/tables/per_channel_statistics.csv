@@ -1,0 +1,13 @@
+dataset,channel,mean,std,min,max,finite,constant
+phones,acc_x,-1.3134148,3.9882677,-29.189133,17.78325,True,False
+phones,acc_y,0.27044263,1.5200592,-16.962305,12.449467,True,False
+phones,acc_z,8.736589,2.2267528,-11.280181,35.53449,True,False
+phones,gyro_x,0.00291882,0.43753996,-3.5104547,6.81003,True,False
+phones,gyro_y,-0.010961816,0.42820472,-7.028677,12.152715,True,False
+phones,gyro_z,-0.011891581,0.48196536,-3.9757829,4.531932,True,False
+watch,acc_x,1.040586,8.279142,-22.56283,21.003529,True,False
+watch,acc_y,-2.8258598,4.2793217,-22.129366,21.08152,True,False
+watch,acc_z,2.2260165,2.9987013,-19.632275,20.934374,True,False
+watch,gyro_x,0.021135416,1.0452534,-14.715607,20.298723,True,False
+watch,gyro_y,0.007965453,0.5870605,-9.019797,8.499484,True,False
+watch,gyro_z,-0.03221814,1.0155182,-9.18121,7.946387,True,False
