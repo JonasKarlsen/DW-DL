@@ -1,0 +1,8 @@
+status,windows
+accepted,57359
+missing_sensor,32162
+missing_or_mixed_activity,13210
+large_internal_gap,5276
+insufficient_timestamp_span,4890
+too_few_samples,53
+sensor_activity_disagreement,43
