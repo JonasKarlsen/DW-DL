@@ -1,7 +1,0 @@
-Model,accepted,insufficient_timestamp_span,large_internal_gap,missing_or_mixed_activity,missing_sensor,sensor_activity_disagreement,too_few_samples,total_windows,acceptance_pct
-gear,1783,833,836,1211,6,1,6,4676,38.130881094952954
-lgwatch,8447,127,9,1648,2772,42,1,13046,64.74781542235168
-nexus4,19044,3237,880,4297,7,0,46,27511,69.2232198029879
-s3,18397,629,1873,3869,5,0,0,24773,74.26230169943084
-s3mini,9688,64,1678,2185,1,0,0,13616,71.15158636897768
-samsungold,0,0,0,0,29371,0,0,29371,0.0
