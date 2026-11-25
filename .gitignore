@@ -245,3 +245,8 @@ ENV/
 
 .ignore_files/
 ignore_files
+
+.code/logs
+code/logs
+logs/
+.logs/
